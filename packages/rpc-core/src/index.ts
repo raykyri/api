@@ -198,6 +198,10 @@ export default class Rpc implements RpcInterface {
         // linked map
         return new Clazz(base);
       } else {
+        // check the hashing option set in meta
+
+        // use black128 or twox128 depending on the metadata
+
         return meta.modifier.isOptional
           ? new Option(Clazz, isNull(result) ? null : new Clazz(base))
           : new Clazz(base);
