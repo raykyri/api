@@ -4,12 +4,16 @@
 
 import ApiPromise from '@polkadot/api/promise/Api';
 import testKeyring from '@polkadot/keyring/testing';
+import testingPairs from '@polkadot/keyring/testingPairs';
 import { WsProvider } from '@polkadot/rpc-provider';
+import { RewardDestination } from '@polkadot/types';
 
 import { HeaderExtended } from '../../src/type';
 import { DerivedBalances, DerivedFees, DerivedSessionInfo, DerivedStaking } from '../../src/types';
 import { SubmittableResult } from '../../../api/src';
 
+const ALICE_STASH = testingPairs().alice_stash.address;
+const ALICE = testingPairs().alice.address;
 const WS = 'ws://127.0.0.1:9944/';
 // const WS = 'wss://poc3-rpc.polkadot.io/';
 
@@ -121,14 +125,10 @@ describe.skip('derive e2e', () => {
 
   describe('verifies derive.staking.unlocking', () => {
     const UNBOND_VALUE = 1;
-    const ALICE_STASH = '5GNJqTPyNqANBkUVMN1LPPrxXnFouWXoe2wNSmmEoLctxiZY';
-    const ALICE = '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY';
-    const keyring = testKeyring();
-    const alicePair = keyring.getPair(ALICE);
 
     it('unbonds dots for Alice (from Alice Stash)', (done) => {
       return api.tx.staking.unbond(UNBOND_VALUE)
-        .signAndSend(alicePair, (result: SubmittableResult) => {
+        .signAndSend(testingPairs().alice, (result: SubmittableResult) => {
           if (result.status.isFinalized) {
 
             done();
@@ -144,15 +144,11 @@ describe.skip('derive e2e', () => {
   });
 
   describe('verifies derive.staking.rewardDestination', () => {
-    const PAYEE = 2;
-    const ALICE_STASH = '5GNJqTPyNqANBkUVMN1LPPrxXnFouWXoe2wNSmmEoLctxiZY';
-    const ALICE = '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY';
-    const keyring = testKeyring();
-    const alicePair = keyring.getPair(ALICE);
+    const PAYEE = 'Controller';
 
     it('Set payee for ALICE to 2', (done) => {
       return api.tx.staking.setPayee(PAYEE)
-        .signAndSend(alicePair, (result: SubmittableResult) => {
+        .signAndSend(testingPairs().alice, (result: SubmittableResult) => {
           if (result.status.isFinalized) {
 
             done();
@@ -170,6 +166,38 @@ describe.skip('derive e2e', () => {
 
         done();
       });
+    });
+
+    it('staking.info updates itself after changing reward destination', async (done) => {
+      let count = 0; // The # of times we got a callback response from api.derive.staking.info
+
+      // Stash = BOB_STASH
+      // Controller = BOB
+
+      await api.tx.staking.bond(testingPairs().bob.address, 123456, new RewardDestination('Staked'))
+        .signAndSend(testingPairs().bob_stash);
+
+      // Wait a bit, and subscribe to staking.info
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      api.derive.staking.info(testingPairs().bob.address, async (result) => {
+        ++count;
+
+        if (count === 1) {
+          // On first result we set the reward destination to Staked
+          expect(result.rewardDestination!.toString()).toBe('Staked');
+        } else if (count === 2) {
+          // On first result we set the reward destination to Controller
+          expect(result.rewardDestination!.toString()).toBe('Controller');
+
+          await api.tx.staking.unbond(123456).signAndSend(testingPairs().bob_stash);
+          done();
+        }
+      });
+
+      // Wait a bit, and change reward destination
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await api.tx.staking.setPayee(new RewardDestination('Controller'))
+        .signAndSend(testingPairs().bob);
     });
   });
 });
