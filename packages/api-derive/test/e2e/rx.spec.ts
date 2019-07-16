@@ -5,21 +5,18 @@
 import BN from 'bn.js';
 
 import ApiRx from '@polkadot/api/rx/Api';
-import { AccountId, AccountIndex, BlockNumber, Index } from '@polkadot/types';
+import { HeaderExtended } from '@polkadot/api-derive';
+import { DerivedBalances, DerivedContractFees, DerivedFees, DerivedSessionInfo, DerivedStakingInfo } from '@polkadot/api-derive/types';
+import { AccountId, AccountIndex, AuthorityId, BlockNumber, Exposure, Index, RewardDestination, SessionKey, StakingLedger, ValidatorPrefs } from '@polkadot/types';
 import { WsProvider } from '@polkadot/rpc-provider';
 
-import { HeaderExtended } from '../../src/type';
-import { DerivedBalances, DerivedContractFees, DerivedFees, DerivedSessionInfo } from '../../src/types';
-
-const WS = 'ws://127.0.0.1:9944/';
-// const WS = 'wss://poc3-rpc.polkadot.io/';
-// const WS = 'wss://substrate-rpc.parity.io/';
+const WS = 'ws://127.0.0.1:9944';
 
 // Dev account Alice
 const ID = '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY';
 const IX = 'F7Hs';
 
-describe.skip('Api-RX derive e2e', (): void => {
+describe('Api-RX derive e2e', (): void => {
   let api: ApiRx;
 
   beforeAll((): void => {
@@ -228,6 +225,28 @@ describe.skip('Api-RX derive e2e', (): void => {
     });
   });
 
+  describe('derive.democracy', (): void => {
+    describe('referendumInfo', (): void => {
+      // @TODO
+    });
+
+    describe('referendumInfos', (): void => {
+      // @TODO
+    });
+
+    describe('referendums', (): void => {
+      // @TODO
+    });
+
+    describe('referendumVote', (): void => {
+      // @TODO
+    });
+
+    describe('voters', (): void => {
+      // @TODO
+    });
+  });
+
   describe('derive.session', (): void => {
     describe('sessionProgress', (): void => {
       it('derive.session.sessionProgress', async (done): Promise<void> => {
@@ -277,8 +296,36 @@ describe.skip('Api-RX derive e2e', (): void => {
   });
 
   describe('derive.staking', (): void => {
-    describe('controllers', (): void => {
-      // @TODO https://github.com/polkadot-js/api/issues/868
+    describe('staking.controllers', (): void => {
+      it('retrieves all controllers', async (done): Promise<void> => {
+        api.derive.staking.controllers().subscribe((controllers: []): void => {
+          expect(controllers).toEqual(expect.objectContaining({
+            0: expect.arrayContaining([expect.any(AccountId)]),
+            1: expect.arrayContaining([expect.anything()])
+          }));
+          done();
+        });
+      });
+    });
+
+    describe('staking.info', (): void => {
+      it('retrieves all staking info for ALICE', async (done): Promise<void> => {
+        api.derive.staking.info(ID).subscribe((info: DerivedStakingInfo): void => {
+          expect(info).toEqual(expect.objectContaining({
+            accountId: expect.any(AccountId),
+            controllerId: expect.any(AccountId),
+            nextSessionId: expect.any(SessionKey),
+            nominators: expect.anything(),
+            rewardDestination: expect.any(RewardDestination),
+            sessionId: expect.any(AuthorityId),
+            stakers: expect.any(Exposure),
+            stakingLedger: expect.any(StakingLedger),
+            stashId: expect.any(AccountId),
+            validatorPrefs: expect.any(ValidatorPrefs)
+          }));
+          done();
+        });
+      });
     });
   });
 });
