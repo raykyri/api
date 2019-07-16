@@ -6,11 +6,12 @@ import BN from 'bn.js';
 
 import ApiRx from '@polkadot/api/rx/Api';
 import { HeaderExtended } from '@polkadot/api-derive';
-import { DerivedBalances, DerivedContractFees, DerivedFees, DerivedSessionInfo, DerivedStakingInfo } from '@polkadot/api-derive/types';
+import { ReferendumInfoExtended } from '@polkadot/api-derive/type';
+import { DerivedBalances, DerivedContractFees, DerivedFees, DerivedReferendumVote, DerivedSessionInfo, DerivedStakingInfo } from '@polkadot/api-derive/types';
 import { AccountId, AccountIndex, AuthorityId, BlockNumber, Exposure, Index, RewardDestination, SessionKey, StakingLedger, ValidatorPrefs } from '@polkadot/types';
 import { WsProvider } from '@polkadot/rpc-provider';
 
-const WS = 'ws://127.0.0.1:9944';
+const WS = 'ws://127.0.0.1:9945';
 
 // Dev account Alice
 const ID = '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY';
@@ -226,29 +227,45 @@ describe('Api-RX derive e2e', (): void => {
   });
 
   describe('derive.democracy', (): void => {
-    describe('referendumInfo', (): void => {
-      // @TODO
+    describe('democracy.referendumInfos', (): void => {
+      it('Gets all referendum Infos', async (done): Promise<void> => {
+        api.derive.democracy.referendumInfos().subscribe((referendums: ReferendumInfoExtended): void => {
+          expect(referendums instanceof Array).toBe(true);
+          done();
+        });
+      });
     });
 
-    describe('referendumInfos', (): void => {
-      // @TODO
+    describe('democracy.referendums', (): void => {
+      it('Gets all referendums', async (done): Promise<void> => {
+        api.derive.democracy.referendums().subscribe((referendums: ReferendumInfoExtended): void => {
+          expect(referendums instanceof Array).toBe(true);
+          done();
+        });
+      });
     });
 
-    describe('referendums', (): void => {
-      // @TODO
+    describe('democracy.referendumVotesFor', (): void => {
+      it('Gets all votes for a certain referendum', async (done): Promise<void> => {
+        api.derive.democracy.referendumVotesFor(0).subscribe((votes: DerivedReferendumVote): void => {
+          expect(votes instanceof Array).toBe(true);
+          done();
+        });
+      });
     });
 
-    describe('referendumVote', (): void => {
-      // @TODO
-    });
-
-    describe('voters', (): void => {
-      // @TODO
+    describe('democracy.votes', (): void => {
+      it('Gets all votes', async (done): Promise<void> => {
+        api.derive.democracy.votes(0).subscribe((votes: DerivedReferendumVote): void => {
+          expect(votes instanceof Array).toBe(true);
+          done();
+        });
+      });
     });
   });
 
   describe('derive.session', (): void => {
-    describe('sessionProgress', (): void => {
+    describe('session.progress', (): void => {
       it('derive.session.sessionProgress', async (done): Promise<void> => {
         api.derive.session.sessionProgress().subscribe((progress: BN): void => {
           expect(progress instanceof BN).toBe(true);
