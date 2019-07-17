@@ -75,7 +75,7 @@ A 32-bit unsigned integer
 
 *Overrides [UInt](_codec_uint_.uint.md).[constructor](_codec_uint_.uint.md#constructor)*
 
-*Defined in [primitive/U32.ts:14](https://github.com/polkadot-js/api/blob/0196829/packages/types/src/primitive/U32.ts#L14)*
+*Defined in [primitive/U32.ts:14](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/primitive/U32.ts#L14)*
 
 **Parameters:**
 
@@ -95,7 +95,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/0196829/packages/types/src/codec/UInt.ts#L36)*
+*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/UInt.ts#L36)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -119,7 +119,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/0196829/packages/types/src/codec/UInt.ts#L48)*
+*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/UInt.ts#L48)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -137,7 +137,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/0196829/packages/types/src/codec/UInt.ts#L57)*
+*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/UInt.ts#L57)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 

@@ -19,6 +19,8 @@
   * [democracy/referendumVotesFor](modules/_democracy_referendumvotesfor_.md)
   * [democracy/referendums](modules/_democracy_referendums_.md)
   * [democracy/votes](modules/_democracy_votes_.md)
+  * [elections/approvalsOf](modules/_elections_approvalsof_.md)
+  * [elections/voters](modules/_elections_voters_.md)
   * [session/eraLength](modules/_session_eralength_.md)
   * [session/eraProgress](modules/_session_eraprogress_.md)
   * [session/info](modules/_session_info_.md)
