@@ -51,7 +51,7 @@ is available here.
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:21](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/UInt.ts#L21)*
+*Defined in [codec/UInt.ts:21](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/UInt.ts#L21)*
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ Name | Type | Default |
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/UInt.ts#L36)*
+*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/UInt.ts#L36)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -93,7 +93,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/UInt.ts#L48)*
+*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/UInt.ts#L48)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -109,7 +109,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/UInt.ts#L57)*
+*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/UInt.ts#L57)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 

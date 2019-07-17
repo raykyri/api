@@ -58,7 +58,7 @@ An [Enum](_codec_enumtype_.enum.md) containing a Bft misbehaviour
 
 *Overrides [Enum](_codec_enumtype_.enum.md).[constructor](_codec_enumtype_.enum.md#constructor)*
 
-*Defined in [type/MisbehaviorReport.ts:123](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L123)*
+*Defined in [type/MisbehaviorReport.ts:123](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L123)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ Name | Type |
 
 • **get asBftDoubleCommit**(): *[BftDoubleCommit](_type_misbehaviorreport_.bftdoublecommit.md)*
 
-*Defined in [type/MisbehaviorReport.ts:136](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L136)*
+*Defined in [type/MisbehaviorReport.ts:136](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L136)*
 
 **`description`** Returns the item as a [BftDoubleCommit](_type_misbehaviorreport_.bftdoublecommit.md)
 
@@ -87,7 +87,7 @@ ___
 
 • **get asBftDoublePrepare**(): *[BftDoublePrepare](_type_misbehaviorreport_.bftdoubleprepare.md)*
 
-*Defined in [type/MisbehaviorReport.ts:145](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L145)*
+*Defined in [type/MisbehaviorReport.ts:145](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L145)*
 
 **`description`** Returns the item as a [BftDoublePrepare](_type_misbehaviorreport_.bftdoubleprepare.md)
 
@@ -99,7 +99,7 @@ ___
 
 • **get asBftDoublePropose**(): *[BftDoublePropose](_type_misbehaviorreport_.bftdoublepropose.md)*
 
-*Defined in [type/MisbehaviorReport.ts:154](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L154)*
+*Defined in [type/MisbehaviorReport.ts:154](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L154)*
 
 **`description`** Returns the item as a [BftDoublePropose](_type_misbehaviorreport_.bftdoublepropose.md)
 
@@ -111,7 +111,7 @@ ___
 
 • **get asBftProposeOutOfTurn**(): *[BftProposeOutOfTurn](_type_misbehaviorreport_.bftproposeoutofturn.md)*
 
-*Defined in [type/MisbehaviorReport.ts:163](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L163)*
+*Defined in [type/MisbehaviorReport.ts:163](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L163)*
 
 **`description`** Returns the item as a [BftProposeOutOfTurn](_type_misbehaviorreport_.bftproposeoutofturn.md)
 
@@ -125,7 +125,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[encodedLength](_codec_enumtype_.enum.md#encodedlength)*
 
-*Defined in [codec/EnumType.ts:164](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L164)*
+*Defined in [codec/EnumType.ts:164](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L164)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -139,7 +139,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[index](_codec_enumtype_.enum.md#index)*
 
-*Defined in [codec/EnumType.ts:171](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L171)*
+*Defined in [codec/EnumType.ts:171](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L171)*
 
 **`description`** The index of the metadata value
 
@@ -151,7 +151,7 @@ ___
 
 • **get isBftDoubleCommit**(): *boolean*
 
-*Defined in [type/MisbehaviorReport.ts:172](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L172)*
+*Defined in [type/MisbehaviorReport.ts:172](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L172)*
 
 **`description`** true when this is a BftDoubleCommit
 
@@ -163,7 +163,7 @@ ___
 
 • **get isBftDoublePrepare**(): *boolean*
 
-*Defined in [type/MisbehaviorReport.ts:179](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L179)*
+*Defined in [type/MisbehaviorReport.ts:179](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L179)*
 
 **`description`** true when this is a BftDoublePrepare
 
@@ -175,7 +175,7 @@ ___
 
 • **get isBftDoublePropose**(): *boolean*
 
-*Defined in [type/MisbehaviorReport.ts:186](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L186)*
+*Defined in [type/MisbehaviorReport.ts:186](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L186)*
 
 **`description`** true when this is a BftDoublePropose
 
@@ -187,7 +187,7 @@ ___
 
 • **get isBftProposeOutOfTurn**(): *boolean*
 
-*Defined in [type/MisbehaviorReport.ts:193](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/type/MisbehaviorReport.ts#L193)*
+*Defined in [type/MisbehaviorReport.ts:193](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/type/MisbehaviorReport.ts#L193)*
 
 **`description`** true when this is a BftProposeOutOfTurn
 
@@ -201,7 +201,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[isEmpty](_codec_enumtype_.enum.md#isempty)*
 
-*Defined in [codec/EnumType.ts:178](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L178)*
+*Defined in [codec/EnumType.ts:178](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L178)*
 
 **`description`** Checks if the value is an empty value
 
@@ -215,7 +215,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[isNone](_codec_enumtype_.enum.md#isnone)*
 
-*Defined in [codec/EnumType.ts:185](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L185)*
+*Defined in [codec/EnumType.ts:185](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L185)*
 
 **`description`** Checks if the Enum points to a [Null](_primitive_null_.null.md) type
 
@@ -229,7 +229,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[isNull](_codec_enumtype_.enum.md#isnull)*
 
-*Defined in [codec/EnumType.ts:192](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L192)*
+*Defined in [codec/EnumType.ts:192](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L192)*
 
 **`description`** Checks if the Enum points to a [Null](_primitive_null_.null.md) type (deprecated, use isNone)
 
@@ -243,7 +243,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[type](_codec_enumtype_.enum.md#type)*
 
-*Defined in [codec/EnumType.ts:199](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L199)*
+*Defined in [codec/EnumType.ts:199](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L199)*
 
 **`description`** The name of the type this enum value represents
 
@@ -257,7 +257,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[value](_codec_enumtype_.enum.md#value)*
 
-*Defined in [codec/EnumType.ts:206](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L206)*
+*Defined in [codec/EnumType.ts:206](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L206)*
 
 **`description`** The value of the enum
 
@@ -273,7 +273,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[eq](_codec_enumtype_.enum.md#eq)*
 
-*Defined in [codec/EnumType.ts:213](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L213)*
+*Defined in [codec/EnumType.ts:213](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L213)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -293,7 +293,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[toHex](_codec_enumtype_.enum.md#tohex)*
 
-*Defined in [codec/EnumType.ts:228](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L228)*
+*Defined in [codec/EnumType.ts:228](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L228)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -309,7 +309,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[toJSON](_codec_enumtype_.enum.md#tojson)*
 
-*Defined in [codec/EnumType.ts:235](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L235)*
+*Defined in [codec/EnumType.ts:235](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L235)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -323,7 +323,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[toNumber](_codec_enumtype_.enum.md#tonumber)*
 
-*Defined in [codec/EnumType.ts:244](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L244)*
+*Defined in [codec/EnumType.ts:244](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L244)*
 
 **`description`** Returns the number representation for the value
 
@@ -339,7 +339,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[toRawType](_codec_enumtype_.enum.md#torawtype)*
 
-*Defined in [codec/EnumType.ts:251](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L251)*
+*Defined in [codec/EnumType.ts:251](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L251)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -355,7 +355,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[toString](_codec_enumtype_.enum.md#tostring)*
 
-*Defined in [codec/EnumType.ts:266](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L266)*
+*Defined in [codec/EnumType.ts:266](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L266)*
 
 **`description`** Returns the string representation of the value
 
@@ -371,7 +371,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[toU8a](_codec_enumtype_.enum.md#tou8a)*
 
-*Defined in [codec/EnumType.ts:276](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L276)*
+*Defined in [codec/EnumType.ts:276](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L276)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
@@ -391,7 +391,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[with](_codec_enumtype_.enum.md#static-with)*
 
-*Defined in [codec/EnumType.ts:129](https://github.com/polkadot-js/api/blob/28cf21d/packages/types/src/codec/EnumType.ts#L129)*
+*Defined in [codec/EnumType.ts:129](https://github.com/polkadot-js/api/blob/ff69c43/packages/types/src/codec/EnumType.ts#L129)*
 
 **Parameters:**
 

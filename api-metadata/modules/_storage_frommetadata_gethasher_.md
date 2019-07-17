@@ -16,7 +16,7 @@
 
 Ƭ **HasherFunction**: *function*
 
-*Defined in [storage/fromMetadata/getHasher.ts:10](https://github.com/polkadot-js/api/blob/28cf21d/packages/api-metadata/src/storage/fromMetadata/getHasher.ts#L10)*
+*Defined in [storage/fromMetadata/getHasher.ts:10](https://github.com/polkadot-js/api/blob/ff69c43/packages/api-metadata/src/storage/fromMetadata/getHasher.ts#L10)*
 
 #### Type declaration:
 
@@ -34,7 +34,7 @@ Name | Type |
 
 ▸ **getHasher**(`hasher?`: `StorageHasher`): *[HasherFunction](_storage_frommetadata_gethasher_.md#hasherfunction)*
 
-*Defined in [storage/fromMetadata/getHasher.ts:12](https://github.com/polkadot-js/api/blob/28cf21d/packages/api-metadata/src/storage/fromMetadata/getHasher.ts#L12)*
+*Defined in [storage/fromMetadata/getHasher.ts:12](https://github.com/polkadot-js/api/blob/ff69c43/packages/api-metadata/src/storage/fromMetadata/getHasher.ts#L12)*
 
 **Parameters:**
 

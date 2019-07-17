@@ -13,7 +13,7 @@
 
 ▸ **approvalFlagToBool**(`flags`: `Vector<ApprovalFlag>`): *boolean[]*
 
-*Defined in [elections/approvalsOf.ts:8](https://github.com/polkadot-js/api/blob/28cf21d/packages/api-derive/src/elections/approvalsOf.ts#L8)*
+*Defined in [elections/approvalsOf.ts:8](https://github.com/polkadot-js/api/blob/ff69c43/packages/api-derive/src/elections/approvalsOf.ts#L8)*
 
 **Parameters:**
 
@@ -29,7 +29,7 @@ ___
 
 ▸ **approvalsOf**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [elections/approvalsOf.ts:18](https://github.com/polkadot-js/api/blob/28cf21d/packages/api-derive/src/elections/approvalsOf.ts#L18)*
+*Defined in [elections/approvalsOf.ts:18](https://github.com/polkadot-js/api/blob/ff69c43/packages/api-derive/src/elections/approvalsOf.ts#L18)*
 
 **Parameters:**
 
