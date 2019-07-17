@@ -1,0 +1,1 @@
+> # External module: "Metadata/v5/static.polkadot"

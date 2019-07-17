@@ -1,0 +1,1 @@
+> # External module: "Metadata/v0/static"
