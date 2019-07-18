@@ -1,8 +1,8 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["Abi"](modules/_abi_.md)
 * ["RxBase"](modules/_rxbase_.md)

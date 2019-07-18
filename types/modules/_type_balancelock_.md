@@ -1,7 +1,7 @@
 > # External module: "type/BalanceLock"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [BalanceLock](../classes/_type_balancelock_.balancelock.md)

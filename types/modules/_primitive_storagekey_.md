@@ -1,11 +1,11 @@
 > # External module: "primitive/StorageKey"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [StorageKey](../classes/_primitive_storagekey_.storagekey.md)
 
-#### Interfaces
+### Interfaces
 
 * [StorageEntry](../interfaces/_primitive_storagekey_.storageentry.md)

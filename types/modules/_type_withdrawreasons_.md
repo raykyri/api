@@ -1,7 +1,7 @@
 > # External module: "type/WithdrawReasons"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [WithdrawReasons](../classes/_type_withdrawreasons_.withdrawreasons.md)

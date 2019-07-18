@@ -1,8 +1,8 @@
 > # External module: "chain/bestNumberLag"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [bestNumberLag](_chain_bestnumberlag_.md#bestnumberlag)
 
@@ -12,7 +12,7 @@
 
 ▸ **bestNumberLag**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [chain/bestNumberLag.ts:27](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/chain/bestNumberLag.ts#L27)*
+*Defined in [chain/bestNumberLag.ts:27](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/chain/bestNumberLag.ts#L27)*
 
 **`name`** bestNumberLag
 

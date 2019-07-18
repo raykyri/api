@@ -1,7 +1,7 @@
 > # External module: "type/TreasuryProposal"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [TreasuryProposal](../classes/_type_treasuryproposal_.treasuryproposal.md)

@@ -1,7 +1,7 @@
 > # External module: "primitive/Hash"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Hash](../classes/_primitive_hash_.hash.md)

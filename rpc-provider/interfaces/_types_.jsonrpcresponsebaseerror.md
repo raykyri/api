@@ -4,9 +4,9 @@
 
 * **JsonRpcResponseBaseError**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [code](_types_.jsonrpcresponsebaseerror.md#code)
 * [data](_types_.jsonrpcresponsebaseerror.md#optional-data)
@@ -18,7 +18,7 @@
 
 • **code**: *number*
 
-*Defined in [types.ts:16](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/types.ts#L16)*
+*Defined in [types.ts:16](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/types.ts#L16)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **data**? : *number | string*
 
-*Defined in [types.ts:17](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/types.ts#L17)*
+*Defined in [types.ts:17](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/types.ts#L17)*
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • **message**: *string*
 
-*Defined in [types.ts:18](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/types.ts#L18)*
+*Defined in [types.ts:18](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/types.ts#L18)*

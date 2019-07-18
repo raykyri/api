@@ -1,8 +1,8 @@
 > # External module: "democracy/referendumInfo"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [constructInfo](_democracy_referenduminfo_.md#constructinfo)
 * [referendumInfo](_democracy_referenduminfo_.md#referenduminfo)
@@ -13,7 +13,7 @@
 
 ▸ **constructInfo**(`index`: `BN` | number, `optionInfo?`: `Option<ReferendumInfo>`): *`Option<ReferendumInfoExtended>`*
 
-*Defined in [democracy/referendumInfo.ts:15](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/democracy/referendumInfo.ts#L15)*
+*Defined in [democracy/referendumInfo.ts:15](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/democracy/referendumInfo.ts#L15)*
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ ___
 
 ▸ **referendumInfo**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [democracy/referendumInfo.ts:28](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/democracy/referendumInfo.ts#L28)*
+*Defined in [democracy/referendumInfo.ts:28](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/democracy/referendumInfo.ts#L28)*
 
 **Parameters:**
 

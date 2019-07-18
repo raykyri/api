@@ -1,7 +1,7 @@
 > # External module: "primitive/StorageData"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [StorageData](../classes/_primitive_storagedata_.storagedata.md)

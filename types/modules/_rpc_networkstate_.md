@@ -1,7 +1,7 @@
 > # External module: "rpc/NetworkState"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [NetworkState](../classes/_rpc_networkstate_.networkstate.md)

@@ -1,7 +1,7 @@
 > # External module: "primitive/AccountInfo"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [AccountInfo](../classes/_primitive_accountinfo_.accountinfo.md)

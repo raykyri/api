@@ -1,7 +1,7 @@
 > # External module: "codec/U8a"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [U8a](../classes/_codec_u8a_.u8a.md)

@@ -1,7 +1,7 @@
 > # External module: "codec/UInt"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [UInt](../classes/_codec_uint_.uint.md)

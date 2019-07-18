@@ -1,8 +1,8 @@
 > # External module: "checkTypes.manual"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [test](_checktypes_manual_.md#test)
 
@@ -12,6 +12,6 @@
 
 ▸ **test**(): *`Promise<void>`*
 
-*Defined in [checkTypes.manual.ts:16](https://github.com/polkadot-js/api/blob/efb38db/packages/api/src/checkTypes.manual.ts#L16)*
+*Defined in [checkTypes.manual.ts:16](https://github.com/polkadot-js/api/blob/37af934/packages/api/src/checkTypes.manual.ts#L16)*
 
 **Returns:** *`Promise<void>`*

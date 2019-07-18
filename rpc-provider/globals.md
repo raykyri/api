@@ -1,8 +1,8 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["defaults"](modules/_defaults_.md)
 * ["http/polyfill"](modules/_http_polyfill_.md)

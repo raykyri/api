@@ -1,7 +1,7 @@
 > # External module: "rx/Api"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ApiRx](../classes/_rx_api_.apirx.md)

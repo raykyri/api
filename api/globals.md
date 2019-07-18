@@ -1,8 +1,8 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["Base"](modules/_base_.md)
 * ["SubmittableExtrinsic"](modules/_submittableextrinsic_.md)

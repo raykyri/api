@@ -1,7 +1,7 @@
 > # External module: "type/AuthorityId"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [AuthorityId](../classes/_type_authorityid_.authorityid.md)

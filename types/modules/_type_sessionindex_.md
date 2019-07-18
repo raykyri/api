@@ -1,7 +1,7 @@
 > # External module: "type/SessionIndex"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [SessionIndex](../classes/_type_sessionindex_.sessionindex.md)

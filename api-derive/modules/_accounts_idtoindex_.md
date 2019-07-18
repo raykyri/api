@@ -1,8 +1,8 @@
 > # External module: "accounts/idToIndex"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [idToIndex](_accounts_idtoindex_.md#idtoindex)
 
@@ -12,7 +12,7 @@
 
 ▸ **idToIndex**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [accounts/idToIndex.ts:27](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/accounts/idToIndex.ts#L27)*
+*Defined in [accounts/idToIndex.ts:27](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/accounts/idToIndex.ts#L27)*
 
 **`name`** idToIndex
 

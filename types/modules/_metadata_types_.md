@@ -1,7 +1,7 @@
 > # External module: "Metadata/types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [MetadataInterface](../interfaces/_metadata_types_.metadatainterface.md)

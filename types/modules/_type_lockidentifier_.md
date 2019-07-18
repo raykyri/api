@@ -1,7 +1,7 @@
 > # External module: "type/LockIdentifier"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [LockIdentifier](../classes/_type_lockidentifier_.lockidentifier.md)

@@ -1,7 +1,7 @@
 > # External module: "rpc/ChainProperties"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ChainProperties](../classes/_rpc_chainproperties_.chainproperties.md)

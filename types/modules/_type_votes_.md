@@ -1,7 +1,7 @@
 > # External module: "type/Votes"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Votes](../classes/_type_votes_.votes.md)

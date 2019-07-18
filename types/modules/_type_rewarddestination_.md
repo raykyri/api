@@ -1,7 +1,7 @@
 > # External module: "type/RewardDestination"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [RewardDestination](../classes/_type_rewarddestination_.rewarddestination.md)

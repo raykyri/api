@@ -1,8 +1,8 @@
 > # External module: "primitive/EventRecord"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ApplyExtrinsic](../classes/_primitive_eventrecord_.applyextrinsic.md)
 * [EventRecord](../classes/_primitive_eventrecord_.eventrecord.md)

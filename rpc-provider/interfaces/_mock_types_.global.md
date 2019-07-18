@@ -6,9 +6,9 @@
 
   * **Global**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [Array](_mock_types_.global.md#array)
 * [ArrayBuffer](_mock_types_.global.md#arraybuffer)
@@ -85,7 +85,7 @@
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1062
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1071
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1063
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1072
 
 ___
 
@@ -105,19 +105,17 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1064
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1073
 
 ___
 
 ###  Buffer
 
-• **Buffer**: *object*
+• **Buffer**: *`Buffer`*
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1065
-
-#### Type declaration:
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1074
 
 ___
 
@@ -127,7 +125,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1066
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1075
 
 ___
 
@@ -137,7 +135,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1067
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1076
 
 ___
 
@@ -147,7 +145,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1068
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1077
 
 ___
 
@@ -157,7 +155,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1069
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1078
 
 ___
 
@@ -167,7 +165,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1070
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1079
 
 ___
 
@@ -177,7 +175,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1071
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1080
 
 ___
 
@@ -187,7 +185,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1072
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1081
 
 ___
 
@@ -197,7 +195,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1073
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1082
 
 ___
 
@@ -207,7 +205,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1074
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1083
 
 ___
 
@@ -217,7 +215,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1075
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1084
 
 ___
 
@@ -227,7 +225,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1076
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1085
 
 ___
 
@@ -237,7 +235,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1077
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1086
 
 ___
 
@@ -247,7 +245,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1078
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1087
 
 ___
 
@@ -257,7 +255,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1079
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1088
 
 ___
 
@@ -267,7 +265,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1080
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1089
 
 ___
 
@@ -277,7 +275,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1081
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1090
 
 ___
 
@@ -287,7 +285,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1082
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1091
 
 ___
 
@@ -297,7 +295,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1083
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1092
 
 ___
 
@@ -307,7 +305,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1084
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1093
 
 ___
 
@@ -317,7 +315,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1085
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1094
 
 ___
 
@@ -327,7 +325,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1086
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1095
 
 ___
 
@@ -337,7 +335,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1087
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1096
 
 ___
 
@@ -347,7 +345,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1088
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1097
 
 ___
 
@@ -357,7 +355,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1089
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1098
 
 ___
 
@@ -367,7 +365,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1090
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1099
 
 ___
 
@@ -377,7 +375,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1091
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1100
 
 ___
 
@@ -387,7 +385,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1092
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1101
 
 ___
 
@@ -397,7 +395,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1093
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1102
 
 ___
 
@@ -407,7 +405,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1094
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1103
 
 ___
 
@@ -417,7 +415,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1095
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1104
 
 ___
 
@@ -427,7 +425,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1096
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1105
 
 ___
 
@@ -437,7 +435,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1097
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1106
 
 ___
 
@@ -447,7 +445,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1098
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1107
 
 ___
 
@@ -457,7 +455,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1099
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1108
 
 ___
 
@@ -467,7 +465,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1100
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1109
 
 ___
 
@@ -475,7 +473,7 @@ ___
 
 • **WebSocket**: *`Constructor<WebSocket>`*
 
-*Defined in [mock/types.ts:9](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/mock/types.ts#L9)*
+*Defined in [mock/types.ts:9](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/mock/types.ts#L9)*
 
 ___
 
@@ -485,7 +483,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1101
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1110
 
 #### Type declaration:
 
@@ -505,7 +503,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1102
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1111
 
 #### Type declaration:
 
@@ -525,7 +523,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1103
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1112
 
 #### Type declaration:
 
@@ -545,7 +543,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1104
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1113
 
 ___
 
@@ -555,7 +553,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1105
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1114
 
 ___
 
@@ -565,7 +563,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1106
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1115
 
 ___
 
@@ -575,7 +573,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1107
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1116
 
 ___
 
@@ -585,7 +583,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1108
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1117
 
 ___
 
@@ -595,7 +593,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1109
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1118
 
 #### Type declaration:
 
@@ -615,7 +613,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1110
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1119
 
 ___
 
@@ -623,7 +621,7 @@ ___
 
 • **fetch**: *`GlobalFetch`*
 
-*Defined in [mock/types.ts:10](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/mock/types.ts#L10)*
+*Defined in [mock/types.ts:10](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/mock/types.ts#L10)*
 
 ___
 
@@ -633,7 +631,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1124
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1133
 
 #### Type declaration:
 
@@ -647,7 +645,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1111
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1120
 
 ___
 
@@ -657,7 +655,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1112
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1121
 
 ___
 
@@ -667,7 +665,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1113
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1122
 
 ___
 
@@ -677,7 +675,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1114
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1123
 
 ___
 
@@ -687,7 +685,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1115
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1124
 
 ___
 
@@ -697,7 +695,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1116
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1125
 
 ___
 
@@ -707,7 +705,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1121
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1130
 
 ___
 
@@ -717,7 +715,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1117
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1126
 
 ___
 
@@ -727,7 +725,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1118
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1127
 
 #### Type declaration:
 
@@ -755,7 +753,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1119
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1128
 
 #### Type declaration:
 
@@ -785,7 +783,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1120
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1129
 
 #### Type declaration:
 
@@ -815,7 +813,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1122
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1131
 
 ___
 
@@ -825,7 +823,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1123
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1132
 
 #### Type declaration:
 
@@ -845,4 +843,4 @@ ___
 
 *Inherited from void*
 
-Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1125
+Defined in /home/travis/build/polkadot-js/api/node_modules/@types/node/globals.d.ts:1134

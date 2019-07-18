@@ -1,12 +1,12 @@
 > # External module: "codec/U8aFixed"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [U8aFixed](../classes/_codec_u8afixed_.u8afixed.md)
 
-#### Type aliases
+### Type aliases
 
 * [BitLength](_codec_u8afixed_.md#bitlength)
 
@@ -16,4 +16,4 @@
 
 Ƭ **BitLength**: *`8` | `16` | `32` | `64` | `128` | `160` | `256` | `512` | `1024` | `2048`*
 
-*Defined in [codec/U8aFixed.ts:11](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/codec/U8aFixed.ts#L11)*
+*Defined in [codec/U8aFixed.ts:11](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/codec/U8aFixed.ts#L11)*

@@ -1,7 +1,7 @@
 > # External module: "type/ValidatorPrefs"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ValidatorPrefs](../classes/_type_validatorprefs_.validatorprefs.md)

@@ -1,7 +1,7 @@
 > # External module: "type/MemberCount"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [MemberCount](../classes/_type_membercount_.membercount.md)

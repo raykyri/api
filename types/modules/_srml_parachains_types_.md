@@ -1,8 +1,8 @@
 > # External module: "srml/parachains/types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [AttestedCandidate](../interfaces/_srml_parachains_types_.attestedcandidate.md)
 * [AuctionIndex](../interfaces/_srml_parachains_types_.auctionindex.md)

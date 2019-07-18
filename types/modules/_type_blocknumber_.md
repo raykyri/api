@@ -1,7 +1,7 @@
 > # External module: "type/BlockNumber"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [BlockNumber](../classes/_type_blocknumber_.blocknumber.md)

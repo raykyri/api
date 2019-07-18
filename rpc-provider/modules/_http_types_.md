@@ -1,7 +1,7 @@
 > # External module: "http/types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [HttpState](../interfaces/_http_types_.httpstate.md)

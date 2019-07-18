@@ -1,8 +1,8 @@
 > # External module: "primitive/Event"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Event](../classes/_primitive_event_.event.md)
 * [EventData](../classes/_primitive_event_.eventdata.md)

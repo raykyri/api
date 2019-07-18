@@ -1,8 +1,8 @@
 > # External module: "type/ContractInfo"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Alive](../classes/_type_contractinfo_.alive.md)
 * [AliveContractInfo](../classes/_type_contractinfo_.alivecontractinfo.md)

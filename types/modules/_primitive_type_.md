@@ -1,7 +1,7 @@
 > # External module: "primitive/Type"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Type](../classes/_primitive_type_.type.md)

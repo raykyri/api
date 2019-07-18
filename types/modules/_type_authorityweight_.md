@@ -1,7 +1,7 @@
 > # External module: "type/AuthorityWeight"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [AuthorityWeight](../classes/_type_authorityweight_.authorityweight.md)

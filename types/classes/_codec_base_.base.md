@@ -22,9 +22,9 @@
 
   * [Extrinsic](_type_extrinsic_.extrinsic.md)
 
-### Index
+## Index
 
-#### Constructors
+### Constructors
 
 * [constructor](_codec_base_.base.md#constructor)
 
@@ -34,7 +34,7 @@
 
 \+ **new Base**(`value?`: any): *[Base](_codec_base_.base.md)*
 
-*Defined in [codec/Base.ts:10](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/codec/Base.ts#L10)*
+*Defined in [codec/Base.ts:10](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/codec/Base.ts#L10)*
 
 **Parameters:**
 

@@ -4,9 +4,9 @@
 
 * **ContractABIFnArg**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [name](_types_.contractabifnarg.md#name)
 * [type](_types_.contractabifnarg.md#type)
@@ -17,7 +17,7 @@
 
 • **name**: *string*
 
-*Defined in [types.ts:57](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L57)*
+*Defined in [types.ts:57](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L57)*
 
 ___
 
@@ -25,4 +25,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [types.ts:58](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L58)*
+*Defined in [types.ts:58](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L58)*

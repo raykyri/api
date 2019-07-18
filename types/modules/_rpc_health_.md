@@ -1,7 +1,7 @@
 > # External module: "rpc/Health"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Health](../classes/_rpc_health_.health.md)

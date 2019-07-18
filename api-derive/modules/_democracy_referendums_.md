@@ -1,8 +1,8 @@
 > # External module: "democracy/referendums"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [referendums](_democracy_referendums_.md#referendums)
 
@@ -12,7 +12,7 @@
 
 ▸ **referendums**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [democracy/referendums.ts:15](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/democracy/referendums.ts#L15)*
+*Defined in [democracy/referendums.ts:15](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/democracy/referendums.ts#L15)*
 
 **Parameters:**
 

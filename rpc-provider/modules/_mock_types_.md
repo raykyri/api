@@ -1,13 +1,13 @@
 > # External module: "mock/types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [Global](../interfaces/_mock_types_.global.md)
 * [Mock](../interfaces/_mock_types_.mock.md)
 
-#### Type aliases
+### Type aliases
 
 * [MockStateDb](_mock_types_.md#mockstatedb)
 * [MockStateRequests](_mock_types_.md#mockstaterequests)
@@ -20,7 +20,7 @@
 
 Ƭ **MockStateDb**: *`Record<string, Uint8Array>`*
 
-*Defined in [mock/types.ts:27](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/mock/types.ts#L27)*
+*Defined in [mock/types.ts:27](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/mock/types.ts#L27)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 Ƭ **MockStateRequests**: *`Record<string, function>`*
 
-*Defined in [mock/types.ts:29](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/mock/types.ts#L29)*
+*Defined in [mock/types.ts:29](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/mock/types.ts#L29)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 Ƭ **MockStateSubscriptionCallback**: *function*
 
-*Defined in [mock/types.ts:20](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/mock/types.ts#L20)*
+*Defined in [mock/types.ts:20](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/mock/types.ts#L20)*
 
 #### Type declaration:
 
@@ -55,4 +55,4 @@ ___
 
 Ƭ **MockStateSubscriptions**: *`Record<string, object>`*
 
-*Defined in [mock/types.ts:22](https://github.com/polkadot-js/api/blob/efb38db/packages/rpc-provider/src/mock/types.ts#L22)*
+*Defined in [mock/types.ts:22](https://github.com/polkadot-js/api/blob/37af934/packages/rpc-provider/src/mock/types.ts#L22)*

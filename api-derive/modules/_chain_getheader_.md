@@ -1,8 +1,8 @@
 > # External module: "chain/getHeader"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [getHeader](_chain_getheader_.md#getheader)
 
@@ -12,7 +12,7 @@
 
 ▸ **getHeader**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [chain/getHeader.ts:28](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/chain/getHeader.ts#L28)*
+*Defined in [chain/getHeader.ts:28](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/chain/getHeader.ts#L28)*
 
 **`name`** bestNumberFinalized
 

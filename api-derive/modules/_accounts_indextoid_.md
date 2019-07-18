@@ -1,8 +1,8 @@
 > # External module: "accounts/indexToId"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [indexToId](_accounts_indextoid_.md#indextoid)
 
@@ -12,7 +12,7 @@
 
 ▸ **indexToId**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [accounts/indexToId.ts:26](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/accounts/indexToId.ts#L26)*
+*Defined in [accounts/indexToId.ts:26](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/accounts/indexToId.ts#L26)*
 
 **`name`** indexToId
 

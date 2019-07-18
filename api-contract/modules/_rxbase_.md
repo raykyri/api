@@ -1,7 +1,7 @@
 > # External module: "RxBase"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [RxBase](../classes/_rxbase_.rxbase.md)

@@ -1,16 +1,16 @@
 > # External module: "RxContract"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [RxContract](../classes/_rxcontract_.rxcontract.md)
 
-#### Interfaces
+### Interfaces
 
 * [ContractCall](../interfaces/_rxcontract_.contractcall.md)
 
-#### Type aliases
+### Type aliases
 
 * [ContractCallResultSubscription](_rxcontract_.md#contractcallresultsubscription)
 
@@ -20,4 +20,4 @@
 
 Ƭ **ContractCallResultSubscription**: *`Observable<SubmittableResult>`*
 
-*Defined in [RxContract.ts:17](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/RxContract.ts#L17)*
+*Defined in [RxContract.ts:17](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/RxContract.ts#L17)*

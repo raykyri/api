@@ -1,11 +1,11 @@
 > # External module: "rpc/Header"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Header](../classes/_rpc_header_.header.md)
 
-#### Interfaces
+### Interfaces
 
 * [HeaderValue](../interfaces/_rpc_header_.headervalue.md)

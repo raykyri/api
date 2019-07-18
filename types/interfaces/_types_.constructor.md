@@ -8,13 +8,13 @@
 
 * **Constructor**
 
-### Index
+## Index
 
-#### Constructors
+### Constructors
 
 * [constructor](_types_.constructor.md#constructor)
 
-#### Properties
+### Properties
 
 * [Fallback](_types_.constructor.md#optional-fallback)
 
@@ -24,7 +24,7 @@
 
 \+ **new Constructor**(...`value`: any[]): *`T`*
 
-*Defined in [types.ts:98](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/types.ts#L98)*
+*Defined in [types.ts:98](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/types.ts#L98)*
 
 **Parameters:**
 
@@ -40,4 +40,4 @@ Name | Type |
 
 • **Fallback**? : *[Constructor](_types_.constructor.md)‹*`T`*›*
 
-*Defined in [types.ts:98](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/types.ts#L98)*
+*Defined in [types.ts:98](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/types.ts#L98)*

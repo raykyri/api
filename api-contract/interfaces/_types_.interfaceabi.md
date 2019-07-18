@@ -8,9 +8,9 @@
 
 * [ContractAbi](../classes/_abi_.contractabi.md)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [abi](_types_.interfaceabi.md#abi)
 * [deploy](_types_.interfaceabi.md#deploy)
@@ -22,7 +22,7 @@
 
 • **abi**: *[ContractABI](_types_.contractabi.md)*
 
-*Defined in [types.ts:74](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L74)*
+*Defined in [types.ts:74](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L74)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **deploy**: *[ContractABIFn](_types_.contractabifn.md)*
 
-*Defined in [types.ts:75](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L75)*
+*Defined in [types.ts:75](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L75)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **messages**: *[AbiMessages](../modules/_types_.md#abimessages)*
 
-*Defined in [types.ts:76](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L76)*
+*Defined in [types.ts:76](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L76)*

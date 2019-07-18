@@ -1,8 +1,8 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["author"](modules/_author_.md)
 * ["chain"](modules/_chain_.md)

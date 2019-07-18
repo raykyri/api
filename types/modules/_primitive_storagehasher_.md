@@ -1,7 +1,7 @@
 > # External module: "primitive/StorageHasher"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [StorageHasher](../classes/_primitive_storagehasher_.storagehasher.md)

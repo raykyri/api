@@ -1,7 +1,7 @@
 > # External module: "codec/Compact"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Compact](../classes/_codec_compact_.compact.md)

@@ -1,8 +1,8 @@
 > # External module: "rpc/ExtrinsicStatus"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Broadcast](../classes/_rpc_extrinsicstatus_.broadcast.md)
 * [Dropped](../classes/_rpc_extrinsicstatus_.dropped.md)

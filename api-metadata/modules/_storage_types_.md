@@ -1,8 +1,8 @@
 > # External module: "storage/types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [ModuleStorage](../interfaces/_storage_types_.modulestorage.md)
 * [Storage](../interfaces/_storage_types_.storage.md)

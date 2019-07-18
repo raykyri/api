@@ -1,8 +1,8 @@
 > # External module: "types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [ContractABI](../interfaces/_types_.contractabi.md)
 * [ContractABIArg](../interfaces/_types_.contractabiarg.md)
@@ -17,7 +17,7 @@
 * [InterfaceContract](../interfaces/_types_.interfacecontract.md)
 * [InterfaceContractCalls](../interfaces/_types_.interfacecontractcalls.md)
 
-#### Type aliases
+### Type aliases
 
 * [AbiMessages](_types_.md#abimessages)
 * [ApiObject](_types_.md#apiobject)
@@ -29,7 +29,7 @@
 
 Ƭ **AbiMessages**: *`Record<string, ContractABIFn>`*
 
-*Defined in [types.ts:71](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L71)*
+*Defined in [types.ts:71](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L71)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 Ƭ **ApiObject**: *`ApiObject<ApiType>`*
 
-*Defined in [types.ts:11](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L11)*
+*Defined in [types.ts:11](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L11)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 Ƭ **ContractABITypes**: *string | [ContractABITypesStruct](../interfaces/_types_.contractabitypesstruct.md) | string | [ContractABITypesStruct](../interfaces/_types_.contractabitypesstruct.md)[]*
 
-*Defined in [types.ts:32](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L32)*
+*Defined in [types.ts:32](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L32)*

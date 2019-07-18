@@ -1,7 +1,7 @@
 > # External module: "rpc/StorageChangeSet"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [StorageChangeSet](../classes/_rpc_storagechangeset_.storagechangeset.md)

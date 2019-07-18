@@ -1,7 +1,7 @@
 > # External module: "type/InherentOfflineReport"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [InherentOfflineReport](../classes/_type_inherentofflinereport_.inherentofflinereport.md)

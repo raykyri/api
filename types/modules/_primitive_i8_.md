@@ -1,7 +1,7 @@
 > # External module: "primitive/I8"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [I8](../classes/_primitive_i8_.i8.md)

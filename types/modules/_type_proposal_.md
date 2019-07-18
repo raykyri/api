@@ -1,7 +1,7 @@
 > # External module: "type/Proposal"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Proposal](../classes/_type_proposal_.proposal.md)

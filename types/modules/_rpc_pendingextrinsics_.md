@@ -1,7 +1,7 @@
 > # External module: "rpc/PendingExtrinsics"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [PendingExtrinsics](../classes/_rpc_pendingextrinsics_.pendingextrinsics.md)

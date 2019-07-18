@@ -1,7 +1,7 @@
 > # External module: "rpc/PeerInfo"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [PeerInfo](../classes/_rpc_peerinfo_.peerinfo.md)

@@ -1,8 +1,8 @@
 > # External module: "session/eraProgress"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [eraProgress](_session_eraprogress_.md#eraprogress)
 
@@ -12,7 +12,7 @@
 
 ▸ **eraProgress**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [session/eraProgress.ts:13](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/session/eraProgress.ts#L13)*
+*Defined in [session/eraProgress.ts:13](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/session/eraProgress.ts#L13)*
 
 **Parameters:**
 

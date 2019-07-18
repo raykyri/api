@@ -1,7 +1,7 @@
 > # External module: "codec/Option"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Option](../classes/_codec_option_.option.md)

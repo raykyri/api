@@ -1,7 +1,7 @@
 > # External module: "type/NonceCompact"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [NonceCompact](../classes/_type_noncecompact_.noncecompact.md)

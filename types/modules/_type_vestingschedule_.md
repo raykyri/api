@@ -1,7 +1,7 @@
 > # External module: "type/VestingSchedule"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [VestingSchedule](../classes/_type_vestingschedule_.vestingschedule.md)

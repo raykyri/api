@@ -1,7 +1,7 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["types"](modules/_types_.md)

@@ -1,12 +1,12 @@
 > # External module: "accounts/indexes"
 
-### Index
+## Index
 
-#### Type aliases
+### Type aliases
 
 * [AccountIndexes](_accounts_indexes_.md#accountindexes)
 
-#### Functions
+### Functions
 
 * [indexes](_accounts_indexes_.md#indexes)
 
@@ -16,7 +16,7 @@
 
 Ƭ **AccountIndexes**: *`Record<string, AccountIndex>`*
 
-*Defined in [accounts/indexes.ts:13](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/accounts/indexes.ts#L13)*
+*Defined in [accounts/indexes.ts:13](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/accounts/indexes.ts#L13)*
 
 ## Functions
 
@@ -24,7 +24,7 @@
 
 ▸ **indexes**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [accounts/indexes.ts:32](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/accounts/indexes.ts#L32)*
+*Defined in [accounts/indexes.ts:32](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/accounts/indexes.ts#L32)*
 
 **`name`** indexes
 

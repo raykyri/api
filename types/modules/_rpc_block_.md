@@ -1,11 +1,11 @@
 > # External module: "rpc/Block"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Block](../classes/_rpc_block_.block.md)
 
-#### Interfaces
+### Interfaces
 
 * [BlockValue](../interfaces/_rpc_block_.blockvalue.md)

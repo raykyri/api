@@ -1,8 +1,8 @@
 > # External module: "codec/utils/compareMap"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [compareMap](_codec_utils_comparemap_.md#comparemap)
 
@@ -12,7 +12,7 @@
 
 ▸ **compareMap**(`a`: `Map<any, any>`, `b?`: any): *boolean*
 
-*Defined in [codec/utils/compareMap.ts:9](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/codec/utils/compareMap.ts#L9)*
+*Defined in [codec/utils/compareMap.ts:9](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/codec/utils/compareMap.ts#L9)*
 
 **Parameters:**
 

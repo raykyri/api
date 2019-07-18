@@ -1,7 +1,7 @@
 > # External module: "codec/Int"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Int](../classes/_codec_int_.int.md)

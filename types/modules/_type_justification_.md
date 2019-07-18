@@ -1,12 +1,12 @@
 > # External module: "type/Justification"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Justification](../classes/_type_justification_.justification.md)
 * [RhdJustification](../classes/_type_justification_.rhdjustification.md)
 
-#### Interfaces
+### Interfaces
 
 * [RhdJustificationValue](../interfaces/_type_justification_.rhdjustificationvalue.md)

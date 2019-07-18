@@ -1,7 +1,7 @@
 > # External module: "type/SessionKey"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [SessionKey](../classes/_type_sessionkey_.sessionkey.md)

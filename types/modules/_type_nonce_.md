@@ -1,7 +1,7 @@
 > # External module: "type/Nonce"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Nonce](../classes/_type_nonce_.nonce.md)

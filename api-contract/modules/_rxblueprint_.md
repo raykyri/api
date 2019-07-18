@@ -1,11 +1,11 @@
 > # External module: "RxBlueprint"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Blueprint](../classes/_rxblueprint_.blueprint.md)
 
-#### Interfaces
+### Interfaces
 
 * [BlueprintCreate](../interfaces/_rxblueprint_.blueprintcreate.md)

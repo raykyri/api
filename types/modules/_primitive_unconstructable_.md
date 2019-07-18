@@ -1,7 +1,7 @@
 > # External module: "primitive/Unconstructable"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Unconstructable](../classes/_primitive_unconstructable_.unconstructable.md)

@@ -1,7 +1,7 @@
 > # External module: "primitive/H512"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [H512](../classes/_primitive_h512_.h512.md)

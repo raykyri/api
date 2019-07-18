@@ -1,8 +1,8 @@
 > # External module: "chain/bestNumber"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [bestNumber](_chain_bestnumber_.md#bestnumber)
 
@@ -12,7 +12,7 @@
 
 ▸ **bestNumber**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [chain/bestNumber.ts:24](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/chain/bestNumber.ts#L24)*
+*Defined in [chain/bestNumber.ts:24](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/chain/bestNumber.ts#L24)*
 
 **`name`** bestNumber
 

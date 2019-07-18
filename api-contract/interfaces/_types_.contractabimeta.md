@@ -6,9 +6,9 @@
 
   * [ContractABIFn](_types_.contractabifn.md)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [args](_types_.contractabimeta.md#args)
 * [isConstant](_types_.contractabimeta.md#isconstant)
@@ -20,7 +20,7 @@
 
 • **args**: *[ContractABIFnArg](_types_.contractabifnarg.md)[]*
 
-*Defined in [types.ts:62](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L62)*
+*Defined in [types.ts:62](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L62)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **isConstant**: *boolean*
 
-*Defined in [types.ts:63](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L63)*
+*Defined in [types.ts:63](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L63)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **type**: *string | null*
 
-*Defined in [types.ts:64](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L64)*
+*Defined in [types.ts:64](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L64)*

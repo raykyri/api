@@ -1,8 +1,8 @@
 > # External module: "rpc/RuntimeVersion"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ApiId](../classes/_rpc_runtimeversion_.apiid.md)
 * [RuntimeVersion](../classes/_rpc_runtimeversion_.runtimeversion.md)

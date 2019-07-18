@@ -1,12 +1,12 @@
 > # External module: "Metadata/MagicNumber"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [MagicNumber](../classes/_metadata_magicnumber_.magicnumber.md)
 
-#### Variables
+### Variables
 
 * [MAGIC_NUMBER](_metadata_magicnumber_.md#const-magic_number)
 
@@ -16,4 +16,4 @@
 
 • **MAGIC_NUMBER**: *[U32](../classes/_primitive_u32_.u32.md)* =  new U32(0x6174656d)
 
-*Defined in [Metadata/MagicNumber.ts:9](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/Metadata/MagicNumber.ts#L9)*
+*Defined in [Metadata/MagicNumber.ts:9](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/Metadata/MagicNumber.ts#L9)*

@@ -1,7 +1,7 @@
 > # External module: "primitive/Origin"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Origin](../classes/_primitive_origin_.origin.md)

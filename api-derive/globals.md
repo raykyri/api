@@ -1,8 +1,8 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["accounts/idAndIndex"](modules/_accounts_idandindex_.md)
 * ["accounts/idToIndex"](modules/_accounts_idtoindex_.md)
@@ -34,4 +34,5 @@
 * ["type/HeaderExtended"](modules/_type_headerextended_.md)
 * ["type/ReferendumInfoExtended"](modules/_type_referenduminfoextended_.md)
 * ["types"](modules/_types_.md)
+* ["util/approvalFlagToBool"](modules/_util_approvalflagtobool_.md)
 * ["util/drr"](modules/_util_drr_.md)

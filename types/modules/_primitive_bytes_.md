@@ -1,7 +1,7 @@
 > # External module: "primitive/Bytes"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Bytes](../classes/_primitive_bytes_.bytes.md)

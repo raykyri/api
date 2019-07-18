@@ -1,7 +1,7 @@
 > # External module: "Metadata/Metadata"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Metadata](../classes/_metadata_metadata_.metadata.md)

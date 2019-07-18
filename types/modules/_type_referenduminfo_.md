@@ -1,7 +1,7 @@
 > # External module: "type/ReferendumInfo"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ReferendumInfo](../classes/_type_referenduminfo_.referenduminfo.md)

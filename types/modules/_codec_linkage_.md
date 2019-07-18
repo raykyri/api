@@ -1,8 +1,8 @@
 > # External module: "codec/Linkage"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Linkage](../classes/_codec_linkage_.linkage.md)
 * [LinkageResult](../classes/_codec_linkage_.linkageresult.md)

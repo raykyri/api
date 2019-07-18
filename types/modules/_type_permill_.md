@@ -1,7 +1,7 @@
 > # External module: "type/Permill"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Permill](../classes/_type_permill_.permill.md)

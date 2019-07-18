@@ -1,7 +1,7 @@
 > # External module: "type/ProposalIndex"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ProposalIndex](../classes/_type_proposalindex_.proposalindex.md)

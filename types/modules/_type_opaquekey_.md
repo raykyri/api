@@ -1,7 +1,7 @@
 > # External module: "type/OpaqueKey"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [OpaqueKey](../classes/_type_opaquekey_.opaquekey.md)

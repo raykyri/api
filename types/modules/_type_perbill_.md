@@ -1,7 +1,7 @@
 > # External module: "type/Perbill"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Perbill](../classes/_type_perbill_.perbill.md)

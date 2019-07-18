@@ -1,7 +1,7 @@
 > # External module: "primitive/Data"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Data](../classes/_primitive_data_.data.md)

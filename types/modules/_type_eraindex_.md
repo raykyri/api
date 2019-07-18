@@ -1,7 +1,7 @@
 > # External module: "type/EraIndex"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [EraIndex](../classes/_type_eraindex_.eraindex.md)

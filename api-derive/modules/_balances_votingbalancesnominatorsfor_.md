@@ -1,8 +1,8 @@
 > # External module: "balances/votingBalancesNominatorsFor"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [votingBalancesNominatorsFor](_balances_votingbalancesnominatorsfor_.md#votingbalancesnominatorsfor)
 
@@ -12,7 +12,7 @@
 
 ▸ **votingBalancesNominatorsFor**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [balances/votingBalancesNominatorsFor.ts:15](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/balances/votingBalancesNominatorsFor.ts#L15)*
+*Defined in [balances/votingBalancesNominatorsFor.ts:15](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/balances/votingBalancesNominatorsFor.ts#L15)*
 
 **Parameters:**
 

@@ -1,7 +1,7 @@
 > # External module: "codec/AbstractArray"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [AbstractArray](../classes/_codec_abstractarray_.abstractarray.md)

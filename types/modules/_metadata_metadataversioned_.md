@@ -1,7 +1,7 @@
 > # External module: "Metadata/MetadataVersioned"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [MetadataVersioned](../classes/_metadata_metadataversioned_.metadataversioned.md)

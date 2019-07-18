@@ -1,7 +1,7 @@
 > # External module: "type/LockPeriods"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [LockPeriods](../classes/_type_lockperiods_.lockperiods.md)

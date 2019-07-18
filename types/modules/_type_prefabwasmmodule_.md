@@ -1,7 +1,7 @@
 > # External module: "type/PrefabWasmModule"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [PrefabWasmModule](../classes/_type_prefabwasmmodule_.prefabwasmmodule.md)

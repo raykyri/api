@@ -1,8 +1,8 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["consts/static"](modules/_consts_static_.md)
 * ["consts/types"](modules/_consts_types_.md)

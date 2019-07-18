@@ -1,8 +1,8 @@
 > # External module: "Metadata/v0/Events"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [EventMetadata](../classes/_metadata_v0_events_.eventmetadata.md)
 * [OuterEventEventMetadata](../classes/_metadata_v0_events_.outereventeventmetadata.md)

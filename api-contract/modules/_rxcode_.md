@@ -1,11 +1,11 @@
 > # External module: "RxCode"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [RxCode](../classes/_rxcode_.rxcode.md)
 
-#### Interfaces
+### Interfaces
 
 * [CodePutCode](../interfaces/_rxcode_.codeputcode.md)

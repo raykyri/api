@@ -1,7 +1,7 @@
 > # External module: "type/StakingLedger"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [StakingLedger](../classes/_type_stakingledger_.stakingledger.md)

@@ -1,35 +1,18 @@
 > # External module: "elections/approvalsOf"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
-* [approvalFlagToBool](_elections_approvalsof_.md#approvalflagtobool)
 * [approvalsOf](_elections_approvalsof_.md#approvalsof)
 
 ## Functions
-
-###  approvalFlagToBool
-
-▸ **approvalFlagToBool**(`flags`: `Vector<ApprovalFlag>`): *boolean[]*
-
-*Defined in [elections/approvalsOf.ts:8](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/elections/approvalsOf.ts#L8)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`flags` | `Vector<ApprovalFlag>` |
-
-**Returns:** *boolean[]*
-
-___
 
 ###  approvalsOf
 
 ▸ **approvalsOf**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [elections/approvalsOf.ts:19](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/elections/approvalsOf.ts#L19)*
+*Defined in [elections/approvalsOf.ts:11](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/elections/approvalsOf.ts#L11)*
 
 **Parameters:**
 

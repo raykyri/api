@@ -1,7 +1,7 @@
 > # External module: "type/ValidatorId"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ValidatorId](../classes/_type_validatorid_.validatorid.md)

@@ -1,7 +1,7 @@
 > # External module: "type/Schedule"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Schedule](../classes/_type_schedule_.schedule.md)

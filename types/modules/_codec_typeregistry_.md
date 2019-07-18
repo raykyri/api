@@ -1,12 +1,12 @@
 > # External module: "codec/typeRegistry"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [TypeRegistry](../classes/_codec_typeregistry_.typeregistry.md)
 
-#### Functions
+### Functions
 
 * [getDefaultRegistry](_codec_typeregistry_.md#getdefaultregistry)
 
@@ -16,6 +16,6 @@
 
 ▸ **getDefaultRegistry**(): *[TypeRegistry](../classes/_codec_typeregistry_.typeregistry.md)*
 
-*Defined in [codec/typeRegistry.ts:69](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/codec/typeRegistry.ts#L69)*
+*Defined in [codec/typeRegistry.ts:69](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/codec/typeRegistry.ts#L69)*
 
 **Returns:** *[TypeRegistry](../classes/_codec_typeregistry_.typeregistry.md)*

@@ -1,8 +1,8 @@
 > # Polkadot JS API
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["Metadata/MagicNumber"](modules/_metadata_magicnumber_.md)
 * ["Metadata/Metadata"](modules/_metadata_metadata_.md)

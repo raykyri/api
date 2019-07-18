@@ -1,8 +1,8 @@
 > # External module: "session/eraLength"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [eraLength](_session_eralength_.md#eralength)
 
@@ -12,7 +12,7 @@
 
 ▸ **eraLength**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [session/eraLength.ts:13](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/session/eraLength.ts#L13)*
+*Defined in [session/eraLength.ts:13](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/session/eraLength.ts#L13)*
 
 **Parameters:**
 

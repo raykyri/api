@@ -1,7 +1,7 @@
 > # External module: "type/IndividualExposure"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [IndividualExposure](../classes/_type_individualexposure_.individualexposure.md)

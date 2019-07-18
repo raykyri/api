@@ -1,7 +1,7 @@
 > # External module: "codec/StructAny"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [StructAny](../classes/_codec_structany_.structany.md)

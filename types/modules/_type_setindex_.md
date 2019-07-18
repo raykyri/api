@@ -1,7 +1,7 @@
 > # External module: "type/SetIndex"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [SetIndex](../classes/_type_setindex_.setindex.md)

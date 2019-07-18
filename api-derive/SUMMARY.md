@@ -38,6 +38,7 @@
   * [types.DerivedReferendumVote](interfaces/_types_.derivedreferendumvote.md)
   * [types.DerivedSessionInfo](interfaces/_types_.derivedsessioninfo.md)
   * [types.DerivedStaking](interfaces/_types_.derivedstaking.md)
+  * [util/approvalFlagToBool](modules/_util_approvalflagtobool_.md)
   * [util/drr](modules/_util_drr_.md)
 * [Classes]()
   * [type/HeaderExtended.HeaderExtended](classes/_type_headerextended_.headerextended.md)

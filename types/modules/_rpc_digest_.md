@@ -1,8 +1,8 @@
 > # External module: "rpc/Digest"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [AuthoritiesChange](../classes/_rpc_digest_.authoritieschange.md)
 * [ChangesTrieRoot](../classes/_rpc_digest_.changestrieroot.md)

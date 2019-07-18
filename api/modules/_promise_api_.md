@@ -1,7 +1,7 @@
 > # External module: "promise/Api"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ApiPromise](../classes/_promise_api_.apipromise.md)

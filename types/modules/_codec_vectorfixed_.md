@@ -1,7 +1,7 @@
 > # External module: "codec/VectorFixed"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [VectorFixed](../classes/_codec_vectorfixed_.vectorfixed.md)

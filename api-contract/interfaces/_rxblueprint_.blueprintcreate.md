@@ -4,9 +4,9 @@
 
 * **BlueprintCreate**
 
-### Index
+## Index
 
-#### Methods
+### Methods
 
 * [signAndSend](_rxblueprint_.blueprintcreate.md#signandsend)
 
@@ -16,7 +16,7 @@
 
 ▸ **signAndSend**(`account`: `IKeyringPair` | string | `AccountId` | `Address`): *`BlueprintCreateResultSubscription`*
 
-*Defined in [RxBlueprint.ts:22](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/RxBlueprint.ts#L22)*
+*Defined in [RxBlueprint.ts:22](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/RxBlueprint.ts#L22)*
 
 **Parameters:**
 

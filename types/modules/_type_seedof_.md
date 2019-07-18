@@ -1,7 +1,7 @@
 > # External module: "type/SeedOf"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [SeedOf](../classes/_type_seedof_.seedof.md)

@@ -1,7 +1,7 @@
 > # External module: "type/Keys"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Keys](../classes/_type_keys_.keys.md)

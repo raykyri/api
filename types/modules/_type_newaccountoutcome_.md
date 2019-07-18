@@ -1,7 +1,7 @@
 > # External module: "type/NewAccountOutcome"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [NewAccountOutcome](../classes/_type_newaccountoutcome_.newaccountoutcome.md)

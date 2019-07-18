@@ -1,13 +1,13 @@
 > # External module: "primitive/Method"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Method](../classes/_primitive_method_.method.md)
 * [MethodIndex](../classes/_primitive_method_.methodindex.md)
 
-#### Interfaces
+### Interfaces
 
 * [MethodFunction](../interfaces/_primitive_method_.methodfunction.md)
 * [Methods](../interfaces/_primitive_method_.methods.md)

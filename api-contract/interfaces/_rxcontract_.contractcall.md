@@ -4,9 +4,9 @@
 
 * **ContractCall**
 
-### Index
+## Index
 
-#### Methods
+### Methods
 
 * [signAndSend](_rxcontract_.contractcall.md#signandsend)
 
@@ -16,7 +16,7 @@
 
 ▸ **signAndSend**(`account`: `IKeyringPair` | string | `AccountId` | `Address`): *[ContractCallResultSubscription](../modules/_rxcontract_.md#contractcallresultsubscription)*
 
-*Defined in [RxContract.ts:20](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/RxContract.ts#L20)*
+*Defined in [RxContract.ts:20](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/RxContract.ts#L20)*
 
 **Parameters:**
 

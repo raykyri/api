@@ -1,7 +1,7 @@
 > # External module: "codec/EnumType"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Enum](../classes/_codec_enumtype_.enum.md)

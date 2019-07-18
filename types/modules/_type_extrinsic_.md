@@ -1,7 +1,7 @@
 > # External module: "type/Extrinsic"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Extrinsic](../classes/_type_extrinsic_.extrinsic.md)

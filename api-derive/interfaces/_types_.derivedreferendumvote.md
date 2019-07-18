@@ -4,9 +4,9 @@
 
 * **DerivedReferendumVote**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [accountId](_types_.derivedreferendumvote.md#accountid)
 * [balance](_types_.derivedreferendumvote.md#balance)
@@ -18,7 +18,7 @@
 
 • **accountId**: *`AccountId`*
 
-*Defined in [types.ts:43](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/types.ts#L43)*
+*Defined in [types.ts:43](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/types.ts#L43)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **balance**: *`Balance`*
 
-*Defined in [types.ts:44](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/types.ts#L44)*
+*Defined in [types.ts:44](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/types.ts#L44)*
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • **vote**: *`Vote`*
 
-*Defined in [types.ts:45](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/types.ts#L45)*
+*Defined in [types.ts:45](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/types.ts#L45)*

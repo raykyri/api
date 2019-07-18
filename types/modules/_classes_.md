@@ -1,8 +1,8 @@
 > # External module: "classes"
 
-### Index
+## Index
 
-#### Type aliases
+### Type aliases
 
 * [CodecTypes](_classes_.md#codectypes)
 
@@ -12,4 +12,4 @@
 
 Ƭ **CodecTypes**: *keyof "/home/travis/build/polkadot-js/api/packages/types/src/index.types"*
 
-*Defined in [classes.ts:7](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/classes.ts#L7)*
+*Defined in [classes.ts:7](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/classes.ts#L7)*

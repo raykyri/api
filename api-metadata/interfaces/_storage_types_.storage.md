@@ -8,9 +8,9 @@
 
 ● \[▪ **key**: *string*\]: [ModuleStorage](_storage_types_.modulestorage.md)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [substrate](_storage_types_.storage.md#substrate)
 
@@ -20,7 +20,7 @@
 
 • **substrate**: *object*
 
-*Defined in [storage/types.ts:13](https://github.com/polkadot-js/api/blob/efb38db/packages/api-metadata/src/storage/types.ts#L13)*
+*Defined in [storage/types.ts:13](https://github.com/polkadot-js/api/blob/37af934/packages/api-metadata/src/storage/types.ts#L13)*
 
 #### Type declaration:
 

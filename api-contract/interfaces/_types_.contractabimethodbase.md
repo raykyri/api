@@ -6,9 +6,9 @@
 
   * [ContractABIMethod](_types_.contractabimethod.md)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [args](_types_.contractabimethodbase.md#args)
 
@@ -18,4 +18,4 @@
 
 • **args**: *[ContractABIArg](_types_.contractabiarg.md)[]*
 
-*Defined in [types.ts:40](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L40)*
+*Defined in [types.ts:40](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L40)*

@@ -1,7 +1,7 @@
 > # External module: "type/Amount"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Amount](../classes/_type_amount_.amount.md)

@@ -1,7 +1,7 @@
 > # External module: "codec/Struct"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Struct](../classes/_codec_struct_.struct.md)

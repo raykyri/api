@@ -1,8 +1,8 @@
 > # External module: "elections/voters"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [voters](_elections_voters_.md#voters)
 
@@ -12,7 +12,7 @@
 
 ▸ **voters**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [elections/voters.ts:7](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/elections/voters.ts#L7)*
+*Defined in [elections/voters.ts:11](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/elections/voters.ts#L11)*
 
 **Parameters:**
 

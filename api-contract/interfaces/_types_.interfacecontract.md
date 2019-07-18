@@ -8,9 +8,9 @@
 
 * [RxContract](../classes/_rxcontract_.rxcontract.md)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [address](_types_.interfacecontract.md#address)
 * [calls](_types_.interfacecontract.md#calls)
@@ -21,7 +21,7 @@
 
 • **address**: *`Address`*
 
-*Defined in [types.ts:90](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L90)*
+*Defined in [types.ts:90](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L90)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **calls**: *[InterfaceContractCalls](_types_.interfacecontractcalls.md)*
 
-*Defined in [types.ts:91](https://github.com/polkadot-js/api/blob/efb38db/packages/api-contract/src/types.ts#L91)*
+*Defined in [types.ts:91](https://github.com/polkadot-js/api/blob/37af934/packages/api-contract/src/types.ts#L91)*

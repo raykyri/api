@@ -1,7 +1,7 @@
 > # External module: "codec/Base"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Base](../classes/_codec_base_.base.md)

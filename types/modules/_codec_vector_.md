@@ -1,7 +1,7 @@
 > # External module: "codec/Vector"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Vector](../classes/_codec_vector_.vector.md)

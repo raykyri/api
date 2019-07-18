@@ -10,14 +10,14 @@
 
 ● \[▪ **n**: *number*\]: [AnyJson](../modules/_types_.md#anyjson)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [Array](_types_.anyjsonarray.md#array)
 * [length](_types_.anyjsonarray.md#length)
 
-#### Methods
+### Methods
 
 * [__@iterator](_types_.anyjsonarray.md#__@iterator)
 * [__@unscopables](_types_.anyjsonarray.md#__@unscopables)

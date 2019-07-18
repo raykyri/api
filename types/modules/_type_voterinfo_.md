@@ -1,7 +1,7 @@
 > # External module: "type/VoterInfo"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [VoterInfo](../classes/_type_voterinfo_.voterinfo.md)

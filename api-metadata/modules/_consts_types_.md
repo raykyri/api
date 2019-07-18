@@ -1,12 +1,12 @@
 > # External module: "consts/types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [ConstantCodec](../interfaces/_consts_types_.constantcodec.md)
 
-#### Type aliases
+### Type aliases
 
 * [Constants](_consts_types_.md#constants)
 * [ModuleConstants](_consts_types_.md#moduleconstants)
@@ -17,7 +17,7 @@
 
 Ƭ **Constants**: *`Record<string, ModuleConstants>`*
 
-*Defined in [consts/types.ts:14](https://github.com/polkadot-js/api/blob/efb38db/packages/api-metadata/src/consts/types.ts#L14)*
+*Defined in [consts/types.ts:14](https://github.com/polkadot-js/api/blob/37af934/packages/api-metadata/src/consts/types.ts#L14)*
 
 ___
 
@@ -25,4 +25,4 @@ ___
 
 Ƭ **ModuleConstants**: *`Record<string, Codec>`*
 
-*Defined in [consts/types.ts:12](https://github.com/polkadot-js/api/blob/efb38db/packages/api-metadata/src/consts/types.ts#L12)*
+*Defined in [consts/types.ts:12](https://github.com/polkadot-js/api/blob/37af934/packages/api-metadata/src/consts/types.ts#L12)*

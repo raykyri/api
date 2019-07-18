@@ -1,8 +1,8 @@
 > # External module: "session/sessionProgress"
 
-### Index
+## Index
 
-#### Functions
+### Functions
 
 * [sessionProgress](_session_sessionprogress_.md#sessionprogress)
 
@@ -12,7 +12,7 @@
 
 ▸ **sessionProgress**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [session/sessionProgress.ts:13](https://github.com/polkadot-js/api/blob/efb38db/packages/api-derive/src/session/sessionProgress.ts#L13)*
+*Defined in [session/sessionProgress.ts:13](https://github.com/polkadot-js/api/blob/37af934/packages/api-derive/src/session/sessionProgress.ts#L13)*
 
 **Parameters:**
 

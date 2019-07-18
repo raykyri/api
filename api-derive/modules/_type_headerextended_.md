@@ -1,7 +1,7 @@
 > # External module: "type/HeaderExtended"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [HeaderExtended](../classes/_type_headerextended_.headerextended.md)

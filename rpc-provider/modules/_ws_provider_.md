@@ -1,7 +1,7 @@
 > # External module: "ws/Provider"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [WsProvider](../classes/_ws_provider_.wsprovider.md)

@@ -1,16 +1,16 @@
 > # External module: "promise/Combinator"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Combinator](../classes/_promise_combinator_.combinator.md)
 
-#### Interfaces
+### Interfaces
 
 * [CombinatorFunction](../interfaces/_promise_combinator_.combinatorfunction.md)
 
-#### Type aliases
+### Type aliases
 
 * [CombinatorCallback](_promise_combinator_.md#combinatorcallback)
 
@@ -20,4 +20,4 @@
 
 Ƭ **CombinatorCallback**: *`Callback<any[]>`*
 
-*Defined in [promise/Combinator.ts:10](https://github.com/polkadot-js/api/blob/efb38db/packages/api/src/promise/Combinator.ts#L10)*
+*Defined in [promise/Combinator.ts:10](https://github.com/polkadot-js/api/blob/37af934/packages/api/src/promise/Combinator.ts#L10)*

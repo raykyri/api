@@ -1,13 +1,13 @@
 > # External module: "storage/fromMetadata/createFunction"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [CreateItemFn](../interfaces/_storage_frommetadata_createfunction_.createitemfn.md)
 * [CreateItemOptions](../interfaces/_storage_frommetadata_createfunction_.createitemoptions.md)
 
-#### Functions
+### Functions
 
 * [createFunction](_storage_frommetadata_createfunction_.md#createfunction)
 
@@ -17,7 +17,7 @@
 
 ▸ **createFunction**(`__namedParameters`: object, `options`: [CreateItemOptions](../interfaces/_storage_frommetadata_createfunction_.createitemoptions.md)): *`StorageEntry`*
 
-*Defined in [storage/fromMetadata/createFunction.ts:34](https://github.com/polkadot-js/api/blob/efb38db/packages/api-metadata/src/storage/fromMetadata/createFunction.ts#L34)*
+*Defined in [storage/fromMetadata/createFunction.ts:34](https://github.com/polkadot-js/api/blob/37af934/packages/api-metadata/src/storage/fromMetadata/createFunction.ts#L34)*
 
 From the schema of a function in the module's storage, generate the function
 that will return the correct storage key.

@@ -8,9 +8,9 @@
 
 * [ExtrinsicEra](../classes/_type_extrinsicera_.extrinsicera.md)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [asImmortalEra](_types_.iextrinsicera.md#asimmortalera)
 * [asMortalEra](_types_.iextrinsicera.md#asmortalera)
@@ -21,7 +21,7 @@
 
 • **asImmortalEra**: *[Codec](_types_.codec.md)*
 
-*Defined in [types.ts:154](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/types.ts#L154)*
+*Defined in [types.ts:154](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/types.ts#L154)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **asMortalEra**: *[Codec](_types_.codec.md)*
 
-*Defined in [types.ts:155](https://github.com/polkadot-js/api/blob/efb38db/packages/types/src/types.ts#L155)*
+*Defined in [types.ts:155](https://github.com/polkadot-js/api/blob/37af934/packages/types/src/types.ts#L155)*

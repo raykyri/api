@@ -1,7 +1,7 @@
 > # External module: "type/ContractStorageKey"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [ContractStorageKey](../classes/_type_contractstoragekey_.contractstoragekey.md)

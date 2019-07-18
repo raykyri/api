@@ -1,7 +1,7 @@
 > # External module: "type/Gas"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Gas](../classes/_type_gas_.gas.md)

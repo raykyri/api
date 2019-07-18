@@ -1,7 +1,7 @@
 > # External module: "primitive/Text"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Text](../classes/_primitive_text_.text.md)

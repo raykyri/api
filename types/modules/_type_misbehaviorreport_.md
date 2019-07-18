@@ -1,8 +1,8 @@
 > # External module: "type/MisbehaviorReport"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [BftAtReport](../classes/_type_misbehaviorreport_.bftatreport.md)
 * [BftDoubleCommit](../classes/_type_misbehaviorreport_.bftdoublecommit.md)

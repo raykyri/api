@@ -1,8 +1,8 @@
 > # External module: "primitive/Signature"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [Ed25519Signature](../classes/_primitive_signature_.ed25519signature.md)
 * [Signature](../classes/_primitive_signature_.signature.md)

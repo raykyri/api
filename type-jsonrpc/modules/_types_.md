@@ -1,8 +1,8 @@
 > # External module: "types"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [RpcMethod](../interfaces/_types_.rpcmethod.md)
 * [RpcMethodOpt](../interfaces/_types_.rpcmethodopt.md)

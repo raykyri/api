@@ -1,8 +1,8 @@
 > # External module: "type/UncleEntryItem"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [InclusionHeight](../classes/_type_uncleentryitem_.inclusionheight.md)
 * [Uncle](../classes/_type_uncleentryitem_.uncle.md)

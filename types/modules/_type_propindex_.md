@@ -1,7 +1,7 @@
 > # External module: "type/PropIndex"
 
-### Index
+## Index
 
-#### Classes
+### Classes
 
 * [PropIndex](../classes/_type_propindex_.propindex.md)
