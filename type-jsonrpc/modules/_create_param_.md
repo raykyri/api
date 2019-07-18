@@ -12,7 +12,7 @@
 
 ▸ **createParam**(`name`: string, `type`: `CodecTypes`, `__namedParameters`: object): *[RpcParam](../interfaces/_types_.rpcparam.md)*
 
-*Defined in [create/param.ts:12](https://github.com/polkadot-js/api/blob/ff69c43/packages/type-jsonrpc/src/create/param.ts#L12)*
+*Defined in [create/param.ts:12](https://github.com/polkadot-js/api/blob/efb38db/packages/type-jsonrpc/src/create/param.ts#L12)*
 
 **Parameters:**
 
