@@ -25,7 +25,7 @@
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:123](https://github.com/polkadot-js/api/blob/ab74db5/packages/types/src/types.ts#L123)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:123](https://github.com/polkadot-js/api/blob/d5fb040/packages/types/src/types.ts#L123)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **blockNumber**: *`BN`*
 
-*Defined in [types.ts:227](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/types.ts#L227)*
+*Defined in [types.ts:227](https://github.com/polkadot-js/api/blob/d5fb040/packages/api/src/types.ts#L227)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:124](https://github.com/polkadot-js/api/blob/ab74db5/packages/types/src/types.ts#L124)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:124](https://github.com/polkadot-js/api/blob/d5fb040/packages/types/src/types.ts#L124)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **genesisHash**: *`Hash`*
 
-*Defined in [types.ts:228](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/types.ts#L228)*
+*Defined in [types.ts:228](https://github.com/polkadot-js/api/blob/d5fb040/packages/api/src/types.ts#L228)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:125](https://github.com/polkadot-js/api/blob/ab74db5/packages/types/src/types.ts#L125)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:125](https://github.com/polkadot-js/api/blob/d5fb040/packages/types/src/types.ts#L125)*
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:126](https://github.com/polkadot-js/api/blob/ab74db5/packages/types/src/types.ts#L126)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:126](https://github.com/polkadot-js/api/blob/d5fb040/packages/types/src/types.ts#L126)*

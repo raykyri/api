@@ -22,7 +22,7 @@
 
 • **candidateCount**: *`BN`*
 
-*Defined in [types.ts:37](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L37)*
+*Defined in [types.ts:37](https://github.com/polkadot-js/api/blob/d5fb040/packages/api-derive/src/types.ts#L37)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **candidates**: *`AccountId`[]*
 
-*Defined in [types.ts:36](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L36)*
+*Defined in [types.ts:36](https://github.com/polkadot-js/api/blob/d5fb040/packages/api-derive/src/types.ts#L36)*
 
 ___
 
@@ -38,15 +38,15 @@ ___
 
 • **desiredSeats**: *`BN`*
 
-*Defined in [types.ts:38](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L38)*
+*Defined in [types.ts:38](https://github.com/polkadot-js/api/blob/d5fb040/packages/api-derive/src/types.ts#L38)*
 
 ___
 
 ###  members
 
-• **members**: *[`AccountId`, `BlockNumber`][]*
+• **members**: *`Record<string, BlockNumber>`*
 
-*Defined in [types.ts:35](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L35)*
+*Defined in [types.ts:35](https://github.com/polkadot-js/api/blob/d5fb040/packages/api-derive/src/types.ts#L35)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **termDuration**: *`BlockNumber`*
 
-*Defined in [types.ts:39](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L39)*
+*Defined in [types.ts:39](https://github.com/polkadot-js/api/blob/d5fb040/packages/api-derive/src/types.ts#L39)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **voteCount**: *`VoteIndex`*
 
-*Defined in [types.ts:40](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L40)*
+*Defined in [types.ts:40](https://github.com/polkadot-js/api/blob/d5fb040/packages/api-derive/src/types.ts#L40)*
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 • **voterCount**: *`SetIndex`*
 
-*Defined in [types.ts:41](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L41)*
+*Defined in [types.ts:41](https://github.com/polkadot-js/api/blob/d5fb040/packages/api-derive/src/types.ts#L41)*
