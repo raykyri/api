@@ -48,7 +48,7 @@
 
 \+ **new ApiBase**(`provider`: [ApiOptions](../interfaces/_types_.apioptions.md) | `ProviderInterface`, `type`: [ApiTypes](../modules/_types_.md#apitypes)): *[ApiBase](_base_.apibase.md)*
 
-*Defined in [Base.ts:97](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L97)*
+*Defined in [Base.ts:97](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L97)*
 
 **`description`** Create an instance of the class
 
@@ -80,7 +80,7 @@ Name | Type | Default |
 
 • **get consts**(): *`Constants`*
 
-*Defined in [Base.ts:238](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L238)*
+*Defined in [Base.ts:238](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L238)*
 
 **`description`** Contains the parameter types (constants) of all modules.
 
@@ -101,7 +101,7 @@ ___
 
 • **get derive**(): *`ReturnType<decorateDerive>`*
 
-*Defined in [Base.ts:220](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L220)*
+*Defined in [Base.ts:220](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L220)*
 
 **`description`** Derived results that are injected into the API, allowing for combinations of various query results.
 
@@ -122,7 +122,7 @@ ___
 
 • **get genesisHash**(): *`Hash`*
 
-*Defined in [Base.ts:156](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L156)*
+*Defined in [Base.ts:156](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L156)*
 
 **`description`** Contains the genesis Hash of the attached chain. Apart from being useful to determine the actual chain, it can also be used to sign immortal transactions.
 
@@ -134,7 +134,7 @@ ___
 
 • **get hasSubscriptions**(): *boolean*
 
-*Defined in [Base.ts:165](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L165)*
+*Defined in [Base.ts:165](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L165)*
 
 **`description`** `true` when subscriptions are supported
 
@@ -146,7 +146,7 @@ ___
 
 • **get libraryInfo**(): *string*
 
-*Defined in [Base.ts:172](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L172)*
+*Defined in [Base.ts:172](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L172)*
 
 **`description`** The library information name & version (from package.json)
 
@@ -158,7 +158,7 @@ ___
 
 • **get query**(): *[QueryableStorage](../interfaces/_types_.queryablestorage.md)‹*`ApiType`*›*
 
-*Defined in [Base.ts:258](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L258)*
+*Defined in [Base.ts:258](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L258)*
 
 **`description`** Contains all the chain state modules and their subsequent methods in the API. These are attached dynamically from the runtime metadata.
 
@@ -181,7 +181,7 @@ ___
 
 • **get queryMulti**(): *[QueryableStorageMulti](../modules/_types_.md#queryablestoragemulti)‹*`ApiType`*›*
 
-*Defined in [Base.ts:286](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L286)*
+*Defined in [Base.ts:286](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L286)*
 
 **`description`** Allows for the querying of multiple storage entries and the combination thereof into a single result. This is a very optimal way to make multiple queries since it only makes a single connection to the node and retrieves the data over one subscription.
 
@@ -212,7 +212,7 @@ ___
 
 • **get rpc**(): *[DecoratedRpc](../interfaces/_types_.decoratedrpc.md)‹*`ApiType`*›*
 
-*Defined in [Base.ts:304](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L304)*
+*Defined in [Base.ts:304](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L304)*
 
 **`description`** Contains all the raw rpc sections and their subsequent methods in the API as defined by the jsonrpc interface definitions. Unlike the dynamic `api.query` and `api.tx` sections, these methods are fixed (although extensible with node upgrades) and not determined by the runtime.
 
@@ -235,7 +235,7 @@ ___
 
 • **get runtimeMetadata**(): *`Metadata`*
 
-*Defined in [Base.ts:179](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L179)*
+*Defined in [Base.ts:179](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L179)*
 
 **`description`** Yields the current attached runtime metadata. Generally this is only used to construct extrinsics & storage, but is useful for current runtime inspection.
 
@@ -247,7 +247,7 @@ ___
 
 • **get runtimeVersion**(): *`RuntimeVersion`*
 
-*Defined in [Base.ts:188](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L188)*
+*Defined in [Base.ts:188](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L188)*
 
 **`description`** Contains the version information for the current runtime.
 
@@ -259,7 +259,7 @@ ___
 
 • **get tx**(): *[SubmittableExtrinsics](../interfaces/_types_.submittableextrinsics.md)‹*`ApiType`*›*
 
-*Defined in [Base.ts:322](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L322)*
+*Defined in [Base.ts:322](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L322)*
 
 **`description`** Contains all the extrinsic modules and their subsequent methods in the API. It allows for the construction of transactions and the submission thereof. These are attached dynamically from the runtime metadata.
 
@@ -282,7 +282,7 @@ ___
 
 • **get type**(): *[ApiTypes](../modules/_types_.md#apitypes)*
 
-*Defined in [Base.ts:197](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L197)*
+*Defined in [Base.ts:197](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L197)*
 
 **`description`** The type of this API instance, either 'rxjs' or 'promise'
 
@@ -294,7 +294,7 @@ ___
 
 ▸ **disconnect**(): *void*
 
-*Defined in [Base.ts:331](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L331)*
+*Defined in [Base.ts:331](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L331)*
 
 **`description`** Disconnect from the underlying provider, halting all comms
 
@@ -306,7 +306,7 @@ ___
 
 ▸ **off**(`type`: [ApiInterfaceEvents](../modules/_types_.md#apiinterfaceevents), `handler`: function): *this*
 
-*Defined in [Base.ts:381](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L381)*
+*Defined in [Base.ts:381](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L381)*
 
 **`description`** Remove the given eventemitter handler
 
@@ -351,7 +351,7 @@ ___
 
 ▸ **on**(`type`: [ApiInterfaceEvents](../modules/_types_.md#apiinterfaceevents), `handler`: function): *this*
 
-*Defined in [Base.ts:354](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L354)*
+*Defined in [Base.ts:354](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L354)*
 
 **`description`** Attach an eventemitter handler to listen to a specific event
 
@@ -394,7 +394,7 @@ ___
 
 ▸ **once**(`type`: [ApiInterfaceEvents](../modules/_types_.md#apiinterfaceevents), `handler`: function): *this*
 
-*Defined in [Base.ts:406](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L406)*
+*Defined in [Base.ts:406](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L406)*
 
 **`description`** Attach an one-time eventemitter handler to listen to a specific event
 
@@ -437,7 +437,7 @@ ___
 
 ▸ **registerTypes**(`types?`: `RegistryTypes`): *void*
 
-*Defined in [Base.ts:415](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L415)*
+*Defined in [Base.ts:415](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L415)*
 
 **`description`** Register additional user-defined of chain-specific types in the type registry
 
@@ -455,7 +455,7 @@ ___
 
 ▸ **setSigner**(`signer`: [Signer](../interfaces/_types_.signer.md)): *void*
 
-*Defined in [Base.ts:204](https://github.com/polkadot-js/api/blob/61065a2/packages/api/src/Base.ts#L204)*
+*Defined in [Base.ts:204](https://github.com/polkadot-js/api/blob/ab74db5/packages/api/src/Base.ts#L204)*
 
 **`description`** Set an external signer which will be used to sign extrinsic when account passed in is not KeyringPair
 

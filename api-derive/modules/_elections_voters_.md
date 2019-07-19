@@ -12,7 +12,18 @@
 
 ▸ **voters**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [elections/voters.ts:11](https://github.com/polkadot-js/api/blob/61065a2/packages/api-derive/src/elections/voters.ts#L11)*
+*Defined in [elections/voters.ts:24](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/elections/voters.ts#L24)*
+
+**`name`** voters
+
+**`example`** 
+<BR>
+
+```javascript
+api.derive.elections.voters((voters) => {
+  console.log(`There are ${voters.length} current voters.`);
+});
+```
 
 **Parameters:**
 
@@ -22,4 +33,6 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (): *`Observable<Option<AccountId>[]>`*
+An array of all current voters from all sets.
+
+▸ (): *`Observable<Vector<AccountId>>`*

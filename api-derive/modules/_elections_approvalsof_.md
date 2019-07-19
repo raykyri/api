@@ -12,7 +12,18 @@
 
 ▸ **approvalsOf**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [elections/approvalsOf.ts:11](https://github.com/polkadot-js/api/blob/61065a2/packages/api-derive/src/elections/approvalsOf.ts#L11)*
+*Defined in [elections/approvalsOf.ts:24](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/elections/approvalsOf.ts#L24)*
+
+**`name`** approvalsOf
+
+**`example`** 
+<BR>
+
+```javascript
+api.derive.elections.approvalsOf(ALICE, (approvals) => {
+  // approvals === [[false], [true, false], ...]
+});
+```
 
 **Parameters:**
 
@@ -22,7 +33,9 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`who`: `AccountId`): *`Observable<Vector<ApprovalFlag>>`*
+A nested array of boolean approvals for the given account in each voter set index, converted from its ApprovalFlag(s).
+
+▸ (`who`: `AccountId`): *`Observable<boolean[][]>`*
 
 **Parameters:**
 

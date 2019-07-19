@@ -6,6 +6,7 @@
 
 * [DerivedBalances](../interfaces/_types_.derivedbalances.md)
 * [DerivedContractFees](../interfaces/_types_.derivedcontractfees.md)
+* [DerivedElectionsInfo](../interfaces/_types_.derivedelectionsinfo.md)
 * [DerivedFees](../interfaces/_types_.derivedfees.md)
 * [DerivedReferendumVote](../interfaces/_types_.derivedreferendumvote.md)
 * [DerivedSessionInfo](../interfaces/_types_.derivedsessioninfo.md)
@@ -22,7 +23,7 @@
 
 Ƭ **DerivedBalancesMap**: *`Record<string, DerivedBalances>`*
 
-*Defined in [types.ts:19](https://github.com/polkadot-js/api/blob/61065a2/packages/api-derive/src/types.ts#L19)*
+*Defined in [types.ts:19](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L19)*
 
 ___
 
@@ -30,4 +31,4 @@ ___
 
 Ƭ **DerivedUnlocking**: *object[]*
 
-*Defined in [types.ts:75](https://github.com/polkadot-js/api/blob/61065a2/packages/api-derive/src/types.ts#L75)*
+*Defined in [types.ts:85](https://github.com/polkadot-js/api/blob/ab74db5/packages/api-derive/src/types.ts#L85)*

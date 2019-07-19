@@ -12,7 +12,7 @@
 
 ▸ **compareArray**(`a`: any[], `b?`: any): *boolean*
 
-*Defined in [codec/utils/compareArray.ts:9](https://github.com/polkadot-js/api/blob/61065a2/packages/types/src/codec/utils/compareArray.ts#L9)*
+*Defined in [codec/utils/compareArray.ts:9](https://github.com/polkadot-js/api/blob/ab74db5/packages/types/src/codec/utils/compareArray.ts#L9)*
 
 **Parameters:**
 
