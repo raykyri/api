@@ -17,7 +17,7 @@
 
 • **index**? : *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [type/StoredPendingChange.ts:15](https://github.com/polkadot-js/api/blob/5fe63b4/packages/types/src/type/StoredPendingChange.ts#L15)*
+*Defined in [type/StoredPendingChange.ts:15](https://github.com/polkadot-js/api/blob/61065a2/packages/types/src/type/StoredPendingChange.ts#L15)*
 
 ___
 
@@ -25,4 +25,4 @@ ___
 
 • **sessionKey**? : *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [type/StoredPendingChange.ts:16](https://github.com/polkadot-js/api/blob/5fe63b4/packages/types/src/type/StoredPendingChange.ts#L16)*
+*Defined in [type/StoredPendingChange.ts:16](https://github.com/polkadot-js/api/blob/61065a2/packages/types/src/type/StoredPendingChange.ts#L16)*

@@ -18,7 +18,7 @@
 
 Ƭ **BftAuthoritySignatureValue**: *[[AnyU8a](_types_.md#anyu8a), [AnyU8a](_types_.md#anyu8a)]*
 
-*Defined in [type/Bft.ts:12](https://github.com/polkadot-js/api/blob/5fe63b4/packages/types/src/type/Bft.ts#L12)*
+*Defined in [type/Bft.ts:12](https://github.com/polkadot-js/api/blob/61065a2/packages/types/src/type/Bft.ts#L12)*
 
 ___
 
@@ -26,4 +26,4 @@ ___
 
 Ƭ **BftHashSignatureValue**: *[[AnyU8a](_types_.md#anyu8a), [AnyU8a](_types_.md#anyu8a)]*
 
-*Defined in [type/Bft.ts:43](https://github.com/polkadot-js/api/blob/5fe63b4/packages/types/src/type/Bft.ts#L43)*
+*Defined in [type/Bft.ts:43](https://github.com/polkadot-js/api/blob/61065a2/packages/types/src/type/Bft.ts#L43)*
