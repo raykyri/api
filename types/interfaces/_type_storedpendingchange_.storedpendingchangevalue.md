@@ -18,7 +18,7 @@
 
 • **delay**: *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [type/StoredPendingChange.ts:21](https://github.com/polkadot-js/api/blob/d5fb040/packages/types/src/type/StoredPendingChange.ts#L21)*
+*Defined in [type/StoredPendingChange.ts:21](https://github.com/polkadot-js/api/blob/5e0f62c/packages/types/src/type/StoredPendingChange.ts#L21)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **nextAuthorities**? : *`Uint8Array` | [NextAuthorityValue](_type_storedpendingchange_.nextauthorityvalue.md)[]*
 
-*Defined in [type/StoredPendingChange.ts:22](https://github.com/polkadot-js/api/blob/d5fb040/packages/types/src/type/StoredPendingChange.ts#L22)*
+*Defined in [type/StoredPendingChange.ts:22](https://github.com/polkadot-js/api/blob/5e0f62c/packages/types/src/type/StoredPendingChange.ts#L22)*
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • **scheduledAt**: *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [type/StoredPendingChange.ts:20](https://github.com/polkadot-js/api/blob/d5fb040/packages/types/src/type/StoredPendingChange.ts#L20)*
+*Defined in [type/StoredPendingChange.ts:20](https://github.com/polkadot-js/api/blob/5e0f62c/packages/types/src/type/StoredPendingChange.ts#L20)*

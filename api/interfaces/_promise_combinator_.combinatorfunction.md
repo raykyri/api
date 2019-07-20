@@ -8,7 +8,7 @@
 
 ▸ (`cb`: `Callback<any>`): *[UnsubscribePromise](../modules/_types_.md#unsubscribepromise)*
 
-*Defined in [promise/Combinator.ts:11](https://github.com/polkadot-js/api/blob/d5fb040/packages/api/src/promise/Combinator.ts#L11)*
+*Defined in [promise/Combinator.ts:11](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api/src/promise/Combinator.ts#L11)*
 
 **Parameters:**
 

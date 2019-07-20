@@ -12,7 +12,7 @@
 
 ▸ **filterEvents**(`extHash`: `U8a`, `__namedParameters`: object, `allEvents`: `EventRecord`[]): *`EventRecord`[] | undefined*
 
-*Defined in [util/filterEvents.ts:9](https://github.com/polkadot-js/api/blob/d5fb040/packages/api/src/util/filterEvents.ts#L9)*
+*Defined in [util/filterEvents.ts:9](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api/src/util/filterEvents.ts#L9)*
 
 **Parameters:**
 
