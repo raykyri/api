@@ -24,7 +24,7 @@
 
 • **currentEra**: *`BN`*
 
-*Defined in [types.ts:59](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L59)*
+*Defined in [types.ts:59](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L59)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **currentIndex**: *`BN`*
 
-*Defined in [types.ts:60](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L60)*
+*Defined in [types.ts:60](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L60)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **eraLength**: *`BN`*
 
-*Defined in [types.ts:61](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L61)*
+*Defined in [types.ts:61](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L61)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **eraProgress**: *`BN`*
 
-*Defined in [types.ts:62](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L62)*
+*Defined in [types.ts:62](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L62)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **lastEraLengthChange**: *`BN`*
 
-*Defined in [types.ts:63](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L63)*
+*Defined in [types.ts:63](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L63)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **lastLengthChange**: *`BN`*
 
-*Defined in [types.ts:64](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L64)*
+*Defined in [types.ts:64](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L64)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **sessionLength**: *`BN`*
 
-*Defined in [types.ts:65](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L65)*
+*Defined in [types.ts:65](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L65)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **sessionProgress**: *`BN`*
 
-*Defined in [types.ts:67](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L67)*
+*Defined in [types.ts:67](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L67)*
 
 ___
 
@@ -88,4 +88,4 @@ ___
 
 • **sessionsPerEra**: *`BN`*
 
-*Defined in [types.ts:66](https://github.com/polkadot-js/api/blob/5e0f62c/packages/api-derive/src/types.ts#L66)*
+*Defined in [types.ts:66](https://github.com/polkadot-js/api/blob/3d7a460/packages/api-derive/src/types.ts#L66)*
