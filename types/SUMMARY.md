@@ -106,6 +106,7 @@
   * [Metadata/v6/Metadata.ModuleMetadata](classes/_metadata_v6_metadata_.modulemetadata.md)
   * [Metadata/v6/Storage](modules/_metadata_v6_storage_.md)
   * [Metadata/v6/static](modules/_metadata_v6_static_.md)
+  * [Metadata/v6/static.polkadot](modules/_metadata_v6_static_polkadot_.md)
   * [classes](modules/_classes_.md)
   * [codec/AbstractArray](modules/_codec_abstractarray_.md)
   * [codec/AbstractArray.AbstractArray](classes/_codec_abstractarray_.abstractarray.md)
