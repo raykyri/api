@@ -11,6 +11,7 @@
 * [blockHash](_types_.signatureoptions.md#blockhash)
 * [era](_types_.signatureoptions.md#optional-era)
 * [nonce](_types_.signatureoptions.md#nonce)
+* [tip](_types_.signatureoptions.md#optional-tip)
 * [version](_types_.signatureoptions.md#optional-version)
 
 ## Properties
@@ -19,7 +20,7 @@
 
 • **blockHash**: *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [types.ts:123](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L123)*
+*Defined in [types.ts:124](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L124)*
 
 ___
 
@@ -27,7 +28,7 @@ ___
 
 • **era**? : *[IExtrinsicEra](_types_.iextrinsicera.md)*
 
-*Defined in [types.ts:124](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L124)*
+*Defined in [types.ts:125](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L125)*
 
 ___
 
@@ -35,7 +36,15 @@ ___
 
 • **nonce**: *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [types.ts:125](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L125)*
+*Defined in [types.ts:126](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L126)*
+
+___
+
+### `Optional` tip
+
+• **tip**? : *[AnyNumber](../modules/_types_.md#anynumber)*
+
+*Defined in [types.ts:127](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L127)*
 
 ___
 
@@ -43,4 +52,4 @@ ___
 
 • **version**? : *[RuntimeVersionInterface](_types_.runtimeversioninterface.md)*
 
-*Defined in [types.ts:126](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L126)*
+*Defined in [types.ts:128](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L128)*

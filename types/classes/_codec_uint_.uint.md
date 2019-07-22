@@ -15,13 +15,13 @@ is available here.
 
   * **UInt**
 
-  * [U32](_primitive_u32_.u32.md)
-
-  * [U16](_primitive_u16_.u16.md)
+  * [U128](_primitive_u128_.u128.md)
 
   * [U64](_primitive_u64_.u64.md)
 
-  * [U128](_primitive_u128_.u128.md)
+  * [U32](_primitive_u32_.u32.md)
+
+  * [U16](_primitive_u16_.u16.md)
 
   * [U8](_primitive_u8_.u8.md)
 
@@ -51,7 +51,7 @@ is available here.
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:21](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/codec/UInt.ts#L21)*
+*Defined in [codec/UInt.ts:21](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/codec/UInt.ts#L21)*
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ Name | Type | Default |
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/codec/UInt.ts#L36)*
+*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/codec/UInt.ts#L36)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -93,7 +93,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/codec/UInt.ts#L48)*
+*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/codec/UInt.ts#L48)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -109,7 +109,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/codec/UInt.ts#L57)*
+*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/codec/UInt.ts#L57)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 

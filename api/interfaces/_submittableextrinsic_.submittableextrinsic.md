@@ -19,13 +19,20 @@
 * [callIndex](_submittableextrinsic_.submittableextrinsic.md#callindex)
 * [data](_submittableextrinsic_.submittableextrinsic.md#data)
 * [encodedLength](_submittableextrinsic_.submittableextrinsic.md#encodedlength)
+* [era](_submittableextrinsic_.submittableextrinsic.md#era)
 * [hasOrigin](_submittableextrinsic_.submittableextrinsic.md#hasorigin)
 * [hash](_submittableextrinsic_.submittableextrinsic.md#hash)
 * [isEmpty](_submittableextrinsic_.submittableextrinsic.md#isempty)
 * [isSigned](_submittableextrinsic_.submittableextrinsic.md#issigned)
+* [length](_submittableextrinsic_.submittableextrinsic.md#length)
 * [meta](_submittableextrinsic_.submittableextrinsic.md#meta)
 * [method](_submittableextrinsic_.submittableextrinsic.md#method)
+* [nonce](_submittableextrinsic_.submittableextrinsic.md#nonce)
 * [signature](_submittableextrinsic_.submittableextrinsic.md#signature)
+* [signer](_submittableextrinsic_.submittableextrinsic.md#signer)
+* [tip](_submittableextrinsic_.submittableextrinsic.md#tip)
+* [type](_submittableextrinsic_.submittableextrinsic.md#type)
+* [version](_submittableextrinsic_.submittableextrinsic.md#version)
 
 ### Methods
 
@@ -48,7 +55,7 @@
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:138](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L138)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:138](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L138)*
 
 ___
 
@@ -58,7 +65,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:139](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L139)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:139](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L139)*
 
 ___
 
@@ -68,7 +75,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:140](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L140)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:140](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L140)*
 
 ___
 
@@ -78,7 +85,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:141](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L141)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:141](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L141)*
 
 ___
 
@@ -88,9 +95,19 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:55](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L55)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:57](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L57)*
 
 **`description`** The length of the value when encoded as a Uint8Array
+
+___
+
+###  era
+
+• **era**: *`IExtrinsicEra`*
+
+*Inherited from void*
+
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:148](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L148)*
 
 ___
 
@@ -100,7 +117,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:142](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L142)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:142](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L142)*
 
 ___
 
@@ -110,7 +127,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:160](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L160)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:186](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L186)*
 
 ___
 
@@ -120,7 +137,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:60](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L60)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:62](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L62)*
 
 **`description`** Checks if the value is an empty value
 
@@ -132,7 +149,17 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:161](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L161)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:147](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L147)*
+
+___
+
+###  length
+
+• **length**: *number*
+
+*Inherited from void*
+
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:187](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L187)*
 
 ___
 
@@ -142,7 +169,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:143](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L143)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:143](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L143)*
 
 ___
 
@@ -152,27 +179,77 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:162](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L162)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:188](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L188)*
+
+___
+
+###  nonce
+
+• **nonce**: *`NonceCompact`*
+
+*Inherited from void*
+
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:149](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L149)*
 
 ___
 
 ###  signature
 
-• **signature**: *`IExtrinsicSignature`*
+• **signature**: *`IHash`*
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:163](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L163)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:150](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L150)*
+
+___
+
+###  signer
+
+• **signer**: *`Address`*
+
+*Inherited from void*
+
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:151](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L151)*
+
+___
+
+###  tip
+
+• **tip**: *`BalanceCompact`*
+
+*Inherited from void*
+
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:152](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L152)*
+
+___
+
+###  type
+
+• **type**: *number*
+
+*Inherited from void*
+
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:189](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L189)*
+
+___
+
+###  version
+
+• **version**: *number*
+
+*Inherited from void*
+
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:190](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L190)*
 
 ## Methods
 
 ###  addSignature
 
-▸ **addSignature**(`signer`: `Address` | `Uint8Array` | string, `signature`: `Uint8Array` | string, `nonce`: `AnyNumber`, `era`: `Uint8Array` | `IExtrinsicEra`): *`IExtrinsic`*
+▸ **addSignature**(`signer`: `Address` | `Uint8Array` | string, `signature`: `Uint8Array` | string, `payload`: `ExtrinsicPayloadValue` | `Uint8Array` | string): *`IExtrinsic`*
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:164](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L164)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:192](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L192)*
 
 **Parameters:**
 
@@ -180,8 +257,7 @@ Name | Type |
 ------ | ------ |
 `signer` | `Address` \| `Uint8Array` \| string |
 `signature` | `Uint8Array` \| string |
-`nonce` | `AnyNumber` |
-`era` | `Uint8Array` \| `IExtrinsicEra` |
+`payload` | `ExtrinsicPayloadValue` \| `Uint8Array` \| string |
 
 **Returns:** *`IExtrinsic`*
 
@@ -193,7 +269,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:66](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L66)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:67](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L67)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -211,13 +287,13 @@ ___
 
 ▸ **send**(): *[SumbitableResultResult](../modules/_submittableextrinsic_.md#sumbitableresultresult)‹*`ApiType`*›*
 
-*Defined in [SubmittableExtrinsic.ts:90](https://github.com/polkadot-js/api/blob/dd7b138/packages/api/src/SubmittableExtrinsic.ts#L90)*
+*Defined in [SubmittableExtrinsic.ts:95](https://github.com/polkadot-js/api/blob/50a2314/packages/api/src/SubmittableExtrinsic.ts#L95)*
 
 **Returns:** *[SumbitableResultResult](../modules/_submittableextrinsic_.md#sumbitableresultresult)‹*`ApiType`*›*
 
 ▸ **send**(`statusCb`: `Callback<ISubmittableResult>`): *[SumbitableResultSubscription](../modules/_submittableextrinsic_.md#sumbitableresultsubscription)‹*`ApiType`*›*
 
-*Defined in [SubmittableExtrinsic.ts:92](https://github.com/polkadot-js/api/blob/dd7b138/packages/api/src/SubmittableExtrinsic.ts#L92)*
+*Defined in [SubmittableExtrinsic.ts:97](https://github.com/polkadot-js/api/blob/50a2314/packages/api/src/SubmittableExtrinsic.ts#L97)*
 
 **Parameters:**
 
@@ -235,7 +311,7 @@ ___
 
 *Overrides void*
 
-*Defined in [SubmittableExtrinsic.ts:94](https://github.com/polkadot-js/api/blob/dd7b138/packages/api/src/SubmittableExtrinsic.ts#L94)*
+*Defined in [SubmittableExtrinsic.ts:99](https://github.com/polkadot-js/api/blob/50a2314/packages/api/src/SubmittableExtrinsic.ts#L99)*
 
 **Parameters:**
 
@@ -252,7 +328,7 @@ ___
 
 ▸ **signAndSend**(`account`: `IKeyringPair` | string | `AccountId` | `Address`, `options?`: `Partial<SignerOptions>`): *[SumbitableResultResult](../modules/_submittableextrinsic_.md#sumbitableresultresult)‹*`ApiType`*›*
 
-*Defined in [SubmittableExtrinsic.ts:96](https://github.com/polkadot-js/api/blob/dd7b138/packages/api/src/SubmittableExtrinsic.ts#L96)*
+*Defined in [SubmittableExtrinsic.ts:101](https://github.com/polkadot-js/api/blob/50a2314/packages/api/src/SubmittableExtrinsic.ts#L101)*
 
 **Parameters:**
 
@@ -265,7 +341,7 @@ Name | Type |
 
 ▸ **signAndSend**(`account`: `IKeyringPair` | string | `AccountId` | `Address`, `statusCb`: `Callback<ISubmittableResult>`): *[SumbitableResultSubscription](../modules/_submittableextrinsic_.md#sumbitableresultsubscription)‹*`ApiType`*›*
 
-*Defined in [SubmittableExtrinsic.ts:98](https://github.com/polkadot-js/api/blob/dd7b138/packages/api/src/SubmittableExtrinsic.ts#L98)*
+*Defined in [SubmittableExtrinsic.ts:103](https://github.com/polkadot-js/api/blob/50a2314/packages/api/src/SubmittableExtrinsic.ts#L103)*
 
 **Parameters:**
 
@@ -278,7 +354,7 @@ Name | Type |
 
 ▸ **signAndSend**(`account`: `IKeyringPair` | string | `AccountId` | `Address`, `options`: `Partial<SignerOptions>`, `statusCb?`: `Callback<ISubmittableResult>`): *[SumbitableResultSubscription](../modules/_submittableextrinsic_.md#sumbitableresultsubscription)‹*`ApiType`*›*
 
-*Defined in [SubmittableExtrinsic.ts:100](https://github.com/polkadot-js/api/blob/dd7b138/packages/api/src/SubmittableExtrinsic.ts#L100)*
+*Defined in [SubmittableExtrinsic.ts:105](https://github.com/polkadot-js/api/blob/50a2314/packages/api/src/SubmittableExtrinsic.ts#L105)*
 
 **Parameters:**
 
@@ -298,7 +374,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:71](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L71)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:72](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L72)*
 
 **`description`** Returns a hex string representation of the value. isLe returns a LE (number-only) representation
 
@@ -318,7 +394,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:76](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L76)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:77](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L77)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -332,7 +408,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:81](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L81)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:82](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L82)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -346,7 +422,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:86](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L86)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:87](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L87)*
 
 **`description`** Returns the string representation of the value
 
@@ -360,7 +436,7 @@ ___
 
 *Inherited from void*
 
-*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:92](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/types.ts#L92)*
+*Defined in [/home/travis/build/polkadot-js/api/packages/types/src/types.ts:93](https://github.com/polkadot-js/api/blob/50a2314/packages/types/src/types.ts#L93)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 

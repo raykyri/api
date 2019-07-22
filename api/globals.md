@@ -5,6 +5,7 @@
 ### External modules
 
 * ["Base"](modules/_base_.md)
+* ["SignerPayload"](modules/_signerpayload_.md)
 * ["SubmittableExtrinsic"](modules/_submittableextrinsic_.md)
 * ["checkTypes.manual"](modules/_checktypes_manual_.md)
 * ["promise/Api"](modules/_promise_api_.md)
