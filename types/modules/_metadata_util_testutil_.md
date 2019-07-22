@@ -6,6 +6,7 @@
 
 * [decodeLatestSubstrate](_metadata_util_testutil_.md#decodelatestsubstrate)
 * [defaultValues](_metadata_util_testutil_.md#defaultvalues)
+* [injectDefinitions](_metadata_util_testutil_.md#injectdefinitions)
 * [toV6](_metadata_util_testutil_.md#tov6)
 
 ## Functions
@@ -14,7 +15,7 @@
 
 ▸ **decodeLatestSubstrate**<**Modules**>(`version`: number, `rpcData`: string, `latestSubstrate`: object): *void*
 
-*Defined in [Metadata/util/testUtil.ts:25](https://github.com/polkadot-js/api/blob/3d7a460/packages/types/src/Metadata/util/testUtil.ts#L25)*
+*Defined in [Metadata/util/testUtil.ts:25](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/Metadata/util/testUtil.ts#L25)*
 
 Given the static `rpcData` and the `latestSubstrate` JSON file, Metadata
 should decode `rpcData` and output `latestSubstrate`.
@@ -39,7 +40,7 @@ ___
 
 ▸ **defaultValues**(`rpcData`: string): *void*
 
-*Defined in [Metadata/util/testUtil.ts:63](https://github.com/polkadot-js/api/blob/3d7a460/packages/types/src/Metadata/util/testUtil.ts#L63)*
+*Defined in [Metadata/util/testUtil.ts:63](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/Metadata/util/testUtil.ts#L63)*
 
 Given a Metadata, no type should throw when given its fallback value.
 
@@ -53,11 +54,21 @@ Name | Type |
 
 ___
 
+###  injectDefinitions
+
+▸ **injectDefinitions**(): *void*
+
+*Defined in [Metadata/util/testUtil.ts:15](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/Metadata/util/testUtil.ts#L15)*
+
+**Returns:** *void*
+
+___
+
 ###  toV6
 
 ▸ **toV6**<**Modules**>(`version`: number, `rpcData`: string): *void*
 
-*Defined in [Metadata/util/testUtil.ts:47](https://github.com/polkadot-js/api/blob/3d7a460/packages/types/src/Metadata/util/testUtil.ts#L47)*
+*Defined in [Metadata/util/testUtil.ts:47](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/Metadata/util/testUtil.ts#L47)*
 
 Given a `version`, MetadataV6 and MetadataV{version} should output the same
 unique types.

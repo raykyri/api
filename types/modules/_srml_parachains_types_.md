@@ -16,6 +16,8 @@
 * [IncomingParachain](../interfaces/_srml_parachains_types_.incomingparachain.md)
 * [IncomingParachainDeploy](../interfaces/_srml_parachains_types_.incomingparachaindeploy.md)
 * [IncomingParachainFixed](../interfaces/_srml_parachains_types_.incomingparachainfixed.md)
+* [LeasePeriod](../interfaces/_srml_parachains_types_.leaseperiod.md)
+* [LeasePeriodOf](../interfaces/_srml_parachains_types_.leaseperiodof.md)
 * [NewBidder](../interfaces/_srml_parachains_types_.newbidder.md)
 * [ParaId](../interfaces/_srml_parachains_types_.paraid.md)
 * [ParaIdOf](../interfaces/_srml_parachains_types_.paraidof.md)

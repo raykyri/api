@@ -11,9 +11,9 @@ A representation of a Substrate BlockNumber, implemented as a [U64](_primitive_u
 
   * **BlockNumber**
 
-  * [LeasePeriod](_type_leaseperiod_.leaseperiod.md)
-
   * [InclusionHeight](_type_uncleentryitem_.inclusionheight.md)
+
+  * [LeasePeriod](../interfaces/_srml_parachains_types_.leaseperiod.md)
 
 ## Implements
 
@@ -41,7 +41,7 @@ A representation of a Substrate BlockNumber, implemented as a [U64](_primitive_u
 
 *Overrides [UInt](_codec_uint_.uint.md).[constructor](_codec_uint_.uint.md#constructor)*
 
-*Defined in [primitive/U64.ts:14](https://github.com/polkadot-js/api/blob/3d7a460/packages/types/src/primitive/U64.ts#L14)*
+*Defined in [primitive/U64.ts:14](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/primitive/U64.ts#L14)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/3d7a460/packages/types/src/codec/UInt.ts#L36)*
+*Defined in [codec/UInt.ts:36](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/codec/UInt.ts#L36)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -85,7 +85,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/3d7a460/packages/types/src/codec/UInt.ts#L48)*
+*Defined in [codec/UInt.ts:48](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/codec/UInt.ts#L48)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -103,7 +103,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/3d7a460/packages/types/src/codec/UInt.ts#L57)*
+*Defined in [codec/UInt.ts:57](https://github.com/polkadot-js/api/blob/dd7b138/packages/types/src/codec/UInt.ts#L57)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 

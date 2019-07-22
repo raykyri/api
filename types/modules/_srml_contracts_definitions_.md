@@ -1,0 +1,1 @@
+> # External module: "srml/contracts/definitions"

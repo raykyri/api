@@ -12,7 +12,7 @@
 
 ▸ **decorateSections**<**ApiType**, **AllSections**>(`allSections`: `AllSections`, `decorateMethod`: function): *object*
 
-*Defined in [util/decorate.ts:38](https://github.com/polkadot-js/api/blob/3d7a460/packages/api/src/util/decorate.ts#L38)*
+*Defined in [util/decorate.ts:38](https://github.com/polkadot-js/api/blob/dd7b138/packages/api/src/util/decorate.ts#L38)*
 
 This is a section decorator which keeps all type information.
 
