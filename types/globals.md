@@ -83,6 +83,7 @@
 * ["codec/utils/compareMap"](modules/_codec_utils_comparemap_.md)
 * ["codec/utils/decodeU8a"](modules/_codec_utils_decodeu8a_.md)
 * ["index.types"](modules/_index_types_.md)
+* ["injector"](modules/_injector_.md)
 * ["primitive/AccountId"](modules/_primitive_accountid_.md)
 * ["primitive/AccountIndex"](modules/_primitive_accountindex_.md)
 * ["primitive/AccountInfo"](modules/_primitive_accountinfo_.md)

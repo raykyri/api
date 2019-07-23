@@ -41,6 +41,7 @@ A proposal in the system. It just extends [Method](_primitive_method_.method.md)
 * [data](_type_proposal_.proposal.md#data)
 * [encodedLength](_type_proposal_.proposal.md#encodedlength)
 * [hasOrigin](_type_proposal_.proposal.md#hasorigin)
+* [hash](_type_proposal_.proposal.md#hash)
 * [isEmpty](_type_proposal_.proposal.md#isempty)
 * [meta](_type_proposal_.proposal.md#meta)
 * [methodName](_type_proposal_.proposal.md#methodname)
@@ -72,7 +73,7 @@ A proposal in the system. It just extends [Method](_primitive_method_.method.md)
 
 *Overrides [Struct](_codec_struct_.struct.md).[constructor](_codec_struct_.struct.md#constructor)*
 
-*Defined in [primitive/Method.ts:66](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L66)*
+*Defined in [primitive/Method.ts:68](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L68)*
 
 **Parameters:**
 
@@ -91,7 +92,7 @@ Name | Type |
 
 *Inherited from [Struct](_codec_struct_.struct.md).[Type](_codec_struct_.struct.md#type)*
 
-*Defined in [codec/Struct.ts:163](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L163)*
+*Defined in [codec/Struct.ts:163](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L163)*
 
 **`description`** Returns the Type description to sthe structure
 
@@ -105,7 +106,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[args](_primitive_method_.method.md#args)*
 
-*Defined in [primitive/Method.ts:181](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L181)*
+*Defined in [primitive/Method.ts:183](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L183)*
 
 **`description`** The arguments for the function call
 
@@ -119,7 +120,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[argsDef](_primitive_method_.method.md#argsdef)*
 
-*Defined in [primitive/Method.ts:189](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L189)*
+*Defined in [primitive/Method.ts:191](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L191)*
 
 **`description`** Thge argument defintions
 
@@ -133,7 +134,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[callIndex](_primitive_method_.method.md#callindex)*
 
-*Defined in [primitive/Method.ts:196](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L196)*
+*Defined in [primitive/Method.ts:198](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L198)*
 
 **`description`** The encoded `[sectionIndex, methodIndex]` identifier
 
@@ -147,7 +148,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[data](_primitive_method_.method.md#data)*
 
-*Defined in [primitive/Method.ts:203](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L203)*
+*Defined in [primitive/Method.ts:205](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L205)*
 
 **`description`** The encoded data
 
@@ -161,7 +162,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[encodedLength](_codec_struct_.struct.md#encodedlength)*
 
-*Defined in [codec/Struct.ts:176](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L176)*
+*Defined in [codec/Struct.ts:176](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L176)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -175,11 +176,25 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[hasOrigin](_primitive_method_.method.md#hasorigin)*
 
-*Defined in [primitive/Method.ts:210](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L210)*
+*Defined in [primitive/Method.ts:221](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L221)*
 
 **`description`** `true` if the `Origin` type is on the method (extrinsic method)
 
 **Returns:** *boolean*
+
+___
+
+###  hash
+
+• **get hash**(): *[Hash](_primitive_hash_.hash.md)*
+
+*Inherited from [Method](_primitive_method_.method.md).[hash](_primitive_method_.method.md#hash)*
+
+*Defined in [primitive/Method.ts:212](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L212)*
+
+**`description`** Convenience function, encodes the Method and returns the actual hash
+
+**Returns:** *[Hash](_primitive_hash_.hash.md)*
 
 ___
 
@@ -189,7 +204,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[isEmpty](_codec_struct_.struct.md#isempty)*
 
-*Defined in [codec/Struct.ts:148](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L148)*
+*Defined in [codec/Struct.ts:148](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L148)*
 
 **`description`** Checks if the value is an empty value
 
@@ -203,7 +218,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[meta](_primitive_method_.method.md#meta)*
 
-*Defined in [primitive/Method.ts:219](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L219)*
+*Defined in [primitive/Method.ts:230](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L230)*
 
 **`description`** The [FunctionMetadata](_metadata_v1_calls_.functionmetadata.md)
 
@@ -217,7 +232,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[methodName](_primitive_method_.method.md#methodname)*
 
-*Defined in [primitive/Method.ts:226](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L226)*
+*Defined in [primitive/Method.ts:237](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L237)*
 
 **`description`** Returns the name of the method
 
@@ -231,7 +246,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[sectionName](_primitive_method_.method.md#sectionname)*
 
-*Defined in [primitive/Method.ts:233](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L233)*
+*Defined in [primitive/Method.ts:244](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L244)*
 
 **`description`** Returns the module containing the method
 
@@ -247,7 +262,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[eq](_codec_struct_.struct.md#eq)*
 
-*Defined in [codec/Struct.ts:187](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L187)*
+*Defined in [codec/Struct.ts:187](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L187)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -269,7 +284,7 @@ ___
 
 *Overrides void*
 
-*Defined in [codec/Struct.ts:195](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L195)*
+*Defined in [codec/Struct.ts:195](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L195)*
 
 **`description`** Returns a specific names entry in the structure
 
@@ -289,7 +304,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[getAtIndex](_codec_struct_.struct.md#getatindex)*
 
-*Defined in [codec/Struct.ts:202](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L202)*
+*Defined in [codec/Struct.ts:202](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L202)*
 
 **`description`** Returns the values of a member at a specific index (Rather use get(name) for performance)
 
@@ -309,7 +324,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[toArray](_codec_struct_.struct.md#toarray)*
 
-*Defined in [codec/Struct.ts:209](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L209)*
+*Defined in [codec/Struct.ts:209](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L209)*
 
 **`description`** Converts the Object to an standard JavaScript Array
 
@@ -323,7 +338,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[toHex](_codec_struct_.struct.md#tohex)*
 
-*Defined in [codec/Struct.ts:216](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L216)*
+*Defined in [codec/Struct.ts:216](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L216)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -339,7 +354,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[toJSON](_codec_struct_.struct.md#tojson)*
 
-*Defined in [codec/Struct.ts:223](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L223)*
+*Defined in [codec/Struct.ts:223](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L223)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -357,7 +372,7 @@ ___
 
 *Overrides [Struct](_codec_struct_.struct.md).[toRawType](_codec_struct_.struct.md#torawtype)*
 
-*Defined in [primitive/Method.ts:240](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L240)*
+*Defined in [primitive/Method.ts:251](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L251)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -373,7 +388,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[toString](_codec_struct_.struct.md#tostring)*
 
-*Defined in [codec/Struct.ts:252](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L252)*
+*Defined in [codec/Struct.ts:252](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L252)*
 
 **`description`** Returns the string representation of the value
 
@@ -389,7 +404,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[toU8a](_codec_struct_.struct.md#tou8a)*
 
-*Defined in [codec/Struct.ts:260](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L260)*
+*Defined in [codec/Struct.ts:260](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L260)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
@@ -409,7 +424,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[filterOrigin](_primitive_method_.method.md#static-filterorigin)*
 
-*Defined in [primitive/Method.ts:129](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L129)*
+*Defined in [primitive/Method.ts:131](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L131)*
 
 **Parameters:**
 
@@ -427,7 +442,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[findFunction](_primitive_method_.method.md#static-findfunction)*
 
-*Defined in [primitive/Method.ts:145](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L145)*
+*Defined in [primitive/Method.ts:147](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L147)*
 
 **Parameters:**
 
@@ -445,7 +460,7 @@ ___
 
 *Inherited from [Method](_primitive_method_.method.md).[injectMethods](_primitive_method_.method.md#static-injectmethods)*
 
-*Defined in [primitive/Method.ts:170](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/primitive/Method.ts#L170)*
+*Defined in [primitive/Method.ts:172](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Method.ts#L172)*
 
 **Parameters:**
 
@@ -463,7 +478,7 @@ ___
 
 *Inherited from [Struct](_codec_struct_.struct.md).[with](_codec_struct_.struct.md#static-with)*
 
-*Defined in [codec/Struct.ts:123](https://github.com/polkadot-js/api/blob/c3811ee/packages/types/src/codec/Struct.ts#L123)*
+*Defined in [codec/Struct.ts:123](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Struct.ts#L123)*
 
 **Type parameters:**
 
