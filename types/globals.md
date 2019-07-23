@@ -151,6 +151,8 @@
 * ["rpc/StorageChangeSet"](modules/_rpc_storagechangeset_.md)
 * ["scripts/MetadataMd"](modules/_scripts_metadatamd_.md)
 * ["scripts/srmlTS"](modules/_scripts_srmlts_.md)
+* ["srml/babe/definitions"](modules/_srml_babe_definitions_.md)
+* ["srml/babe/types"](modules/_srml_babe_types_.md)
 * ["srml/contracts/definitions"](modules/_srml_contracts_definitions_.md)
 * ["srml/contracts/types"](modules/_srml_contracts_types_.md)
 * ["srml/definitions"](modules/_srml_definitions_.md)

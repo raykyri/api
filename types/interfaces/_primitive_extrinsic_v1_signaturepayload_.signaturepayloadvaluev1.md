@@ -19,7 +19,7 @@
 
 • **blockHash**: *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:15](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L15)*
+*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:15](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L15)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **era**: *[AnyU8a](../modules/_types_.md#anyu8a) | [IExtrinsicEra](_types_.iextrinsicera.md)*
 
-*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:16](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L16)*
+*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:16](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L16)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **method**: *[AnyU8a](../modules/_types_.md#anyu8a) | [IMethod](_types_.imethod.md)*
 
-*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:17](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L17)*
+*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:17](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L17)*
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 • **nonce**: *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:18](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L18)*
+*Defined in [primitive/Extrinsic/v1/SignaturePayload.ts:18](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/v1/SignaturePayload.ts#L18)*
