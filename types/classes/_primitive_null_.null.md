@@ -51,7 +51,7 @@ Implements a type that does not contain anything (apart from `null`)
 
 • **get encodedLength**(): *number*
 
-*Defined in [primitive/Null.ts:17](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L17)*
+*Defined in [primitive/Null.ts:17](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L17)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -63,7 +63,7 @@ ___
 
 • **get isEmpty**(): *boolean*
 
-*Defined in [primitive/Null.ts:24](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L24)*
+*Defined in [primitive/Null.ts:24](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L24)*
 
 **`description`** Checks if the value is an empty value (always true)
 
@@ -77,7 +77,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Null.ts:31](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L31)*
+*Defined in [primitive/Null.ts:31](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L31)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **toHex**(): *string*
 
-*Defined in [primitive/Null.ts:38](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L38)*
+*Defined in [primitive/Null.ts:38](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L38)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -109,7 +109,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Null.ts:45](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L45)*
+*Defined in [primitive/Null.ts:45](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L45)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -123,7 +123,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Null.ts:52](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L52)*
+*Defined in [primitive/Null.ts:52](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L52)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -137,7 +137,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Null.ts:59](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L59)*
+*Defined in [primitive/Null.ts:59](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L59)*
 
 **`description`** Returns the string representation of the value
 
@@ -151,7 +151,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Null.ts:68](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/primitive/Null.ts#L68)*
+*Defined in [primitive/Null.ts:68](https://github.com/polkadot-js/api/blob/f9a3f3e/packages/types/src/primitive/Null.ts#L68)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
