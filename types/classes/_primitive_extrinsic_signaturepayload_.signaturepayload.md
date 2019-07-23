@@ -51,7 +51,7 @@ on the contents included
 
 *Overrides [Base](_codec_base_.base.md).[constructor](_codec_base_.base.md#constructor)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:29](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L29)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:29](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L29)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ Name | Type | Default |
 
 • **get blockHash**(): *[Hash](_primitive_hash_.hash.md)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:51](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L51)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:51](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L51)*
 
 **`description`** The block [Hash](_primitive_hash_.hash.md) the signature applies to (mortal/immortal)
 
@@ -82,7 +82,7 @@ ___
 
 *Inherited from [Base](_codec_base_.base.md).[encodedLength](_codec_base_.base.md#encodedlength)*
 
-*Defined in [codec/Base.ts:21](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/codec/Base.ts#L21)*
+*Defined in [codec/Base.ts:21](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/codec/Base.ts#L21)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -94,7 +94,7 @@ ___
 
 • **get era**(): *[ExtrinsicEra](_primitive_extrinsic_extrinsicera_.extrinsicera.md)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:65](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L65)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:65](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L65)*
 
 **`description`** The [ExtrinsicEra](_primitive_extrinsic_extrinsicera_.extrinsicera.md)
 
@@ -108,7 +108,7 @@ ___
 
 *Inherited from [Base](_codec_base_.base.md).[isEmpty](_codec_base_.base.md#isempty)*
 
-*Defined in [codec/Base.ts:28](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/codec/Base.ts#L28)*
+*Defined in [codec/Base.ts:28](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/codec/Base.ts#L28)*
 
 **`description`** Checks if the value is an empty value
 
@@ -120,7 +120,7 @@ ___
 
 • **get method**(): *[U8a](_codec_u8a_.u8a.md)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:58](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L58)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:58](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L58)*
 
 **`description`** The [U8a](_codec_u8a_.u8a.md) contained in the payload
 
@@ -132,7 +132,7 @@ ___
 
 • **get nonce**(): *[NonceCompact](_type_noncecompact_.noncecompact.md)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:72](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L72)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:72](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L72)*
 
 **`description`** The [NonceCompact](_type_noncecompact_.noncecompact.md)
 
@@ -144,7 +144,7 @@ ___
 
 • **get tip**(): *[BalanceCompact](_primitive_balancecompact_.balancecompact.md)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:79](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L79)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:79](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L79)*
 
 **`description`** The [BalanceCompact](_primitive_balancecompact_.balancecompact.md)
 
@@ -160,7 +160,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[eq](_codec_base_.base.md#eq)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:86](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L86)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:86](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L86)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -178,7 +178,7 @@ ___
 
 ▸ **sign**(`signerPair`: [IKeyringPair](../interfaces/_types_.ikeyringpair.md)): *object*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:93](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L93)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:93](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L93)*
 
 **`description`** Sign the payload with the keypair
 
@@ -200,7 +200,7 @@ ___
 
 *Inherited from [Base](_codec_base_.base.md).[toHex](_codec_base_.base.md#tohex)*
 
-*Defined in [codec/Base.ts:42](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/codec/Base.ts#L42)*
+*Defined in [codec/Base.ts:42](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/codec/Base.ts#L42)*
 
 **`description`** Returns a hex string representation of the value. isLe returns a LE (number-only) representation
 
@@ -222,7 +222,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[toJSON](_codec_base_.base.md#tojson)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:108](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L108)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:108](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L108)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -238,7 +238,7 @@ ___
 
 *Inherited from [Base](_codec_base_.base.md).[toRawType](_codec_base_.base.md#torawtype)*
 
-*Defined in [codec/Base.ts:71](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/codec/Base.ts#L71)*
+*Defined in [codec/Base.ts:71](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/codec/Base.ts#L71)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -254,7 +254,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[toString](_codec_base_.base.md#tostring)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:115](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L115)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:115](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L115)*
 
 **`description`** Returns the string representation of the value
 
@@ -270,7 +270,7 @@ ___
 
 *Inherited from [Base](_codec_base_.base.md).[toU8a](_codec_base_.base.md#tou8a)*
 
-*Defined in [codec/Base.ts:64](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/codec/Base.ts#L64)*
+*Defined in [codec/Base.ts:64](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/codec/Base.ts#L64)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
@@ -288,7 +288,7 @@ ___
 
 ▸ **decodeSignaturePayload**(`value`: [SignaturePayload](_primitive_extrinsic_signaturepayload_.signaturepayload.md) | [SignaturePayloadValueV1](../interfaces/_primitive_extrinsic_v1_signaturepayload_.signaturepayloadvaluev1.md) | [SignaturePayloadValueV2](../interfaces/_primitive_extrinsic_v2_signaturepayload_.signaturepayloadvaluev2.md) | `Uint8Array` | string | undefined, `version`: number): *[SignaturePayloadV1](_primitive_extrinsic_v1_signaturepayload_.signaturepayloadv1.md) | [SignaturePayloadV2](_primitive_extrinsic_v2_signaturepayload_.signaturepayloadv2.md)*
 
-*Defined in [primitive/Extrinsic/SignaturePayload.ts:36](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L36)*
+*Defined in [primitive/Extrinsic/SignaturePayload.ts:36](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/primitive/Extrinsic/SignaturePayload.ts#L36)*
 
 **Parameters:**
 

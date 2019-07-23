@@ -23,7 +23,7 @@
 
 Ƭ **DerivedBalancesMap**: *`Record<string, DerivedBalances>`*
 
-*Defined in [types.ts:19](https://github.com/polkadot-js/api/blob/f9f3956/packages/api-derive/src/types.ts#L19)*
+*Defined in [types.ts:21](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/api-derive/src/types.ts#L21)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 Ƭ **DerivedUnlocking**: *object[]*
 
-*Defined in [types.ts:85](https://github.com/polkadot-js/api/blob/f9f3956/packages/api-derive/src/types.ts#L85)*
+*Defined in [types.ts:87](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/api-derive/src/types.ts#L87)*

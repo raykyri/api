@@ -19,7 +19,7 @@
 
 • **era**: *[IExtrinsicEra](_types_.iextrinsicera.md) | [AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [types.ts:156](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/types.ts#L156)*
+*Defined in [types.ts:156](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/types.ts#L156)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **method**: *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [types.ts:157](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/types.ts#L157)*
+*Defined in [types.ts:157](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/types.ts#L157)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **nonce**: *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [types.ts:158](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/types.ts#L158)*
+*Defined in [types.ts:158](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/types.ts#L158)*
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 • **tip**: *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [types.ts:159](https://github.com/polkadot-js/api/blob/f9f3956/packages/types/src/types.ts#L159)*
+*Defined in [types.ts:159](https://github.com/polkadot-js/api/blob/ebc2fbe/packages/types/src/types.ts#L159)*
