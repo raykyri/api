@@ -54,7 +54,7 @@
 
 \+ **new Base**(`value?`: any): *[Base](_codec_base_.base.md)*
 
-*Defined in [codec/Base.ts:12](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L12)*
+*Defined in [codec/Base.ts:12](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L12)*
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ Name | Type |
 
 • **get encodedLength**(): *number*
 
-*Defined in [codec/Base.ts:21](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L21)*
+*Defined in [codec/Base.ts:21](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L21)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -82,7 +82,7 @@ ___
 
 • **get isEmpty**(): *boolean*
 
-*Defined in [codec/Base.ts:28](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L28)*
+*Defined in [codec/Base.ts:28](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L28)*
 
 **`description`** Checks if the value is an empty value
 
@@ -96,7 +96,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [codec/Base.ts:35](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L35)*
+*Defined in [codec/Base.ts:35](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L35)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -116,7 +116,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [codec/Base.ts:42](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L42)*
+*Defined in [codec/Base.ts:42](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L42)*
 
 **`description`** Returns a hex string representation of the value. isLe returns a LE (number-only) representation
 
@@ -136,7 +136,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [codec/Base.ts:49](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L49)*
+*Defined in [codec/Base.ts:49](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L49)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -150,7 +150,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [codec/Base.ts:71](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L71)*
+*Defined in [codec/Base.ts:71](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L71)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -164,7 +164,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [codec/Base.ts:56](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L56)*
+*Defined in [codec/Base.ts:56](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L56)*
 
 **`description`** Returns the string representation of the value
 
@@ -178,7 +178,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [codec/Base.ts:64](https://github.com/polkadot-js/api/blob/98cffea/packages/types/src/codec/Base.ts#L64)*
+*Defined in [codec/Base.ts:64](https://github.com/polkadot-js/api/blob/43ca02b/packages/types/src/codec/Base.ts#L64)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
