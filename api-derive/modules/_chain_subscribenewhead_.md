@@ -16,7 +16,7 @@
 
 Ƭ **HeaderAndValidators**: *[`Header`, `AccountId`[]]*
 
-*Defined in [chain/subscribeNewHead.ts:13](https://github.com/polkadot-js/api/blob/72af35d/packages/api-derive/src/chain/subscribeNewHead.ts#L13)*
+*Defined in [chain/subscribeNewHead.ts:13](https://github.com/polkadot-js/api/blob/657d241/packages/api-derive/src/chain/subscribeNewHead.ts#L13)*
 
 ## Functions
 
@@ -24,7 +24,7 @@
 
 ▸ **subscribeNewHead**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [chain/subscribeNewHead.ts:28](https://github.com/polkadot-js/api/blob/72af35d/packages/api-derive/src/chain/subscribeNewHead.ts#L28)*
+*Defined in [chain/subscribeNewHead.ts:28](https://github.com/polkadot-js/api/blob/657d241/packages/api-derive/src/chain/subscribeNewHead.ts#L28)*
 
 **`name`** subscribeNewHead
 
