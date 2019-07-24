@@ -55,7 +55,7 @@ and has all the methods available that are applicable to any `Date`
 
 \+ **new Moment**(`value`: [Moment](_primitive_moment_.moment.md) | `Date` | [AnyNumber](../modules/_types_.md#anynumber)): *[Moment](_primitive_moment_.moment.md)*
 
-*Defined in [primitive/Moment.ts:24](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L24)*
+*Defined in [primitive/Moment.ts:24](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L24)*
 
 **Parameters:**
 
@@ -79,7 +79,7 @@ Defined in /home/travis/build/polkadot-js/api/node_modules/typescript/lib/lib.es
 
 • **get encodedLength**(): *number*
 
-*Defined in [primitive/Moment.ts:51](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L51)*
+*Defined in [primitive/Moment.ts:51](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L51)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -91,7 +91,7 @@ ___
 
 • **get isEmpty**(): *boolean*
 
-*Defined in [primitive/Moment.ts:58](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L58)*
+*Defined in [primitive/Moment.ts:58](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L58)*
 
 **`description`** Checks if the value is an empty value
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **bitLength**(): *[UIntBitLength](../modules/_codec_abstractint_.md#uintbitlength)*
 
-*Defined in [primitive/Moment.ts:72](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L72)*
+*Defined in [primitive/Moment.ts:72](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L72)*
 
 **`description`** Returns the number of bits in the value
 
@@ -117,7 +117,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Moment.ts:65](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L65)*
+*Defined in [primitive/Moment.ts:65](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L65)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **toBn**(): *`BN`*
 
-*Defined in [primitive/Moment.ts:79](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L79)*
+*Defined in [primitive/Moment.ts:79](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L79)*
 
 **`description`** Returns the BN representation of the timestamp
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **toHex**(`isLe`: boolean): *string*
 
-*Defined in [primitive/Moment.ts:86](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L86)*
+*Defined in [primitive/Moment.ts:86](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L86)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -169,7 +169,7 @@ ___
 
 *Overrides void*
 
-*Defined in [primitive/Moment.ts:97](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L97)*
+*Defined in [primitive/Moment.ts:97](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L97)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -181,7 +181,7 @@ ___
 
 ▸ **toNumber**(): *number*
 
-*Defined in [primitive/Moment.ts:106](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L106)*
+*Defined in [primitive/Moment.ts:106](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L106)*
 
 **`description`** Returns the number representation for the timestamp
 
@@ -195,7 +195,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Moment.ts:113](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L113)*
+*Defined in [primitive/Moment.ts:113](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L113)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -211,7 +211,7 @@ ___
 
 *Overrides void*
 
-*Defined in [primitive/Moment.ts:120](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L120)*
+*Defined in [primitive/Moment.ts:120](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L120)*
 
 **`description`** Returns the string representation of the value
 
@@ -225,7 +225,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Moment.ts:130](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L130)*
+*Defined in [primitive/Moment.ts:130](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L130)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
@@ -243,7 +243,7 @@ ___
 
 ▸ **decodeMoment**(`value`: [Moment](_primitive_moment_.moment.md) | `Date` | [AnyNumber](../modules/_types_.md#anynumber)): *`Date`*
 
-*Defined in [primitive/Moment.ts:34](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/primitive/Moment.ts#L34)*
+*Defined in [primitive/Moment.ts:34](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Moment.ts#L34)*
 
 **Parameters:**
 

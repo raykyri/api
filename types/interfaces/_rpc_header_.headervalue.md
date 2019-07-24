@@ -20,7 +20,7 @@
 
 • **digest**? : *[Digest](../classes/_rpc_digest_.digest.md) | object*
 
-*Defined in [rpc/Header.ts:16](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/rpc/Header.ts#L16)*
+*Defined in [rpc/Header.ts:16](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/rpc/Header.ts#L16)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **extrinsicsRoot**? : *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [rpc/Header.ts:17](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/rpc/Header.ts#L17)*
+*Defined in [rpc/Header.ts:17](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/rpc/Header.ts#L17)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **number**? : *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [rpc/Header.ts:18](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/rpc/Header.ts#L18)*
+*Defined in [rpc/Header.ts:18](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/rpc/Header.ts#L18)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **parentHash**? : *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [rpc/Header.ts:19](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/rpc/Header.ts#L19)*
+*Defined in [rpc/Header.ts:19](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/rpc/Header.ts#L19)*
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 • **stateRoot**? : *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [rpc/Header.ts:20](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/rpc/Header.ts#L20)*
+*Defined in [rpc/Header.ts:20](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/rpc/Header.ts#L20)*

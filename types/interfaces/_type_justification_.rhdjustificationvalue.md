@@ -18,7 +18,7 @@
 
 • **hash**? : *[AnyU8a](../modules/_types_.md#anyu8a)*
 
-*Defined in [type/Justification.ts:16](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/type/Justification.ts#L16)*
+*Defined in [type/Justification.ts:16](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/type/Justification.ts#L16)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **roundNumber**? : *[AnyNumber](../modules/_types_.md#anynumber)*
 
-*Defined in [type/Justification.ts:15](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/type/Justification.ts#L15)*
+*Defined in [type/Justification.ts:15](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/type/Justification.ts#L15)*
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • **signatures**? : *[BftAuthoritySignatureValue](../modules/_type_bft_.md#bftauthoritysignaturevalue)[]*
 
-*Defined in [type/Justification.ts:17](https://github.com/polkadot-js/api/blob/657d241/packages/types/src/type/Justification.ts#L17)*
+*Defined in [type/Justification.ts:17](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/type/Justification.ts#L17)*
