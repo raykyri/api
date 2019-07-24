@@ -12,4 +12,4 @@
 
 Ƭ **CodecTypes**: *keyof "/home/travis/build/polkadot-js/api/packages/types/src/index.types"*
 
-*Defined in [classes.ts:7](https://github.com/polkadot-js/api/blob/3827353/packages/types/src/classes.ts#L7)*
+*Defined in [classes.ts:7](https://github.com/polkadot-js/api/blob/79e5f7c/packages/types/src/classes.ts#L7)*

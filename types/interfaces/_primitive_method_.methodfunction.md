@@ -8,7 +8,7 @@
 
 ▸ (...`args`: any[]): *[Method](../classes/_primitive_method_.method.md)*
 
-*Defined in [primitive/Method.ts:26](https://github.com/polkadot-js/api/blob/3827353/packages/types/src/primitive/Method.ts#L26)*
+*Defined in [primitive/Method.ts:26](https://github.com/polkadot-js/api/blob/79e5f7c/packages/types/src/primitive/Method.ts#L26)*
 
 **Parameters:**
 
@@ -34,15 +34,15 @@ Name | Type |
 
 • **callIndex**: *`Uint8Array`*
 
-*Defined in [primitive/Method.ts:28](https://github.com/polkadot-js/api/blob/3827353/packages/types/src/primitive/Method.ts#L28)*
+*Defined in [primitive/Method.ts:28](https://github.com/polkadot-js/api/blob/79e5f7c/packages/types/src/primitive/Method.ts#L28)*
 
 ___
 
 ###  meta
 
-• **meta**: *`FunctionMetadataV6`*
+• **meta**: *`FunctionMetadataV7`*
 
-*Defined in [primitive/Method.ts:29](https://github.com/polkadot-js/api/blob/3827353/packages/types/src/primitive/Method.ts#L29)*
+*Defined in [primitive/Method.ts:29](https://github.com/polkadot-js/api/blob/79e5f7c/packages/types/src/primitive/Method.ts#L29)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **method**: *string*
 
-*Defined in [primitive/Method.ts:30](https://github.com/polkadot-js/api/blob/3827353/packages/types/src/primitive/Method.ts#L30)*
+*Defined in [primitive/Method.ts:30](https://github.com/polkadot-js/api/blob/79e5f7c/packages/types/src/primitive/Method.ts#L30)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **section**: *string*
 
-*Defined in [primitive/Method.ts:31](https://github.com/polkadot-js/api/blob/3827353/packages/types/src/primitive/Method.ts#L31)*
+*Defined in [primitive/Method.ts:31](https://github.com/polkadot-js/api/blob/79e5f7c/packages/types/src/primitive/Method.ts#L31)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **toJSON**: *function*
 
-*Defined in [primitive/Method.ts:32](https://github.com/polkadot-js/api/blob/3827353/packages/types/src/primitive/Method.ts#L32)*
+*Defined in [primitive/Method.ts:32](https://github.com/polkadot-js/api/blob/79e5f7c/packages/types/src/primitive/Method.ts#L32)*
 
 #### Type declaration:
 
