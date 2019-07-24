@@ -11,11 +11,13 @@
 * [DerivedReferendumVote](../interfaces/_types_.derivedreferendumvote.md)
 * [DerivedSessionInfo](../interfaces/_types_.derivedsessioninfo.md)
 * [DerivedStaking](../interfaces/_types_.derivedstaking.md)
+* [VoterPosition](../interfaces/_types_.voterposition.md)
 
 ### Type aliases
 
 * [DerivedBalancesMap](_types_.md#derivedbalancesmap)
 * [DerivedUnlocking](_types_.md#derivedunlocking)
+* [DerivedVoterPositions](_types_.md#derivedvoterpositions)
 
 ## Type aliases
 
@@ -23,7 +25,7 @@
 
 Ƭ **DerivedBalancesMap**: *`Record<string, DerivedBalances>`*
 
-*Defined in [types.ts:21](https://github.com/polkadot-js/api/blob/66ab3ac/packages/api-derive/src/types.ts#L21)*
+*Defined in [types.ts:21](https://github.com/polkadot-js/api/blob/e1cf002/packages/api-derive/src/types.ts#L21)*
 
 ___
 
@@ -31,4 +33,12 @@ ___
 
 Ƭ **DerivedUnlocking**: *object[]*
 
-*Defined in [types.ts:87](https://github.com/polkadot-js/api/blob/66ab3ac/packages/api-derive/src/types.ts#L87)*
+*Defined in [types.ts:88](https://github.com/polkadot-js/api/blob/e1cf002/packages/api-derive/src/types.ts#L88)*
+
+___
+
+###  DerivedVoterPositions
+
+Ƭ **DerivedVoterPositions**: *`Record<string, VoterPosition>`*
+
+*Defined in [types.ts:96](https://github.com/polkadot-js/api/blob/e1cf002/packages/api-derive/src/types.ts#L96)*

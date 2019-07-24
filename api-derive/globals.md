@@ -26,7 +26,7 @@
 * ["elections/approvalsOf"](modules/_elections_approvalsof_.md)
 * ["elections/approvalsOfAt"](modules/_elections_approvalsofat_.md)
 * ["elections/info"](modules/_elections_info_.md)
-* ["elections/voterSets"](modules/_elections_votersets_.md)
+* ["elections/voterPositions"](modules/_elections_voterpositions_.md)
 * ["elections/voters"](modules/_elections_voters_.md)
 * ["session/eraLength"](modules/_session_eralength_.md)
 * ["session/eraProgress"](modules/_session_eraprogress_.md)

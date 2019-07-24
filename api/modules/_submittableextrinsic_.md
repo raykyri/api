@@ -26,7 +26,7 @@
 
 Ƭ **SumbitableResultResult**: *`SumbitableResultResult<ApiType>`*
 
-*Defined in [SubmittableExtrinsic.ts:29](https://github.com/polkadot-js/api/blob/66ab3ac/packages/api/src/SubmittableExtrinsic.ts#L29)*
+*Defined in [SubmittableExtrinsic.ts:29](https://github.com/polkadot-js/api/blob/e1cf002/packages/api/src/SubmittableExtrinsic.ts#L29)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 Ƭ **SumbitableResultSubscription**: *`SumbitableResultSubscription<ApiType>`*
 
-*Defined in [SubmittableExtrinsic.ts:34](https://github.com/polkadot-js/api/blob/66ab3ac/packages/api/src/SubmittableExtrinsic.ts#L34)*
+*Defined in [SubmittableExtrinsic.ts:34](https://github.com/polkadot-js/api/blob/e1cf002/packages/api/src/SubmittableExtrinsic.ts#L34)*
 
 ## Functions
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **createSubmittableExtrinsic**<**ApiType**>(`type`: [ApiTypes](_types_.md#apitypes), `api`: [ApiInterfaceRx](../interfaces/_types_.apiinterfacerx.md), `decorateMethod`: `decorateMethod`, `extrinsic`: `Method` | `Uint8Array` | string, `trackingCb?`: `Callback<ISubmittableResult>`): *[SubmittableExtrinsic](../interfaces/_submittableextrinsic_.submittableextrinsic.md)‹*`ApiType`*›*
 
-*Defined in [SubmittableExtrinsic.ts:108](https://github.com/polkadot-js/api/blob/66ab3ac/packages/api/src/SubmittableExtrinsic.ts#L108)*
+*Defined in [SubmittableExtrinsic.ts:108](https://github.com/polkadot-js/api/blob/e1cf002/packages/api/src/SubmittableExtrinsic.ts#L108)*
 
 **Type parameters:**
 

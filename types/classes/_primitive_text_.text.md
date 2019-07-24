@@ -54,7 +54,7 @@ object, inheriting all methods exposed from `String`.
 
 \+ **new Text**(`value`: [Text](_primitive_text_.text.md) | string | [AnyU8a](../modules/_types_.md#anyu8a) | object): *[Text](_primitive_text_.text.md)*
 
-*Defined in [primitive/Text.ts:20](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L20)*
+*Defined in [primitive/Text.ts:20](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L20)*
 
 **Parameters:**
 
@@ -80,7 +80,7 @@ Allows manipulation and formatting of text strings and determination and locatio
 
 • **get encodedLength**(): *number*
 
-*Defined in [primitive/Text.ts:49](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L49)*
+*Defined in [primitive/Text.ts:49](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L49)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -92,7 +92,7 @@ ___
 
 • **get isEmpty**(): *boolean*
 
-*Defined in [primitive/Text.ts:56](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L56)*
+*Defined in [primitive/Text.ts:56](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L56)*
 
 **`description`** Checks if the value is an empty value
 
@@ -106,7 +106,7 @@ ___
 
 *Overrides void*
 
-*Defined in [primitive/Text.ts:63](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L63)*
+*Defined in [primitive/Text.ts:63](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L63)*
 
 **`description`** The length of the value
 
@@ -120,7 +120,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Text.ts:71](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L71)*
+*Defined in [primitive/Text.ts:71](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L71)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **toHex**(): *string*
 
-*Defined in [primitive/Text.ts:80](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L80)*
+*Defined in [primitive/Text.ts:80](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L80)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -152,7 +152,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Text.ts:89](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L89)*
+*Defined in [primitive/Text.ts:89](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L89)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -166,7 +166,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Text.ts:96](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L96)*
+*Defined in [primitive/Text.ts:96](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L96)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -182,7 +182,7 @@ ___
 
 *Overrides void*
 
-*Defined in [primitive/Text.ts:103](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L103)*
+*Defined in [primitive/Text.ts:103](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L103)*
 
 **`description`** Returns the string representation of the value
 
@@ -196,7 +196,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_.codec.md)*
 
-*Defined in [primitive/Text.ts:112](https://github.com/polkadot-js/api/blob/66ab3ac/packages/types/src/primitive/Text.ts#L112)*
+*Defined in [primitive/Text.ts:112](https://github.com/polkadot-js/api/blob/e1cf002/packages/types/src/primitive/Text.ts#L112)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 

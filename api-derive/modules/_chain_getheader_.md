@@ -12,7 +12,7 @@
 
 ▸ **getHeader**(`api`: `ApiInterfaceRx`): *function*
 
-*Defined in [chain/getHeader.ts:28](https://github.com/polkadot-js/api/blob/66ab3ac/packages/api-derive/src/chain/getHeader.ts#L28)*
+*Defined in [chain/getHeader.ts:28](https://github.com/polkadot-js/api/blob/e1cf002/packages/api-derive/src/chain/getHeader.ts#L28)*
 
 **`name`** bestNumberFinalized
 
