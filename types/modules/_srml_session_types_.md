@@ -4,6 +4,8 @@
 
 ### Interfaces
 
+* [EraRewards](../interfaces/_srml_session_types_.erarewards.md)
+* [KeyTypeId](../interfaces/_srml_session_types_.keytypeid.md)
 * [Keys](../interfaces/_srml_session_types_.keys.md)
 * [SessionIndex](../interfaces/_srml_session_types_.sessionindex.md)
 * [SessionKey](../interfaces/_srml_session_types_.sessionkey.md)
