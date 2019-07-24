@@ -64,7 +64,7 @@ A [Enum](_codec_enumtype_.enum.md) the specifies the specific item in the logs o
 
 *Overrides [Enum](_codec_enumtype_.enum.md).[constructor](_codec_enumtype_.enum.md#constructor)*
 
-*Defined in [rpc/Digest.ts:255](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L255)*
+*Defined in [rpc/Digest.ts:255](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L255)*
 
 **Parameters:**
 
@@ -80,7 +80,7 @@ Name | Type |
 
 • **get asAuthoritiesChange**(): *[AuthoritiesChange](_rpc_digest_.authoritieschange.md)*
 
-*Defined in [rpc/Digest.ts:263](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L263)*
+*Defined in [rpc/Digest.ts:263](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L263)*
 
 **`description`** Returns the item as a [AuthoritiesChange](_rpc_digest_.authoritieschange.md)
 
@@ -92,7 +92,7 @@ ___
 
 • **get asChangesTrieRoot**(): *[ChangesTrieRoot](_rpc_digest_.changestrieroot.md)*
 
-*Defined in [rpc/Digest.ts:272](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L272)*
+*Defined in [rpc/Digest.ts:272](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L272)*
 
 **`description`** Returns the item as a [ChangesTrieRoot](_rpc_digest_.changestrieroot.md)
 
@@ -104,7 +104,7 @@ ___
 
 • **get asConsensus**(): *[Consensus](_rpc_digest_.consensus.md)*
 
-*Defined in [rpc/Digest.ts:281](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L281)*
+*Defined in [rpc/Digest.ts:281](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L281)*
 
 **`desciption`** Retuns the item as a [Consensus](_rpc_digest_.consensus.md)
 
@@ -116,7 +116,7 @@ ___
 
 • **get asOther**(): *[Other](_rpc_digest_.other.md)*
 
-*Defined in [rpc/Digest.ts:290](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L290)*
+*Defined in [rpc/Digest.ts:290](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L290)*
 
 **`description`** Returns the item as a [Other](_rpc_digest_.other.md)
 
@@ -128,7 +128,7 @@ ___
 
 • **get asPreRuntime**(): *[PreRuntime](_rpc_digest_.preruntime.md)*
 
-*Defined in [rpc/Digest.ts:299](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L299)*
+*Defined in [rpc/Digest.ts:299](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L299)*
 
 **`description`** Returns the item as a [PreRuntime](_rpc_digest_.preruntime.md)
 
@@ -140,7 +140,7 @@ ___
 
 • **get asSeal**(): *[Seal](_rpc_digest_.seal.md)*
 
-*Defined in [rpc/Digest.ts:308](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L308)*
+*Defined in [rpc/Digest.ts:308](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L308)*
 
 **`description`** Returns the item as a [Seal](_rpc_digest_.seal.md)
 
@@ -152,7 +152,7 @@ ___
 
 • **get asSealV0**(): *[SealV0](_rpc_digest_.sealv0.md)*
 
-*Defined in [rpc/Digest.ts:317](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L317)*
+*Defined in [rpc/Digest.ts:317](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L317)*
 
 **`description`** Returns the item as a [SealV0](_rpc_digest_.sealv0.md)
 
@@ -168,7 +168,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[encodedLength](_codec_base_.base.md#encodedlength)*
 
-*Defined in [codec/EnumType.ts:164](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L164)*
+*Defined in [codec/EnumType.ts:164](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L164)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -182,7 +182,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[index](_codec_enumtype_.enum.md#index)*
 
-*Defined in [codec/EnumType.ts:171](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L171)*
+*Defined in [codec/EnumType.ts:171](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L171)*
 
 **`description`** The index of the metadata value
 
@@ -194,7 +194,7 @@ ___
 
 • **get isAuthoritiesChange**(): *boolean*
 
-*Defined in [rpc/Digest.ts:326](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L326)*
+*Defined in [rpc/Digest.ts:326](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L326)*
 
 **`description`** Returns true on [AuthoritiesChange](_rpc_digest_.authoritieschange.md)
 
@@ -206,7 +206,7 @@ ___
 
 • **get isChangesTrieRoot**(): *boolean*
 
-*Defined in [rpc/Digest.ts:333](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L333)*
+*Defined in [rpc/Digest.ts:333](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L333)*
 
 **`description`** Returns true on [ChangesTrieRoot](_rpc_digest_.changestrieroot.md)
 
@@ -218,7 +218,7 @@ ___
 
 • **get isConsensus**(): *boolean*
 
-*Defined in [rpc/Digest.ts:340](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L340)*
+*Defined in [rpc/Digest.ts:340](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L340)*
 
 **`description`** Returns true on [Consensus](_rpc_digest_.consensus.md)
 
@@ -232,7 +232,7 @@ ___
 
 *Inherited from [Base](_codec_base_.base.md).[isEmpty](_codec_base_.base.md#isempty)*
 
-*Defined in [codec/Base.ts:28](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/Base.ts#L28)*
+*Defined in [codec/Base.ts:28](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/Base.ts#L28)*
 
 **`description`** Checks if the value is an empty value
 
@@ -246,7 +246,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[isNone](_codec_enumtype_.enum.md#isnone)*
 
-*Defined in [codec/EnumType.ts:178](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L178)*
+*Defined in [codec/EnumType.ts:178](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L178)*
 
 **`description`** Checks if the Enum points to a [Null](_primitive_null_.null.md) type
 
@@ -260,7 +260,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[isNull](_codec_enumtype_.enum.md#isnull)*
 
-*Defined in [codec/EnumType.ts:185](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L185)*
+*Defined in [codec/EnumType.ts:185](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L185)*
 
 **`description`** Checks if the Enum points to a [Null](_primitive_null_.null.md) type (deprecated, use isNone)
 
@@ -272,7 +272,7 @@ ___
 
 • **get isOther**(): *boolean*
 
-*Defined in [rpc/Digest.ts:347](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L347)*
+*Defined in [rpc/Digest.ts:347](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L347)*
 
 **`description`** Returns true on [Other](_rpc_digest_.other.md)
 
@@ -284,7 +284,7 @@ ___
 
 • **get isPreRuntime**(): *boolean*
 
-*Defined in [rpc/Digest.ts:354](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L354)*
+*Defined in [rpc/Digest.ts:354](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L354)*
 
 **`description`** Returns true on [PreRuntime](_rpc_digest_.preruntime.md)
 
@@ -296,7 +296,7 @@ ___
 
 • **get isSeal**(): *boolean*
 
-*Defined in [rpc/Digest.ts:361](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L361)*
+*Defined in [rpc/Digest.ts:361](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L361)*
 
 **`description`** Returns true on [Seal](_rpc_digest_.seal.md)
 
@@ -308,7 +308,7 @@ ___
 
 • **get isSealV0**(): *boolean*
 
-*Defined in [rpc/Digest.ts:368](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L368)*
+*Defined in [rpc/Digest.ts:368](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L368)*
 
 **`description`** Returns true on [SealV0](_rpc_digest_.sealv0.md)
 
@@ -322,7 +322,7 @@ ___
 
 *Overrides [Enum](_codec_enumtype_.enum.md).[type](_codec_enumtype_.enum.md#type)*
 
-*Defined in [rpc/Digest.ts:382](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L382)*
+*Defined in [rpc/Digest.ts:382](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L382)*
 
 **`description`** Returns the type of engine, we just override here to get the typings correct
 
@@ -336,7 +336,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[value](_codec_enumtype_.enum.md#value)*
 
-*Defined in [codec/EnumType.ts:199](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L199)*
+*Defined in [codec/EnumType.ts:199](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L199)*
 
 **`description`** The value of the enum
 
@@ -354,7 +354,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[eq](_codec_base_.base.md#eq)*
 
-*Defined in [codec/EnumType.ts:206](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L206)*
+*Defined in [codec/EnumType.ts:206](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L206)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -376,7 +376,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[toHex](_codec_base_.base.md#tohex)*
 
-*Defined in [codec/EnumType.ts:221](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L221)*
+*Defined in [codec/EnumType.ts:221](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L221)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -392,7 +392,7 @@ ___
 
 *Overrides [Enum](_codec_enumtype_.enum.md).[toJSON](_codec_enumtype_.enum.md#tojson)*
 
-*Defined in [rpc/Digest.ts:375](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/rpc/Digest.ts#L375)*
+*Defined in [rpc/Digest.ts:375](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/rpc/Digest.ts#L375)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers. For logs, we overrides to produce the hex version (sligning with substrate gives in actual JSON responses)
 
@@ -406,7 +406,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[toNumber](_codec_enumtype_.enum.md#tonumber)*
 
-*Defined in [codec/EnumType.ts:237](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L237)*
+*Defined in [codec/EnumType.ts:237](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L237)*
 
 **`description`** Returns the number representation for the value
 
@@ -424,7 +424,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[toRawType](_codec_base_.base.md#torawtype)*
 
-*Defined in [codec/EnumType.ts:244](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L244)*
+*Defined in [codec/EnumType.ts:244](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L244)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -442,7 +442,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[toString](_codec_base_.base.md#tostring)*
 
-*Defined in [codec/EnumType.ts:259](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L259)*
+*Defined in [codec/EnumType.ts:259](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L259)*
 
 **`description`** Returns the string representation of the value
 
@@ -460,7 +460,7 @@ ___
 
 *Overrides [Base](_codec_base_.base.md).[toU8a](_codec_base_.base.md#tou8a)*
 
-*Defined in [codec/EnumType.ts:269](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L269)*
+*Defined in [codec/EnumType.ts:269](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L269)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
@@ -480,7 +480,7 @@ ___
 
 *Inherited from [Enum](_codec_enumtype_.enum.md).[with](_codec_enumtype_.enum.md#static-with)*
 
-*Defined in [codec/EnumType.ts:129](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/codec/EnumType.ts#L129)*
+*Defined in [codec/EnumType.ts:129](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/codec/EnumType.ts#L129)*
 
 **Parameters:**
 

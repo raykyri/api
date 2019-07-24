@@ -16,4 +16,4 @@
 
 • **ACCOUNT_ID_PREFIX**: *`Uint8Array`* =  new Uint8Array([0xff])
 
-*Defined in [primitive/Address.ts:15](https://github.com/polkadot-js/api/blob/d34eb15/packages/types/src/primitive/Address.ts#L15)*
+*Defined in [primitive/Address.ts:15](https://github.com/polkadot-js/api/blob/fcaa7a5/packages/types/src/primitive/Address.ts#L15)*
