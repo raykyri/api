@@ -17,4 +17,4 @@
 
 Ƭ **RpcInterfaceSection**: *`Record<string, RpcInterfaceMethod>`*
 
-*Defined in [types.ts:11](https://github.com/polkadot-js/api/blob/e1cf002/packages/rpc-core/src/types.ts#L11)*
+*Defined in [types.ts:11](https://github.com/polkadot-js/api/blob/3827353/packages/rpc-core/src/types.ts#L11)*
