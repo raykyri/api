@@ -7,7 +7,7 @@ import { bnToBn, compactAddLength, compactFromU8a, compactStripLength, compactTo
 import { DEFAULT_BITLENGTH } from '@polkadot/util/compact/defaults';
 
 import Moment from '../primitive/Moment';
-import { AnyNumber, Codec, Constructor } from '../types';
+import { AnyNumber, Constructor } from '../types';
 import { UIntBitLength } from './AbstractInt';
 import Base from './Base';
 import UInt from './UInt';
@@ -20,13 +20,13 @@ import UInt from './UInt';
  * used by other types to add length-prefixed encoding, or in the case of wrapped types, taking
  * a number and making the compact representation thereof
  */
-export default class Compact extends Base<UInt | Moment> implements Codec {
-  public constructor (Type: Constructor<UInt | Moment>, value: Compact | AnyNumber = 0) {
-    super(Compact.decodeCompact(Type, value));
+export default class Compact<T extends UInt | Moment> extends Base<T> {
+  public constructor (Type: Constructor<T>, value: Compact<T> | AnyNumber = 0) {
+    super(Compact.decodeCompact<T>(Type, value));
   }
 
-  public static with (Type: Constructor<UInt | Moment>): Constructor<Compact> {
-    return class extends Compact {
+  public static with<T extends UInt | Moment> (Type: Constructor<T>): Constructor<Compact<T>> {
+    return class extends Compact<T> {
       public constructor (value?: any) {
         super(Type, value);
       }
@@ -50,7 +50,7 @@ export default class Compact extends Base<UInt | Moment> implements Codec {
     return value;
   }
 
-  public static decodeCompact (Type: Constructor<UInt | Moment>, value: Compact | AnyNumber): Moment | UInt {
+  public static decodeCompact<T extends UInt | Moment> (Type: Constructor<T>, value: Compact<T> | AnyNumber): Moment | UInt {
     if (value instanceof Compact) {
       return new Type(value.raw);
     } else if (isString(value)) {
@@ -66,20 +66,6 @@ export default class Compact extends Base<UInt | Moment> implements Codec {
     const [, _value] = Compact.decodeU8a(value, new Type(0).bitLength());
 
     return new Type(_value);
-  }
-
-  /**
-   * @description The length of the value when encoded as a Uint8Array
-   */
-  public get encodedLength (): number {
-    return this.toU8a().length;
-  }
-
-  /**
-   * @description Checks if the value is an empty value
-   */
-  public get isEmpty (): boolean {
-    return this.raw.isEmpty;
   }
 
   /**
@@ -108,20 +94,6 @@ export default class Compact extends Base<UInt | Moment> implements Codec {
   }
 
   /**
-   * @description Returns a hex string representation of the value
-   */
-  public toHex (isLe?: boolean): any {
-    return this.raw.toHex(isLe);
-  }
-
-  /**
-   * @description Converts the Object to JSON, typically used for RPC transfers
-   */
-  public toJSON (): string | number {
-    return this.raw.toJSON();
-  }
-
-  /**
    * @description Returns the number representation for the value
    */
   public toNumber (): number {
@@ -136,13 +108,6 @@ export default class Compact extends Base<UInt | Moment> implements Codec {
   }
 
   /**
-   * @description Returns the string representation of the value
-   */
-  public toString (): string {
-    return this.raw.toString();
-  }
-
-  /**
    * @description Encodes the value as a Uint8Array as per the SCALE specifications
    * @param isBare true when the value has none of the type-specific prefixes (internal)
    */
@@ -154,7 +119,7 @@ export default class Compact extends Base<UInt | Moment> implements Codec {
   /**
    * @description Returns the embedded [[UInt]] or [[Moment]] value
    */
-  public unwrap (): UInt | Moment {
-    return this.raw;
+  public unwrap (): T {
+    return this.raw as T;
   }
 }

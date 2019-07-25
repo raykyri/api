@@ -2,8 +2,10 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
+import { SetIndex } from '@polkadot/types/srml/elections/types';
+
 import BN from 'bn.js';
-import { AccountId, Balance, Exposure, Index, RewardDestination, StakingLedger, ValidatorPrefs, Vote } from '@polkadot/types';
+import { AccountId, Balance, BlockNumber, Exposure, Index, RewardDestination, StakingLedger, ValidatorPrefs, Vote, VoteIndex } from '@polkadot/types';
 
 export interface DerivedBalances {
   accountId: AccountId;
@@ -29,6 +31,17 @@ export interface DerivedContractFees {
   transactionBaseFee: BN;
   transactionByteFee: BN;
   transferFee: BN;
+}
+
+export interface DerivedElectionsInfo {
+  members: Record<string, BlockNumber>;
+  candidates: AccountId[];
+  candidateCount: BN;
+  desiredSeats: BN;
+  nextVoterSet: SetIndex;
+  termDuration: BlockNumber;
+  voteCount: VoteIndex;
+  voterCount: SetIndex;
 }
 
 export interface DerivedFees {
@@ -73,3 +86,11 @@ export interface DerivedStaking {
 }
 
 export type DerivedUnlocking = { remainingBlocks: BN; value: BN }[];
+
+export interface VoterPosition {
+  globalIndex: BN;
+  index: BN;
+  setIndex: SetIndex;
+}
+
+export type DerivedVoterPositions = Record<string, VoterPosition>;

@@ -5,6 +5,7 @@
 import Keyring from '@polkadot/keyring';
 import testingPairs from '@polkadot/keyring/testingPairs';
 import WsProvider from '@polkadot/rpc-provider/ws';
+import { u8aToHex } from '@polkadot/util';
 import { randomAsHex } from '@polkadot/util-crypto';
 import { EventRecord, ExtrinsicEra, Hash, Header, Index, SignedBlock } from '@polkadot/types';
 
@@ -40,6 +41,7 @@ describeE2E({
   let api: ApiPromise;
 
   beforeEach(async (done): Promise<void> => {
+    jest.setTimeout(30000);
     api = await ApiPromise.create(new WsProvider(wsUrl));
 
     done();
@@ -53,6 +55,28 @@ describeE2E({
       .toHex();
 
     return api.tx(hex).send(logEvents(done));
+  });
+
+  it('invalid hex does throw a catchable exception', async (done): Promise<void> => {
+    const nonce = await api.query.system.accountNonce(keyring.dave.address) as Index;
+    const hex = api.tx.balances
+      .transfer(keyring.eve.address, 12345)
+      .sign(keyring.dave, { nonce })
+      .toHex();
+
+    // change to an invalid signature, 32 * 2 for hex
+    const sigIdx = hex.indexOf(u8aToHex(keyring.dave.publicKey).substr(2)) + 64;
+    const mangled = hex.replace(
+      hex.substr(sigIdx, 32), // first 16 bytes of sig
+      hex.substr(2, 32) // replaced by first 16 bytes of tx
+    );
+
+    try {
+      await api.tx(mangled).send(logEvents(done));
+    } catch (error) {
+      console.error(error);
+      done();
+    }
   });
 
   it('makes a transfer (sign, then send)', async (done): Promise<() => void> => {
@@ -159,7 +183,36 @@ describeE2E({
           try {
             await ex.signAndSend(keyring.alice, { blockHash, era: exERA, nonce } as any);
           } catch (error) {
-            expect(error.message).toMatch(/1010: Invalid Transaction \(0\)/);
+            // NOTE This will fail on any version with v1 Extrinsics, the code returned there
+            // is simply (0), so it doesn't have an "invalid-era" specific message. (the -127
+            // error code is introduced along with the transaction version 2
+            expect(error.message).toMatch(/1010: Invalid Transaction \(-127\)/);
+            done();
+          }
+        }
+      });
+    });
+
+    it('fails on a transfer with invalid time (via Signer)', async (done): Promise<void> => {
+      const signer: Signer = new SingleAccountSigner(keyring.alice);
+
+      api.setSigner(signer);
+
+      const nonce = await api.query.system.accountNonce(keyring.alice.address) as Index;
+      const signedBlock = await api.rpc.chain.getBlock() as SignedBlock;
+      const currentHeight = signedBlock.block.header.number;
+      const exERA = new ExtrinsicEra({ current: currentHeight, period: 4 });
+      const eraDeath = exERA.asMortalEra.death(currentHeight.toNumber());
+      const blockHash = signedBlock.block.header.hash;
+      const ex = api.tx.balances.transfer(keyring.eve.address, 12345);
+
+      await api.rpc.chain.subscribeNewHead(async (header: Header): Promise<void> => {
+        if (header.blockNumber.toNumber() === eraDeath - 1) {
+          try {
+            await ex.signAndSend(keyring.alice.address, { blockHash, era: exERA, nonce } as any);
+          } catch (error) {
+            // NOTE As per above 0 vs -127 note
+            expect(error.message).toMatch(/1010: Invalid Transaction \(-127\)/);
             done();
           }
         }

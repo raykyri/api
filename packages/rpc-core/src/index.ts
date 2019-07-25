@@ -7,12 +7,12 @@ import { RpcSection, RpcMethod } from '@polkadot/jsonrpc/types';
 import { AnyJson, Codec } from '@polkadot/types/types';
 import { RpcInterface, RpcInterfaceMethod, RpcInterfaceSection } from './types';
 
-import memoize from 'memoizee';
+import memoizee from 'memoizee';
 import { combineLatest, from, Observable, Observer, of, throwError } from 'rxjs';
 import { catchError, map, publishReplay, refCount, switchMap } from 'rxjs/operators';
 import interfaces from '@polkadot/jsonrpc';
 import { Option, StorageChangeSet, StorageData, StorageKey, Vector, createClass, createType } from '@polkadot/types';
-import { ExtError, assert, isFunction, isNull, logger } from '@polkadot/util';
+import { ExtError, assert, isFunction, isNull, isNumber, logger } from '@polkadot/util';
 
 const l = logger('rpc-core');
 
@@ -173,7 +173,16 @@ export default class Rpc implements RpcInterface {
 
     const call = (...values: any[]): Observable<any> => {
       return new Observable((observer: Observer<any>): VoidCallback => {
-        let subscriptionPromise: Promise<number>;
+        // Have at least an empty promise, as used in the unsubscribe
+        let subscriptionPromise: Promise<number | void> = Promise.resolve();
+
+        const errorHandler = (error: Error): void => {
+          const message = this.createErrorMessage(method, error);
+
+          l.error(message);
+
+          observer.error(new ExtError(message, (error as ExtError).code, undefined));
+        };
 
         try {
           const params = this.formatInputs(method, values);
@@ -187,13 +196,14 @@ export default class Rpc implements RpcInterface {
             observer.next(this.formatOutput(method, params, result));
           };
 
-          subscriptionPromise = this.provider.subscribe(subType, subName, paramsJson, update);
+          // FIXME This is a work-around, provider.subscribe _should_ always return,
+          // however in some cases `this.provider.subscribe.catch` yields ".catch of
+          // undefined", so here we flatten via Promise.reolve (which doe sfollow)
+          subscriptionPromise = Promise.resolve(
+            this.provider.subscribe(subType, subName, paramsJson, update)
+          ).catch(errorHandler);
         } catch (error) {
-          const message = this.createErrorMessage(method, error);
-
-          l.error(message);
-
-          observer.error(new ExtError(message, (error as ExtError).code, undefined));
+          errorHandler(error);
         }
 
         // Teardown logic
@@ -209,10 +219,13 @@ export default class Rpc implements RpcInterface {
           // ```
           // eslint-disable-next-line @typescript-eslint/no-use-before-define
           memoized.delete(...values);
+
           // Unsubscribe from provider
           subscriptionPromise
             .then((subscriptionId): Promise<boolean> =>
-              this.provider.unsubscribe(subType, unsubName, subscriptionId)
+              isNumber(subscriptionId)
+                ? this.provider.unsubscribe(subType, unsubName, subscriptionId)
+                : Promise.resolve(false)
             )
             .catch((error: Error): void => {
               const message = this.createErrorMessage(method, error);
@@ -226,7 +239,7 @@ export default class Rpc implements RpcInterface {
       );
     };
 
-    const memoized = memoize(call, {
+    const memoized = memoizee(call, {
       // Dynamic length for argument
       length: false,
       // Normalize args so that different args that should be cached
@@ -292,9 +305,7 @@ export default class Rpc implements RpcInterface {
     const type = key.outputType || 'Data';
     const meta = key.meta || EMPTY_META;
 
-    if (meta.type.isMap && meta.type.asMap.isLinked) {
-      return createType(type, base, true);
-    } else if (meta.modifier.isOptional) {
+    if (meta.modifier.isOptional) {
       return new Option(
         createClass(type),
         isNull ? null : createType(type, base, true)
@@ -321,9 +332,7 @@ export default class Rpc implements RpcInterface {
     // will increase memory beyond what is allowed.
     this._storageCache.set(hexKey, value);
 
-    if (meta.type.isMap && meta.type.asMap.isLinked) {
-      return createType(type, value.unwrapOr(null), true);
-    } else if (meta.modifier.isOptional) {
+    if (meta.modifier.isOptional) {
       return new Option(
         createClass(type),
         value.isNone ? null : createType(type, value.unwrap(), true)

@@ -57,14 +57,18 @@ export default class Type extends Text {
       Type._alias('Compact<Index>', 'IndexCompact'),
       // alias Vec<u8> -> Bytes
       Type._alias('Vec<u8>', 'Bytes'),
+      // alias &[u8] -> Bytes
+      Type._alias('&\\[u8\\]', 'Bytes'),
       // alias RawAddress -> Address
       Type._alias('RawAddress', 'Address'),
       // alias Lookup::Source to Address (_could_ be AccountId on certain chains)
       Type._alias('Lookup::Source', 'Address'),
       // alias Lookup::Target to AccountId (always the case)
       Type._alias('Lookup::Target', 'AccountId'),
-      // alias for grandpa, as used in polkador
+      // alias for grandpa, as used in polkadot
       Type._alias('grandpa::AuthorityId', 'AuthorityId'),
+      // specific for SessionIndex (cvould make this session::, but be conservative)
+      Type._alias('session::SessionIndex', 'SessionIndex'),
       // HACK duplication between contracts & primitives, however contracts prefixed with exec
       Type._alias('exec::StorageKey', 'ContractStorageKey'),
       // flattens tuples with one value, `(AccountId)` -> `AccountId`

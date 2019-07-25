@@ -1,9 +1,11 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
-// Auto-generated, do not edit
+// Auto-generated via `yarn build:srmlTs`, do not edit
 
 import { Codec } from '../../types';
 import { Enum, Struct, Vector } from '../../codec';
 import { AccountId, BalanceOf, Bytes, Hash, Signature, u32, u64 } from '../../primitive';
+import { BlockNumber } from '../../type';
+import { SessionKey } from '../session/types';
 
 export interface AttestedCandidate extends Struct {
   readonly candidate: CandidateReceipt;
@@ -13,7 +15,7 @@ export interface AttestedCandidate extends Struct {
 
 export interface AuctionIndex extends u32 {}
 
-type _AvailabilityVote = [AccountId, CollatorSignature];
+type _AvailabilityVote = [SessionKey, CollatorSignature];
 export interface AvailabilityVote extends Codec, _AvailabilityVote {}
 
 type _BalanceUpload = [AccountId, u64];
@@ -77,6 +79,10 @@ export interface IncomingParachainFixed extends Struct {
   readonly codeHash: Hash;
   readonly initialHeadData: Bytes;
 }
+
+export interface LeasePeriod extends BlockNumber {}
+
+export interface LeasePeriodOf extends LeasePeriod {}
 
 export interface NewBidder extends Struct {
   readonly who: AccountId;

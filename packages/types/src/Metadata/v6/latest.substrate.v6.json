@@ -38,11 +38,34 @@
               "name": "AllExtrinsicsWeight",
               "modifier": "Optional",
               "type": {
-                "PlainType": "u32"
+                "PlainType": "Weight"
               },
               "fallback": "0x00",
               "documentation": [
                 " Total weight for all extrinsics put together, for the current block."
+              ]
+            },
+            {
+              "name": "AllExtrinsicsLen",
+              "modifier": "Optional",
+              "type": {
+                "PlainType": "u32"
+              },
+              "fallback": "0x00",
+              "documentation": [
+                " Total length (in bytes) for all extrinsics put together, for the current block."
+              ]
+            },
+            {
+              "name": "NextWeightMultiplier",
+              "modifier": "Default",
+              "type": {
+                "PlainType": "WeightMultiplier"
+              },
+              "fallback": "0x0000000000000000",
+              "documentation": [
+                " The next weight multiplier. This should be updated at the end of each block based on the",
+                " saturation level (weight)."
               ]
             },
             {
@@ -312,31 +335,6 @@
               ]
             },
             {
-              "name": "BlockPeriod",
-              "modifier": "Optional",
-              "type": {
-                "PlainType": "Moment"
-              },
-              "fallback": "0x00",
-              "documentation": [
-                " Old storage item provided for compatibility. Remove after all networks upgraded."
-              ]
-            },
-            {
-              "name": "MinimumPeriod",
-              "modifier": "Default",
-              "type": {
-                "PlainType": "Moment"
-              },
-              "fallback": "0x0300000000000000",
-              "documentation": [
-                " The minimum period between blocks. Beware that this is different to the *expected* period",
-                " that the block production apparatus provides. Your chosen consensus system will generally",
-                " work with this to determine a sensible block time. e.g. For Aura, it will be double this",
-                " period on default settings."
-              ]
-            },
-            {
               "name": "DidUpdate",
               "modifier": "Default",
               "type": {
@@ -360,17 +358,30 @@
               "documentation": [
                 " Set the current time.",
                 "",
-                " This call should be invoked exactly once per block. It will panic at the finalization phase,",
-                " if this call hasn't been invoked by that time.",
+                " This call should be invoked exactly once per block. It will panic at the finalization",
+                " phase, if this call hasn't been invoked by that time.",
                 "",
-                " The timestamp should be greater than the previous one by the amount specified by `minimum_period`.",
+                " The timestamp should be greater than the previous one by the amount specified by",
+                " `MinimumPeriod`.",
                 "",
                 " The dispatch origin for this call must be `Inherent`."
               ]
             }
           ],
           "events": null,
-          "constants": []
+          "constants": [
+            {
+              "name": "MinimumPeriod",
+              "type": "Moment",
+              "value": "0x0300000000000000",
+              "documentation": [
+                " The minimum period between blocks. Beware that this is different to the *expected* period",
+                " that the block production apparatus provides. Your chosen consensus system will generally",
+                " work with this to determine a sensible block time. e.g. For Aura, it will be double this",
+                " period on default settings."
+              ]
+            }
+          ]
         },
         {
           "name": "authorship",
@@ -1388,6 +1399,46 @@
                 " The queued keys for the next session. When the next session begins, these keys",
                 " will be used to determine the validator's session keys."
               ]
+            },
+            {
+              "name": "NextKeys",
+              "modifier": "Optional",
+              "type": {
+                "DoubleMapType": {
+                  "hasher": "Twox64Concat",
+                  "key1": "Bytes",
+                  "key2": "ValidatorId",
+                  "value": "Keys",
+                  "key2Hasher": "Blake2_256"
+                }
+              },
+              "fallback": "0x00",
+              "documentation": [
+                " The next session keys for a validator.",
+                "",
+                " The first key is always `DEDUP_KEY_PREFIX` to have all the data in the same branch of",
+                " the trie. Having all data in the same branch should prevent slowing down other queries."
+              ]
+            },
+            {
+              "name": "KeyOwner",
+              "modifier": "Optional",
+              "type": {
+                "DoubleMapType": {
+                  "hasher": "Twox64Concat",
+                  "key1": "Bytes",
+                  "key2": "(KeyTypeId,Bytes)",
+                  "value": "ValidatorId",
+                  "key2Hasher": "Blake2_256"
+                }
+              },
+              "fallback": "0x00",
+              "documentation": [
+                " The owner of a key. The second key is the `KeyTypeId` + the encoded key.",
+                "",
+                " The first key is always `DEDUP_KEY_PREFIX` to have all the data in the same branch of",
+                " the trie. Having all data in the same branch should prevent slowing down other queries."
+              ]
             }
           ],
           "calls": [
@@ -1429,7 +1480,17 @@
               ]
             }
           ],
-          "constants": []
+          "constants": [
+            {
+              "name": "DEDUP_KEY_PREFIX",
+              "type": "Bytes",
+              "value": "0x343a73657373696f6e3a6b657973",
+              "documentation": [
+                " Used as first key for `NextKeys` and `KeyOwner` to put all the data into the same branch",
+                " of the trie."
+              ]
+            }
+          ]
         },
         {
           "name": "democracy",
@@ -2237,15 +2298,6 @@
           ],
           "events": [
             {
-              "name": "_Phantom",
-              "args": [
-                "Phantom"
-              ],
-              "documentation": [
-                " Dummy to manage the fact we have instancing."
-              ]
-            },
-            {
               "name": "Proposed",
               "args": [
                 "AccountId",
@@ -2457,15 +2509,6 @@
             }
           ],
           "events": [
-            {
-              "name": "_Phantom",
-              "args": [
-                "Phantom"
-              ],
-              "documentation": [
-                " Dummy to manage the fact we have instancing."
-              ]
-            },
             {
               "name": "Proposed",
               "args": [
@@ -3097,6 +3140,22 @@
                 " increment step `t`. 0 will result in no weight being added at all (normal",
                 " approval voting). A reasonable default value is 24."
               ]
+            },
+            {
+              "name": "VOTER_SET_SIZE",
+              "type": "u32",
+              "value": "0x40000000",
+              "documentation": [
+                " The chunk size of the voter vector."
+              ]
+            },
+            {
+              "name": "APPROVAL_SET_SIZE",
+              "type": "u32",
+              "value": "0x08000000",
+              "documentation": [
+                " The chunk size of the approval vector."
+              ]
             }
           ]
         },
@@ -3155,6 +3214,17 @@
               ]
             },
             {
+              "name": "State",
+              "modifier": "Default",
+              "type": {
+                "PlainType": "StoredState"
+              },
+              "fallback": "0x00",
+              "documentation": [
+                " State of the current authority set."
+              ]
+            },
+            {
               "name": "PendingChange",
               "modifier": "Optional",
               "type": {
@@ -3210,6 +3280,20 @@
               ],
               "documentation": [
                 " New authority set has been applied."
+              ]
+            },
+            {
+              "name": "Paused",
+              "args": [],
+              "documentation": [
+                " Current authority set has been paused."
+              ]
+            },
+            {
+              "name": "Resumed",
+              "args": [],
+              "documentation": [
+                " Current authority set has been resumed."
               ]
             }
           ],
@@ -3839,6 +3923,14 @@
               ]
             },
             {
+              "name": "MaxValueSize",
+              "type": "u32",
+              "value": "0x00400000",
+              "documentation": [
+                " The maximum size of a storage value in bytes. A reasonable default is 16 KiB."
+              ]
+            },
+            {
               "name": "BlockGasLimit",
               "type": "Gas",
               "value": "0x8096980000000000",
@@ -3928,6 +4020,83 @@
             }
           ],
           "constants": []
+        },
+        {
+          "name": "im_online",
+          "prefix": "ImOnline",
+          "storage": [
+            {
+              "name": "GossipAt",
+              "modifier": "Default",
+              "type": {
+                "PlainType": "BlockNumber"
+              },
+              "fallback": "0x0000000000000000",
+              "documentation": []
+            },
+            {
+              "name": "LastNewEraStart",
+              "modifier": "Optional",
+              "type": {
+                "PlainType": "SessionIndex"
+              },
+              "fallback": "0x00",
+              "documentation": []
+            },
+            {
+              "name": "ReceivedHeartbeats",
+              "modifier": "Default",
+              "type": {
+                "DoubleMapType": {
+                  "hasher": "Blake2_256",
+                  "key1": "SessionIndex",
+                  "key2": "AuthorityId",
+                  "value": "Bytes",
+                  "key2Hasher": "Blake2_256"
+                }
+              },
+              "fallback": "0x00",
+              "documentation": []
+            }
+          ],
+          "calls": [
+            {
+              "name": "heartbeat",
+              "args": [
+                {
+                  "name": "heartbeat",
+                  "type": "Heartbeat"
+                },
+                {
+                  "name": "_signature",
+                  "type": "Bytes"
+                }
+              ],
+              "documentation": []
+            }
+          ],
+          "events": [
+            {
+              "name": "HeartbeatReceived",
+              "args": [
+                "BlockNumber",
+                "AuthorityId"
+              ],
+              "documentation": [
+                " A new heartbeat was received at this `BlockNumber` from `AuthorityId`"
+              ]
+            }
+          ],
+          "constants": [
+            {
+              "name": "SessionsPerEra",
+              "type": "SessionIndex",
+              "value": "0x06000000",
+              "documentation": [
+                " Number of sessions per era."
+              ]
+            }
+          ]
         }
       ]
     }

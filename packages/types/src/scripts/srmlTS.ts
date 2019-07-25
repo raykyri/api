@@ -6,30 +6,56 @@ import fs from 'fs';
 import { isString } from '@polkadot/util';
 
 import { getTypeDef, TypeDef, TypeDefInfo, TypeDefExtVecFixed } from '../codec/createType';
+import * as codecClasses from '../codec';
+import * as primitiveClasses from '../primitive';
+import * as typeClasses from '../type';
 import * as definitions from '../srml/definitions';
 
 // these map all the codec and primitive types for import, see the TypeImports below. If
 // we have an unseen type, it is `undefined`/`false`, if we need to import it, it is `true`
-interface TypeExist {
-  [index: string]: boolean;
-}
+type TypeExist = Record<string, boolean>;
+
+// local imports (between files), maps to this format
+// { [moduleName]: { [typeName]: true } }
+type LocalExist = Record<string, TypeExist>;
+
 interface TypeImports {
   codecTypes: TypeExist;
-  otherTypes: TypeExist;
+  localTypes: LocalExist;
   ownTypes: string[];
+  primitiveTypes: TypeExist;
+  substrateTypes: TypeExist;
 }
 
-const HEADER = '/* eslint-disable @typescript-eslint/no-empty-interface */\n// Auto-generated, do not edit\n\n';
+const HEADER = '/* eslint-disable @typescript-eslint/no-empty-interface */\n// Auto-generated via `yarn build:srmlTs`, do not edit\n\n';
 const FOOTER = '\n';
+const OUTPUT_FILE = 'types.ts';
 
-function setImports ({ codecTypes, otherTypes, ownTypes }: TypeImports, type: string | null, codecType: string | null): void {
-  if (type && !ownTypes.includes(type) && !otherTypes[type]) {
-    otherTypes[type] = true;
-  }
+// Maps the types as found to the source location. This is used to generate the
+// imports in the output file, dep-duped and sorted
+function setImports ({ codecTypes, localTypes, ownTypes, primitiveTypes, substrateTypes }: TypeImports, types: string[]): void {
+  types.forEach((type): void => {
+    if (ownTypes.includes(type)) {
+      // do nothing
+    } else if ((codecClasses as any)[type]) {
+      codecTypes[type] = true;
+    } else if ((primitiveClasses as any)[type]) {
+      primitiveTypes[type] = true;
+    } else if ((typeClasses as any)[type]) {
+      substrateTypes[type] = true;
+    } else {
+      // find this module inside the exports from the rest
+      const [moduleName] = Object.entries(definitions).find(([, { types }]): boolean =>
+        Object.keys(types).includes(type)
+      ) || [null];
 
-  if (codecType) {
-    codecTypes[codecType] = true;
-  }
+      if (moduleName) {
+        localTypes[moduleName][type] = true;
+
+        console.log(`\tImporting ${type} from ../'${moduleName}/types'`);
+      }
+    }
+  });
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -37,8 +63,23 @@ function errorUnhandled (def: TypeDef, imports: TypeImports): string {
   throw new Error(`Generate: ${name}: Unhandled type ${TypeDefInfo[def.info]}`);
 }
 
+function tsCompact ({ name: compactName, sub }: TypeDef, imports: TypeImports): string {
+  const def = (sub as TypeDef);
+
+  setImports(imports, ['Compact']);
+
+  switch (def.info) {
+    case TypeDefInfo.Plain:
+      setImports(imports, [def.type]);
+      return `export interface ${compactName} extends Compact<${def.type}> {}`;
+
+    default:
+      throw new Error(`Enum: ${compactName}: Unhandled type ${TypeDefInfo[def.info]}`);
+  }
+}
+
 function tsEnum ({ name: enumName, sub }: TypeDef, imports: TypeImports): string {
-  setImports(imports, null, 'Enum');
+  setImports(imports, ['Enum']);
 
   const keys = (sub as TypeDef[]).map(({ info, name, type }, index): string => {
     const [enumType, asGetter] = type === 'Null'
@@ -57,19 +98,52 @@ function tsEnum ({ name: enumName, sub }: TypeDef, imports: TypeImports): string
   return `export interface ${enumName} extends Enum {\n${keys.join('')}}`;
 }
 
+function tsOption ({ name: optionName, sub }: TypeDef, imports: TypeImports): string {
+  const def = (sub as TypeDef);
+
+  setImports(imports, ['Option']);
+
+  switch (def.info) {
+    case TypeDefInfo.Plain:
+      setImports(imports, [def.type]);
+      return `export interface ${optionName} extends Option<${def.type}> {}`;
+
+    default:
+      throw new Error(`Enum: ${optionName}: Unhandled type ${TypeDefInfo[def.info]}`);
+  }
+}
+
 function tsPlain ({ name: plainName, type }: TypeDef, imports: TypeImports): string {
-  setImports(imports, type, null);
+  setImports(imports, [type]);
 
   return `export interface ${plainName} extends ${type} {}`;
 }
 
-function _tsStructGetterType (structName: string | undefined, { info, sub, type }: TypeDef): [string, string] {
+function _tsStructGetterType (structName: string | undefined, { info, sub, type }: TypeDef, imports: TypeImports): [string, string] {
+  let _type;
+
   switch (info) {
+    case TypeDefInfo.Compact:
+      _type = (sub as TypeDef).type;
+
+      setImports(imports, ['Compact']);
+
+      return [_type, `Compact<${_type}>`];
+
+    case TypeDefInfo.Option:
+      _type = (sub as TypeDef).type;
+
+      setImports(imports, ['Option']);
+
+      return [_type, `Option<${_type}>`];
+
     case TypeDefInfo.Plain:
       return [type, type];
 
     case TypeDefInfo.Vector:
-      const _type = (sub as TypeDef).type;
+      _type = (sub as TypeDef).type;
+
+      setImports(imports, ['Vector']);
 
       return [_type, `Vector<${_type}>`];
 
@@ -80,9 +154,9 @@ function _tsStructGetterType (structName: string | undefined, { info, sub, type 
 
 function tsStruct ({ name: structName, sub }: TypeDef, imports: TypeImports): string {
   const keys = (sub as TypeDef[]).map((typedef): string => {
-    const [embedType, returnType] = _tsStructGetterType(structName, typedef);
+    const [embedType, returnType] = _tsStructGetterType(structName, typedef, imports);
 
-    setImports(imports, embedType, 'Struct');
+    setImports(imports, ['Struct', embedType]);
 
     return `  readonly ${typedef.name}: ${returnType};\n`;
   });
@@ -92,7 +166,7 @@ function tsStruct ({ name: structName, sub }: TypeDef, imports: TypeImports): st
 
 function tsTuple ({ name: tupleName, sub }: TypeDef, imports: TypeImports): string {
   const types = (sub as TypeDef[]).map(({ type }): string => {
-    setImports(imports, type, 'Tuple');
+    setImports(imports, ['Tuple', type]);
 
     return type;
   });
@@ -106,9 +180,20 @@ function tsVector ({ ext, info, name: vectorName, sub }: TypeDef, imports: TypeI
     ? (ext as TypeDefExtVecFixed).type
     : (sub as TypeDef).type;
 
-  setImports(imports, type, 'Vector');
+  setImports(imports, ['Vector', type]);
 
   return `export interface ${vectorName} extends Vector<${type}> {}`;
+}
+
+// creates the import lines
+function createImportCode (header: string, checks: { file: string; types: string[]}[]): string {
+  return checks.reduce((result, { file, types }): string => {
+    if (types.length) {
+      result += `import { ${types.sort().join(', ')} } from '../${file}';\n`;
+    }
+
+    return result;
+  }, header) + '\n';
 }
 
 function generateTsDef (srmlName: string, { types }: { types: Record<string, any> }): void {
@@ -116,12 +201,12 @@ function generateTsDef (srmlName: string, { types }: { types: Record<string, any
   // `generators[typedef.info](...)` TS will show any unhandled types. Rather
   // we are being explicit in having no handlers where we do not support (yet)
   const generators = {
-    [TypeDefInfo.Compact]: errorUnhandled,
+    [TypeDefInfo.Compact]: tsCompact,
     [TypeDefInfo.DoubleMap]: errorUnhandled,
     [TypeDefInfo.Enum]: tsEnum,
     [TypeDefInfo.Linkage]: errorUnhandled,
     [TypeDefInfo.Null]: errorUnhandled,
-    [TypeDefInfo.Option]: errorUnhandled,
+    [TypeDefInfo.Option]: tsOption,
     [TypeDefInfo.Plain]: tsPlain,
     [TypeDefInfo.Struct]: tsStruct,
     [TypeDefInfo.Tuple]: tsTuple,
@@ -130,34 +215,49 @@ function generateTsDef (srmlName: string, { types }: { types: Record<string, any
   };
 
   const codecTypes: TypeExist = {};
-  const otherTypes: TypeExist = {};
+  const localTypes: LocalExist = Object.keys(definitions).reduce((localTypes: Record<string, TypeExist>, moduleName): Record<string, TypeExist> => {
+    localTypes[moduleName] = {};
+
+    return localTypes;
+  }, {});
   const ownTypes = Object.keys(types);
+  const primitiveTypes: TypeExist = {};
+  const substrateTypes: TypeExist = {};
   const interfaces = Object.entries(types).map(([name, type]): [string, string] => {
     const def = getTypeDef(isString(type) ? type.toString() : JSON.stringify(type), name);
 
-    return [name, generators[def.info](def, { codecTypes, otherTypes, ownTypes })];
+    return [name, generators[def.info](def, { codecTypes, localTypes, ownTypes, primitiveTypes, substrateTypes })];
   });
 
-  let header = HEADER;
-  const codecImports = Object.keys(codecTypes).filter((name): boolean => name !== 'Tuple').sort();
-  const primitiveImports = Object.keys(otherTypes).filter((type): boolean => otherTypes[type]).sort();
-  const sortedDefs = interfaces.sort((a, b): number => a[0].localeCompare(b[0])).map(([, definition]): string => definition);
+  const sortedDefs = interfaces.sort((a, b): number => a[0].localeCompare(b[0])).map(([, definition]): string => definition).join('\n\n');
+  const header = createImportCode(HEADER, [
+    {
+      file: '../types',
+      types: codecTypes['Tuple'] ? ['Codec'] : []
+    },
+    {
+      file: '../codec',
+      types: Object.keys(codecTypes).filter((name): boolean => name !== 'Tuple')
+    },
+    {
+      file: '../primitive',
+      types: Object.keys(primitiveTypes)
+    },
+    {
+      file: '../type',
+      types: Object.keys(substrateTypes)
+    },
+    ...Object.keys(localTypes).map((moduleName): { file: string; types: string[] } => ({
+      file: `${moduleName}/types`,
+      types: Object.keys(localTypes[moduleName])
+    }))
+  ]);
 
-  if (codecTypes['Tuple']) {
-    header = header.concat(`import { Codec } from '../../types';\n`);
-  }
-
-  if (codecImports.length) {
-    header = header.concat(`import { ${codecImports.join(', ')} } from '../../codec';\n`);
-  }
-
-  if (primitiveImports.length) {
-    header = header.concat(`import { ${primitiveImports.join(', ')} } from '../../primitive';\n`);
-  }
-
-  fs.writeFileSync(`packages/types/src/srml/${srmlName}/types.ts`, header.concat('\n').concat(sortedDefs.join('\n\n')).concat(FOOTER), { flag: 'w' });
+  fs.writeFileSync(`packages/types/src/srml/${srmlName}/${OUTPUT_FILE}`, header.concat(sortedDefs).concat(FOOTER), { flag: 'w' });
 }
 
-Object.entries(definitions).forEach(([name, obj]): void =>
-  generateTsDef(name, obj)
-);
+Object.entries(definitions).forEach(([srmlName, obj]): void => {
+  console.log(`Extracting definitions for ${srmlName}`);
+
+  generateTsDef(srmlName, obj);
+});

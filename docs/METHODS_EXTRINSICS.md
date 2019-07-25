@@ -5,19 +5,19 @@ _The following sections contain Extrinsics methods are part of the default Subst
 
 - **[balances](#balances)**
 
-- **[collective](#collective)**
-
-- **[collective](#collective)**
-
-- **[contract](#contract)**
-
-- **[democracy](#democracy)**
+- **[contracts](#contracts)**
 
 - **[council](#council)**
 
-- **[](#)**
+- **[democracy](#democracy)**
 
-- **[grandpaFinality](#grandpaFinality)**
+- **[elections](#elections)**
+
+- **[finalityTracker](#finalityTracker)**
+
+- **[grandpa](#grandpa)**
+
+- **[imOnline](#imOnline)**
 
 - **[session](#session)**
 
@@ -26,6 +26,8 @@ _The following sections contain Extrinsics methods are part of the default Subst
 - **[sudo](#sudo)**
 
 - **[system](#system)**
+
+- **[technicalCommittee](#technicalCommittee)**
 
 - **[timestamp](#timestamp)**
 
@@ -54,41 +56,7 @@ ___
 ___
 
 
-### collective
-
-▸ **execute**(proposal: `Proposal`)
-- **summary**:   Dispatch a proposal from a member using the `Member` origin.   Origin must be a member of the collective.
-
-▸ **propose**(threshold: `Compact<MemberCount>`, proposal: `Proposal`)
-- **summary**:   # <weight>  - Bounded storage reads and writes.  - Argument `threshold` has bearing on weight.  # </weight>
-
-▸ **setMembers**(new_members: `Vec<AccountId>`)
-- **summary**:   Set the collective's membership manually to `new_members`. Be nice to the chain and  provide it pre-sorted.   Requires root origin.
-
-▸ **vote**(proposal: `Hash`, index: `Compact<ProposalIndex>`, approve: `bool`)
-- **summary**:   # <weight>  - Bounded storage read and writes.  - Will be slightly heavier if the proposal is approved / disapproved after the vote.  # </weight>
-
-___
-
-
-### collective
-
-▸ **execute**(proposal: `Proposal`)
-- **summary**:   Dispatch a proposal from a member using the `Member` origin.   Origin must be a member of the collective.
-
-▸ **propose**(threshold: `Compact<MemberCount>`, proposal: `Proposal`)
-- **summary**:   # <weight>  - Bounded storage reads and writes.  - Argument `threshold` has bearing on weight.  # </weight>
-
-▸ **setMembers**(new_members: `Vec<AccountId>`)
-- **summary**:   Set the collective's membership manually to `new_members`. Be nice to the chain and  provide it pre-sorted.   Requires root origin.
-
-▸ **vote**(proposal: `Hash`, index: `Compact<ProposalIndex>`, approve: `bool`)
-- **summary**:   # <weight>  - Bounded storage read and writes.  - Will be slightly heavier if the proposal is approved / disapproved after the vote.  # </weight>
-
-___
-
-
-### contract
+### contracts
 
 ▸ **call**(dest: `Address`, value: `Compact<BalanceOf>`, gas_limit: `Compact<Gas>`, data: `Bytes`)
 - **summary**:   Makes a call to an account, optionally transferring some balance.   * If the account is a smart-contract account, the associated code will be  executed and any value will be transferred.  * If the account is a regular account, any value will be transferred.  * If no account exists and the call value is not less than `existential_deposit`,  a regular account will be created and any value will be transferred.
@@ -107,6 +75,23 @@ ___
 
 ▸ **updateSchedule**(schedule: `Schedule`)
 - **summary**:   Updates the schedule for metering contracts.   The schedule must have a greater version than the stored schedule.
+
+___
+
+
+### council
+
+▸ **execute**(proposal: `Proposal`)
+- **summary**:   Dispatch a proposal from a member using the `Member` origin.   Origin must be a member of the collective.
+
+▸ **propose**(threshold: `Compact<MemberCount>`, proposal: `Proposal`)
+- **summary**:   # <weight>  - Bounded storage reads and writes.  - Argument `threshold` has bearing on weight.  # </weight>
+
+▸ **setMembers**(new_members: `Vec<AccountId>`)
+- **summary**:   Set the collective's membership manually to `new_members`. Be nice to the chain and  provide it pre-sorted.   Requires root origin.
+
+▸ **vote**(proposal: `Hash`, index: `Compact<ProposalIndex>`, approve: `bool`)
+- **summary**:   # <weight>  - Bounded storage read and writes.  - Will be slightly heavier if the proposal is approved / disapproved after the vote.  # </weight>
 
 ___
 
@@ -167,7 +152,7 @@ ___
 ___
 
 
-### council
+### elections
 
 ▸ **presentWinner**(candidate: `Address`, total: `Compact<BalanceOf>`, index: `Compact<VoteIndex>`)
 - **summary**:   Claim that `signed` is one of the top Self::carry_count() + current_vote().1 candidates.  Only works if the `block_number >= current_vote().0` and `< current_vote().0 + presentation_duration()`  `signed` should have at least   # <weight>  - O(voters) compute.  - One DB change.  # </weight>
@@ -202,7 +187,7 @@ ___
 ___
 
 
-### 
+### finalityTracker
 
 ▸ **finalHint**(hint: `Compact<BlockNumber>`)
 - **summary**:   Hint that the author of this block thinks the best finalized  block is the given number.
@@ -210,10 +195,17 @@ ___
 ___
 
 
-### grandpaFinality
+### grandpa
 
 ▸ **reportMisbehavior**(_report: `Bytes`)
 - **summary**:   Report some misbehavior.
+
+___
+
+
+### imOnline
+
+▸ **heartbeat**(heartbeat: `Heartbeat`, _signature: `Bytes`)
 
 ___
 
@@ -301,10 +293,27 @@ ___
 ___
 
 
+### technicalCommittee
+
+▸ **execute**(proposal: `Proposal`)
+- **summary**:   Dispatch a proposal from a member using the `Member` origin.   Origin must be a member of the collective.
+
+▸ **propose**(threshold: `Compact<MemberCount>`, proposal: `Proposal`)
+- **summary**:   # <weight>  - Bounded storage reads and writes.  - Argument `threshold` has bearing on weight.  # </weight>
+
+▸ **setMembers**(new_members: `Vec<AccountId>`)
+- **summary**:   Set the collective's membership manually to `new_members`. Be nice to the chain and  provide it pre-sorted.   Requires root origin.
+
+▸ **vote**(proposal: `Hash`, index: `Compact<ProposalIndex>`, approve: `bool`)
+- **summary**:   # <weight>  - Bounded storage read and writes.  - Will be slightly heavier if the proposal is approved / disapproved after the vote.  # </weight>
+
+___
+
+
 ### timestamp
 
 ▸ **set**(now: `Compact<Moment>`)
-- **summary**:   Set the current time.   This call should be invoked exactly once per block. It will panic at the finalization phase,  if this call hasn't been invoked by that time.   The timestamp should be greater than the previous one by the amount specified by `minimum_period`.   The dispatch origin for this call must be `Inherent`.
+- **summary**:   Set the current time.   This call should be invoked exactly once per block. It will panic at the finalization  phase, if this call hasn't been invoked by that time.   The timestamp should be greater than the previous one by the amount specified by  `MinimumPeriod`.   The dispatch origin for this call must be `Inherent`.
 
 ___
 

@@ -1,23 +1,23 @@
 ## Storage
 
 _The following sections contain Storage methods are part of the default Substrate runtime._
-- **[aura](#aura)**
-
 - **[authorship](#authorship)**
+
+- **[babe](#babe)**
 
 - **[balances](#balances)**
 
-- **[collective](#collective)**
-
-- **[collective](#collective)**
-
 - **[contracts](#contracts)**
+
+- **[council](#council)**
 
 - **[democracy](#democracy)**
 
 - **[elections](#elections)**
 
 - **[grandpa](#grandpa)**
+
+- **[imOnline](#imOnline)**
 
 - **[indices](#indices)**
 
@@ -29,23 +29,14 @@ _The following sections contain Storage methods are part of the default Substrat
 
 - **[system](#system)**
 
+- **[technicalCommittee](#technicalCommittee)**
+
 - **[timestamp](#timestamp)**
 
 - **[treasury](#treasury)**
 
 - **[substrate](#substrate)**
 
-
-___
-
-
-### aura
-
-▸ **authorities**(): `Vec<AuthorityId>`
-- **summary**:   The current authorities
-
-▸ **lastTimestamp**(): `Moment`
-- **summary**:   The last timestamp.
 
 ___
 
@@ -60,6 +51,32 @@ ___
 
 ▸ **uncles**(): `Vec<UncleEntryItem>`
 - **summary**:   Uncles
+
+___
+
+
+### babe
+
+▸ **authorities**(): `Vec<(AuthorityId,BabeWeight)>`
+- **summary**:   Current epoch authorities.
+
+▸ **currentSlot**(): `u64`
+- **summary**:   Current slot number.
+
+▸ **epochIndex**(): `u64`
+- **summary**:   Current epoch index.
+
+▸ **epochStartSlot**(): `u64`
+- **summary**:   Slot at which the current epoch started. It is possible that no  block was authored at the given slot and the epoch change was  signalled later than this.
+
+▸ **nextRandomness**(): `[u8;32]`
+- **summary**:   Next epoch randomness.
+
+▸ **randomness**(): `[u8;32]`
+- **summary**:   The epoch randomness for the *current* epoch.   # Security   This MUST NOT be used for gambling, as it can be influenced by a  malicious validator in the short term. It MAY be used in many  cryptographic protocols, however, so long as one remembers that this  (like everything else on-chain) it is public. For example, it can be  used where a number is needed that cannot have been chosen by an  adversary, for purposes such as public-coin zero-knowledge proofs.
+
+▸ **underConstruction**(): `[u8;32]`
+- **summary**:   Randomness under construction.
 
 ___
 
@@ -80,46 +97,6 @@ ___
 
 ▸ **vesting**(`AccountId`): `Option<VestingSchedule>`
 - **summary**:   Information regarding the vesting of a given account.
-
-___
-
-
-### collective
-
-▸ **members**(): `Vec<AccountId>`
-- **summary**:   The current members of the collective. This is stored sorted (just by value).
-
-▸ **proposalCount**(): `u32`
-- **summary**:   Proposals so far.
-
-▸ **proposalOf**(`Hash`): `Option<Proposal>`
-- **summary**:   Actual proposal for a given hash, if it's current.
-
-▸ **proposals**(): `Vec<Hash>`
-- **summary**:   The hashes of the active proposals.
-
-▸ **voting**(`Hash`): `Option<Votes>`
-- **summary**:   Votes on a given proposal, if it is ongoing.
-
-___
-
-
-### collective
-
-▸ **members**(): `Vec<AccountId>`
-- **summary**:   The current members of the collective. This is stored sorted (just by value).
-
-▸ **proposalCount**(): `u32`
-- **summary**:   Proposals so far.
-
-▸ **proposalOf**(`Hash`): `Option<Proposal>`
-- **summary**:   Actual proposal for a given hash, if it's current.
-
-▸ **proposals**(): `Vec<Hash>`
-- **summary**:   The hashes of the active proposals.
-
-▸ **voting**(`Hash`): `Option<Votes>`
-- **summary**:   Votes on a given proposal, if it is ongoing.
 
 ___
 
@@ -146,6 +123,26 @@ ___
 
 ▸ **pristineCode**(`CodeHash`): `Option<Bytes>`
 - **summary**:   A mapping from an original code hash to the original code, untouched by instrumentation.
+
+___
+
+
+### council
+
+▸ **members**(): `Vec<AccountId>`
+- **summary**:   The current members of the collective. This is stored sorted (just by value).
+
+▸ **proposalCount**(): `u32`
+- **summary**:   Proposals so far.
+
+▸ **proposalOf**(`Hash`): `Option<Proposal>`
+- **summary**:   Actual proposal for a given hash, if it's current.
+
+▸ **proposals**(): `Vec<Hash>`
+- **summary**:   The hashes of the active proposals.
+
+▸ **voting**(`Hash`): `Option<Votes>`
+- **summary**:   Votes on a given proposal, if it is ongoing.
 
 ___
 
@@ -267,6 +264,20 @@ ___
 ▸ **stalled**(): `Option<(BlockNumber,BlockNumber)>`
 - **summary**:   `true` if we are currently stalled.
 
+▸ **state**(): `StoredState`
+- **summary**:   State of the current authority set.
+
+___
+
+
+### imOnline
+
+▸ **gossipAt**(): `BlockNumber`
+
+▸ **lastNewEraStart**(): `Option<SessionIndex>`
+
+▸ **receivedHeartbeats**(): `DoubleMap<Bytes>`
+
 ___
 
 
@@ -288,6 +299,12 @@ ___
 
 ▸ **currentIndex**(): `SessionIndex`
 - **summary**:   Current index of the session.
+
+▸ **keyOwner**(): `Option<DoubleMap<ValidatorId>>`
+- **summary**:   The owner of a key. The second key is the `KeyTypeId` + the encoded key.   The first key is always `DEDUP_KEY_PREFIX` to have all the data in the same branch of  the trie. Having all data in the same branch should prevent slowing down other queries.
+
+▸ **nextKeys**(): `Option<DoubleMap<Keys>>`
+- **summary**:   The next session keys for a validator.   The first key is always `DEDUP_KEY_PREFIX` to have all the data in the same branch of  the trie. Having all data in the same branch should prevent slowing down other queries.
 
 ▸ **queuedChanged**(): `bool`
 - **summary**:   Queued keys changed.
@@ -315,11 +332,11 @@ ___
 ▸ **currentEra**(): `EraIndex`
 - **summary**:   The current era index.
 
-▸ **currentEraReward**(): `BalanceOf`
-- **summary**:   The accumulated reward for the current era. Reset to zero at the beginning of the era  and increased for every successfully finished session.
+▸ **currentEraRewards**(): `EraRewards`
+- **summary**:   Rewards for the current era. Using indices of current elected set.
 
-▸ **currentSessionReward**(): `BalanceOf`
-- **summary**:   Maximum reward, per validator, that is provided per acceptable session.
+▸ **currentEraStart**(): `MomentOf`
+- **summary**:   The start of the current era.
 
 ▸ **forceNewEra**(): `bool`
 - **summary**:   True if the next session change will be a new era regardless of index.
@@ -347,9 +364,6 @@ ___
 
 ▸ **recentlyOffline**(): `Vec<(AccountId,BlockNumber,u32)>`
 - **summary**:   Most recent `RECENT_OFFLINE_COUNT` instances. (Who it was, when it was reported, how  many instances they were offline for).
-
-▸ **sessionReward**(): `Perbill`
-- **summary**:   Maximum reward, per validator, that is provided per acceptable session.
 
 ▸ **slashCount**(`AccountId`): `u32`
 - **summary**:   The number of times a given validator has been reported offline. This gets decremented  by one each era that passes.
@@ -382,7 +396,10 @@ ___
 ▸ **accountNonce**(`AccountId`): `Index`
 - **summary**:   Extrinsics nonce for accounts.
 
-▸ **allExtrinsicsWeight**(): `Option<u32>`
+▸ **allExtrinsicsLen**(): `Option<u32>`
+- **summary**:   Total length (in bytes) for all extrinsics put together, for the current block.
+
+▸ **allExtrinsicsWeight**(): `Option<Weight>`
 - **summary**:   Total weight for all extrinsics put together, for the current block.
 
 ▸ **blockHash**(`BlockNumber`): `Hash`
@@ -409,6 +426,9 @@ ___
 ▸ **extrinsicsRoot**(): `Hash`
 - **summary**:   Extrinsics root of the current block, also part of the block header.
 
+▸ **nextWeightMultiplier**(): `WeightMultiplier`
+- **summary**:   The next weight multiplier. This should be updated at the end of each block based on the  saturation level (weight).
+
 ▸ **number**(): `BlockNumber`
 - **summary**:   The current block number being processed. Set by `execute_block`.
 
@@ -421,16 +441,30 @@ ___
 ___
 
 
-### timestamp
+### technicalCommittee
 
-▸ **blockPeriod**(): `Option<Moment>`
-- **summary**:   Old storage item provided for compatibility. Remove after all networks upgraded.
+▸ **members**(): `Vec<AccountId>`
+- **summary**:   The current members of the collective. This is stored sorted (just by value).
+
+▸ **proposalCount**(): `u32`
+- **summary**:   Proposals so far.
+
+▸ **proposalOf**(`Hash`): `Option<Proposal>`
+- **summary**:   Actual proposal for a given hash, if it's current.
+
+▸ **proposals**(): `Vec<Hash>`
+- **summary**:   The hashes of the active proposals.
+
+▸ **voting**(`Hash`): `Option<Votes>`
+- **summary**:   Votes on a given proposal, if it is ongoing.
+
+___
+
+
+### timestamp
 
 ▸ **didUpdate**(): `bool`
 - **summary**:   Did the timestamp get updated in this block?
-
-▸ **minimumPeriod**(): `Moment`
-- **summary**:   The minimum period between blocks. Beware that this is different to the *expected* period  that the block production apparatus provides. Your chosen consensus system will generally  work with this to determine a sensible block time. e.g. For Aura, it will be double this  period on default settings.
 
 ▸ **now**(): `Moment`
 - **summary**:   Current time for the current block.

@@ -6,18 +6,17 @@ import BN from 'bn.js';
 
 import ApiRx from '@polkadot/api/rx/Api';
 import { HeaderExtended } from '@polkadot/api-derive';
-import { ReferendumInfoExtended } from '@polkadot/api-derive/type';
-import { DerivedBalances, DerivedContractFees, DerivedFees, DerivedReferendumVote, DerivedSessionInfo, DerivedStakingInfo } from '@polkadot/api-derive/types';
-import { AccountId, AccountIndex, AuthorityId, BlockNumber, Exposure, Index, RewardDestination, SessionKey, StakingLedger, ValidatorPrefs } from '@polkadot/types';
+import { DerivedBalances, DerivedContractFees, DerivedElectionsInfo, DerivedFees, DerivedSessionInfo } from '@polkadot/api-derive/types';
+import { AccountId, AccountIndex, BlockNumber, Index } from '@polkadot/types';
 import { WsProvider } from '@polkadot/rpc-provider';
 
-const WS = 'ws://127.0.0.1:9945';
+const WS = 'ws://127.0.0.1:9944/';
 
 // Dev account Alice
 const ID = '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY';
 const IX = 'F7Hs';
 
-describe('Api-RX derive e2e', (): void => {
+describe.skip('Api-RX derive e2e', (): void => {
   let api: ApiRx;
 
   beforeAll((): void => {
@@ -226,38 +225,18 @@ describe('Api-RX derive e2e', (): void => {
     });
   });
 
-  describe('derive.democracy', (): void => {
-    describe('democracy.referendumInfos', (): void => {
-      it('Gets all referendum Infos', async (done): Promise<void> => {
-        api.derive.democracy.referendumInfos().subscribe((referendums: ReferendumInfoExtended): void => {
-          expect(referendums instanceof Array).toBe(true);
-          done();
-        });
-      });
-    });
-
-    describe('democracy.referendums', (): void => {
-      it('Gets all referendums', async (done): Promise<void> => {
-        api.derive.democracy.referendums().subscribe((referendums: ReferendumInfoExtended): void => {
-          expect(referendums instanceof Array).toBe(true);
-          done();
-        });
-      });
-    });
-
-    describe('democracy.referendumVotesFor', (): void => {
-      it('Gets all votes for a certain referendum', async (done): Promise<void> => {
-        api.derive.democracy.referendumVotesFor(0).subscribe((votes: DerivedReferendumVote): void => {
-          expect(votes instanceof Array).toBe(true);
-          done();
-        });
-      });
-    });
-
-    describe('democracy.votes', (): void => {
-      it('Gets all votes', async (done): Promise<void> => {
-        api.derive.democracy.votes(0).subscribe((votes: DerivedReferendumVote): void => {
-          expect(votes instanceof Array).toBe(true);
+  describe('derive.elections', (): void => {
+    describe('info', (): void => {
+      it('It returns an object with all relevant elections properties', async (done): Promise<void> => {
+        api.derive.elections.info().subscribe((info: DerivedElectionsInfo): void => {
+          expect(info).toEqual(expect.objectContaining({
+            members: expect.anything(),
+            candidates: expect.anything(),
+            candidateCount: expect.any(BN),
+            desiredSeats: expect.any(BN),
+            termDuration: expect.any(BN),
+            voteCount: expect.any(BN)
+          }));
           done();
         });
       });
@@ -265,7 +244,7 @@ describe('Api-RX derive e2e', (): void => {
   });
 
   describe('derive.session', (): void => {
-    describe('session.progress', (): void => {
+    describe('sessionProgress', (): void => {
       it('derive.session.sessionProgress', async (done): Promise<void> => {
         api.derive.session.sessionProgress().subscribe((progress: BN): void => {
           expect(progress instanceof BN).toBe(true);
@@ -313,36 +292,8 @@ describe('Api-RX derive e2e', (): void => {
   });
 
   describe('derive.staking', (): void => {
-    describe('staking.controllers', (): void => {
-      it('retrieves all controllers', async (done): Promise<void> => {
-        api.derive.staking.controllers().subscribe((controllers: []): void => {
-          expect(controllers).toEqual(expect.objectContaining({
-            0: expect.arrayContaining([expect.any(AccountId)]),
-            1: expect.arrayContaining([expect.anything()])
-          }));
-          done();
-        });
-      });
-    });
-
-    describe('staking.info', (): void => {
-      it('retrieves all staking info for ALICE', async (done): Promise<void> => {
-        api.derive.staking.info(ID).subscribe((info: DerivedStakingInfo): void => {
-          expect(info).toEqual(expect.objectContaining({
-            accountId: expect.any(AccountId),
-            controllerId: expect.any(AccountId),
-            nextSessionId: expect.any(SessionKey),
-            nominators: expect.anything(),
-            rewardDestination: expect.any(RewardDestination),
-            sessionId: expect.any(AuthorityId),
-            stakers: expect.any(Exposure),
-            stakingLedger: expect.any(StakingLedger),
-            stashId: expect.any(AccountId),
-            validatorPrefs: expect.any(ValidatorPrefs)
-          }));
-          done();
-        });
-      });
+    describe('controllers', (): void => {
+      // @TODO https://github.com/polkadot-js/api/issues/868
     });
   });
 });
